@@ -42,7 +42,7 @@ Agents are programmed either directly self contained to drop right into an agent
 
 ### Web Agents
 
-Gemini 2.5 or Open AI customGPTs are created by running the node build script to generate output to a build folder. This output is the full package to create the orchestrator web agent.
+Gemini 2.5 or Open AI customGPTs are created using the pre-built package in the `web-build-sample` folder. This folder contains the complete package to create the orchestrator web agent.
 
 See the detailed [Web Orchestration Setup and Usage Instructions](./instruction.md#setting-up-web-agent-orchestrator)
 

@@ -6,68 +6,61 @@
 
 ## Setting up Web Agent Orchestrator
 
-The Agent Orchestrator in V3 utilizes a build script to package various agent assets (personas, tasks, templates, etc.) into a structured format, primarily for use with web-based orchestrator agents that can leverage large context windows. This process involves consolidating files from specified source directories into bundled text files and preparing a main agent prompt.
+The Agent Orchestrator in V3 provides a pre-built package that contains various agent assets (personas, tasks, templates, etc.) in a structured format, ready for use with web-based orchestrator agents that can leverage large context windows. The assets are already consolidated into bundled text files with a prepared main agent prompt.
 
 ### Overview
 
-The build process is managed by the `build-bmad-orchestrator.js` Node.js script. This script reads its configuration from `build-web-agent.cfg.js`, processes files from an asset directory, and outputs the bundled assets into a designated build directory.
+The pre-built package is available in the `web-build-sample` folder, which contains all the necessary files to set up the orchestrator web agent immediately without any build process.
 
-Quickstart: see [this below](#running-the-build-script)
+Quickstart: see [this below](#using-the-pre-built-package)
 
 ### Prerequisites
 
-- **Node.js**: Ensure you have Node.js installed to run the build script. Python version coming soon...
+- **No build tools required**: The pre-built package is ready to use immediately.
 
-### Configuration (`build-web-agent.cfg.js`)
+### Pre-built Package Contents (`web-build-sample/`)
 
-The build process is configured via `build-web-agent.cfg.js`. Key parameters include:
+The `web-build-sample` folder contains all the necessary files for the orchestrator web agent:
 
-- `orchestrator_agent_prompt`: Specifies the path to the main prompt file for the orchestrator agent, such as `bmad-agent/web-bmad-orchestrator-agent.md`. This file will be copied to `agent-prompt.txt` in the build directory.
-  - Example: `./bmad-agent/web-bmad-orchestrator-agent.md`
-- `asset_root`: Defines the root directory where your agent assets are stored. The script will look for subdirectories within this path.
-  - Example: `./bmad-agent/` meaning it will look for folders like `personas`, `tasks` inside `bmad-agent/`)
-- `build_dir`: Specifies the directory where the bundled output files and the `agent-prompt.txt` will be created.
-  - Example: `./bmad-agent/build/`
-- `agent_cfg`: Specifies the path to the md cfg file that defines the agents the Orchestrator can embody.
-  - Example: `./bmad-agent/web-bmad-orchestrator-agent.cfg.md`
+- `agent-prompt.txt`: The main prompt file for the orchestrator agent that gets pasted into Gemini or ChatGPT instructions.
+- `agent-config.txt`: Defines the agents the Orchestrator can embody.
+- `personas.txt`: Bundled persona definitions for all available agents.
+- `tasks.txt`: Bundled task definitions for all available operations.
+- `templates.txt`: Bundled templates for document generation.
+- `checklists.txt`: Bundled checklists for quality assurance.
+- `data.txt`: Bundled knowledge base and reference data.
 
-Paths in the configuration file (`build-web-agent.cfg.js`) are relative to the `bmad-agent` directory (where `build-web-agent.cfg.js` and the build script `build-bmad-orchestrator.js` are located).
+All files are pre-processed and ready for immediate use with web-based AI platforms.
 
-### Asset Directory Structure
+### Using the Pre-built Package
 
-The script expects a specific structure within the `asset_root` directory:
+The `web-build-sample` folder contains a ready-to-use package that has been pre-processed from the source assets in the `codemad-agent` directory:
 
-1. **Subdirectories**: Create subdirectories directly under `asset_root` for each category of assets. Based on the `bmad-agent/` folder, these would be:
-    - `checklists/`
-    - `data/`
-    - `personas/`
-    - `tasks/`
-    - `templates/`
-2. **Asset Files**: Place your individual asset files (e.g., `.md`, `.txt`) within these subdirectories.
-    - For example, persona definition files would go into `asset_root/personas/`, task files into `asset_root/tasks/`, etc.
-3. **Filename Uniqueness**: Within each subdirectory, ensure that all files have unique base names (i.e., the filename without its final extension). For example, having `my-persona.md` and `my-persona.txt` in the _same_ subdirectory (e.g., `personas/`) will cause the script to halt with an error. However, `my-persona.md` and `another-persona.md` is fine.
+1. **Source Structure**: The original assets are organized in the `codemad-agent` directory:
+    - `checklists/` - Individual checklist files
+    - `data/` - Knowledge base and reference files
+    - `personas/` - Individual persona definition files
+    - `tasks/` - Individual task definition files
+    - `templates/` - Document template files
 
-### Running the Build Script
+2. **Pre-built Output**: These have been consolidated into the bundled files in `web-build-sample/`:
+    - All personas bundled into `personas.txt`
+    - All tasks bundled into `tasks.txt`
+    - All checklists bundled into `checklists.txt`
+    - All data bundled into `data.txt`
+    - All templates bundled into `templates.txt`
 
-NOTE the build will skip any files with the `.ide.<extension>` - so you can have ide specific agents or files also that do not make sense for the web, such as `dev.ide.md` - or a specific ide `sm.ide.md`.
+3. **File Structure**: Each bundled file contains content from multiple source files, with each original file's content demarcated by `==================== START: [base_filename] ====================` and `==================== END: [base_filename] ====================` markers.
 
-1. ```cmd
-    node build-web-agent.js
-    ```
+4. **Ready to Use**: Simply use the files from `web-build-sample/` - no build process required.
 
-The script will log its progress, including discovered source directories, any issues found (like duplicate base filenames), and the output files being generated.
+### Package Contents
 
-### Output
+The `web-build-sample` folder contains:
 
-After running the script, the `build_dir` (e.g., `bmad-agent/build/`) will contain:
-
-1. **Bundled Asset Files**: For each subdirectory processed in `asset_root`, a corresponding `.txt` file will be created in `build_dir`. Each file concatenates the content of all files from its source subdirectory.
-    - Example: Files from `asset_root/personas/` will be bundled into `build_dir/personas.txt`.
-    - Each original file's content within the bundle is demarcated by `==================== START: [base_filename] ====================` and `==================== END: [base_filename] ====================`.
-2. **`agent-prompt.txt`**: This file is a copy of the bmad orchestrator prompt specified by `orchestrator_agent_prompt` in the configuration.
-3. **`agent-config.txt**: This is the key file so the orchestrator knows what agents and tasks are configured, and how to find the specific instructions and tasks for the agent in the compiled build assets
-
-These bundled files and the agent prompt are then ready to be used by the Agent Orchestrator.
+1. **`agent-prompt.txt`**: The main orchestrator prompt that gets pasted into Gemini or ChatGPT instructions.
+2. **`agent-config.txt`**: The key configuration file that tells the orchestrator what agents and tasks are available, and how to find the specific instructions in the bundled assets.
+3. **Bundled Asset Files**: Pre-processed files containing all the agent resources.
 
 ### Gemini Gem or GPT Setup
 
@@ -75,7 +68,7 @@ The text in agent-prompt.txt gets entered into the window of the main custom web
 
 ### Orchestrator Agent Configuration (e.g., `bmad-agent/web-bmad-orchestrator-agent.cfg.md`)
 
-While `build-bmad-orchestrator.js` packages assets, the Orchestrator's core behavior, agent definitions, and personality are defined in a Markdown configuration file. An example is `bmad-agent/web-bmad-orchestrator-agent.cfg.md` (path relative to `bmad-agent/`, specified in `build-web-agent.cfg.js` via `agent_cfg`). This file is key to the Orchestrator's adaptability.
+The Orchestrator's core behavior, agent definitions, and personality are defined in a Markdown configuration file. The pre-built package uses `codemad-agent/web-codemad-orchestrator-agent.cfg.md` as the source configuration. This file is key to the Orchestrator's adaptability.
 
 **Key Features and Configurability:**
 
@@ -121,7 +114,7 @@ While `build-bmad-orchestrator.js` packages assets, the Orchestrator's core beha
 4. The `Customize` instructions from the Markdown configuration are applied, potentially modifying the agent's behavior.
 5. The Orchestrator then _becomes_ that agent, adopting its complete persona, knowledge, and operational parameters defined in the Markdown configuration and the loaded asset sections.
 
-This system makes the Agent Orchestrator highly adaptable. You can easily define new agents, modify existing ones, tweak personalities with the `Customize` field (in the Markdown agent configuration file like `web-bmad-orchestrator-agent.cfg.md`), or change their knowledge base, main prompt, and asset paths (in `build-web-agent.cfg.js` and the corresponding asset files), then re-running the build script if asset content was changed.
+This system makes the Agent Orchestrator highly adaptable. You can easily define new agents, modify existing ones, tweak personalities with the `Customize` field (in the Markdown agent configuration file like `web-codemad-orchestrator-agent.cfg.md`), or change their knowledge base by modifying the source files in the `codemad-agent` directory. The `web-build-sample` folder provides a ready-to-use package based on these source files.
 
 ## IDE Agent Setup and Usage
 
