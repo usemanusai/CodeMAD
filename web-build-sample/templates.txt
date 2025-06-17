@@ -1521,3 +1521,1898 @@ Hello {{users name}}, this is your foo report for {{todays date}}
 ==================== END: template-format ====================
 
 
+==================== START: test-plan-tmpl ====================
+# {Project Name} Test Plan
+
+## Executive Summary
+
+{Brief overview of the testing approach, scope, and objectives for this project.}
+
+## Test Strategy Overview
+
+### Testing Objectives
+- {Primary objective 1}
+- {Primary objective 2}
+- {Primary objective 3}
+
+### Scope and Coverage
+- **In Scope:** {What will be tested}
+- **Out of Scope:** {What will not be tested}
+- **Risk Areas:** {High-risk areas requiring focused testing}
+
+## Test Types and Approaches
+
+### Unit Testing
+- **Coverage Target:** {e.g., 80% line coverage}
+- **Tools:** {Testing frameworks and tools}
+- **Responsibility:** {Who writes and maintains unit tests}
+- **Execution:** {When and how unit tests are run}
+
+### Integration Testing
+- **Scope:** {API testing, service integration, database integration}
+- **Tools:** {Integration testing tools and frameworks}
+- **Test Environment:** {Integration testing environment requirements}
+- **Data Management:** {Test data strategy for integration tests}
+
+### System Testing
+- **End-to-End Testing:** {User journey testing approach}
+- **Performance Testing:** {Load, stress, and performance testing strategy}
+- **Security Testing:** {Security testing approach and tools}
+- **Compatibility Testing:** {Browser, device, and platform testing}
+
+### User Acceptance Testing
+- **UAT Process:** {UAT execution process and stakeholder involvement}
+- **Acceptance Criteria:** {How acceptance criteria will be validated}
+- **User Involvement:** {End user participation in testing}
+
+## Test Automation Strategy
+
+### Automation Framework
+- **Framework Type:** {e.g., Page Object Model, Keyword-Driven}
+- **Tools and Technologies:** {Automation tools and programming languages}
+- **Test Data Management:** {Automated test data creation and management}
+
+### Automation Scope
+- **Automated Tests:** {What will be automated}
+- **Manual Tests:** {What will remain manual}
+- **CI/CD Integration:** {How automated tests integrate with deployment pipeline}
+
+## Quality Gates and Criteria
+
+### Entry Criteria
+- {Criteria that must be met before testing begins}
+
+### Exit Criteria
+- {Criteria that must be met before testing is considered complete}
+
+### Quality Metrics
+- **Defect Density:** {Target defect density metrics}
+- **Test Coverage:** {Coverage targets for different test types}
+- **Pass Rate:** {Acceptable test pass rates}
+
+## Test Environment and Infrastructure
+
+### Test Environments
+- **Development:** {Dev environment testing approach}
+- **Staging:** {Staging environment testing approach}
+- **Production-like:** {Production-like testing environment}
+
+### Test Data Strategy
+- **Data Creation:** {How test data will be created and managed}
+- **Data Privacy:** {Handling of sensitive data in testing}
+- **Data Refresh:** {Test data refresh and maintenance procedures}
+
+## Defect Management
+
+### Defect Lifecycle
+- {Defect reporting, tracking, and resolution process}
+
+### Severity and Priority
+- **Critical:** {Definition and response time}
+- **High:** {Definition and response time}
+- **Medium:** {Definition and response time}
+- **Low:** {Definition and response time}
+
+## Risk Assessment and Mitigation
+
+### Testing Risks
+- **Risk 1:** {Description and mitigation strategy}
+- **Risk 2:** {Description and mitigation strategy}
+- **Risk 3:** {Description and mitigation strategy}
+
+## Resource Planning
+
+### Team Structure
+- **Test Lead:** {Responsibilities}
+- **Test Engineers:** {Responsibilities}
+- **Automation Engineers:** {Responsibilities}
+
+### Timeline and Milestones
+- **Test Planning:** {Timeline}
+- **Test Design:** {Timeline}
+- **Test Execution:** {Timeline}
+- **Test Closure:** {Timeline}
+
+## Reporting and Communication
+
+### Test Reporting
+- **Daily Reports:** {Daily test execution status}
+- **Weekly Reports:** {Weekly progress and metrics}
+- **Final Report:** {Comprehensive test summary}
+
+### Communication Plan
+- **Stakeholders:** {Key stakeholders and communication frequency}
+- **Escalation:** {Issue escalation procedures}
+
+==================== END: test-plan-tmpl ====================
+
+
+==================== START: bug-report-tmpl ====================
+# Bug Report Template
+
+## Bug Information
+
+**Bug ID:** {Unique identifier}
+**Date Reported:** {Date}
+**Reported By:** {Reporter name and contact}
+**Assigned To:** {Developer/team assigned}
+**Status:** {New/In Progress/Resolved/Closed}
+
+## Bug Classification
+
+**Severity:** {Critical/High/Medium/Low}
+**Priority:** {P1/P2/P3/P4}
+**Component:** {System component or module affected}
+**Version:** {Software version where bug was found}
+**Environment:** {Testing environment details}
+
+## Bug Description
+
+### Summary
+{Brief, clear description of the bug}
+
+### Expected Behavior
+{What should happen}
+
+### Actual Behavior
+{What actually happens}
+
+### Impact
+{Business impact and user experience impact}
+
+## Reproduction Information
+
+### Steps to Reproduce
+1. {Step 1}
+2. {Step 2}
+3. {Step 3}
+4. {Continue as needed}
+
+### Preconditions
+{Any setup or conditions required before reproduction}
+
+### Test Data
+{Specific test data used, if applicable}
+
+### Frequency
+{How often the bug occurs - Always/Sometimes/Rarely}
+
+## Environment Details
+
+**Operating System:** {OS and version}
+**Browser:** {Browser and version, if applicable}
+**Device:** {Device type and model, if applicable}
+**Network:** {Network conditions, if relevant}
+**Database:** {Database version and configuration, if relevant}
+
+## Evidence
+
+### Screenshots
+{Attach relevant screenshots}
+
+### Log Files
+{Attach relevant log files or error messages}
+
+### Video Recording
+{Link to video recording, if available}
+
+### Additional Files
+{Any other supporting files}
+
+## Workaround
+
+{Temporary workaround, if available}
+
+## Root Cause Analysis
+
+{To be filled by developer - root cause of the issue}
+
+## Resolution
+
+### Fix Description
+{Description of the fix implemented}
+
+### Code Changes
+{Summary of code changes made}
+
+### Testing Notes
+{Notes for testing the fix}
+
+## Verification
+
+**Verified By:** {Tester name}
+**Verification Date:** {Date}
+**Verification Environment:** {Environment used for verification}
+**Verification Status:** {Pass/Fail}
+
+## Related Information
+
+**Related Bugs:** {Links to related bug reports}
+**Related Requirements:** {Links to related requirements or user stories}
+**Related Test Cases:** {Links to related test cases}
+
+==================== END: bug-report-tmpl ====================
+
+
+==================== START: threat-model-tmpl ====================
+# {Project Name} Threat Model
+
+## Executive Summary
+
+{High-level overview of the security posture, key threats identified, and recommended security controls.}
+
+## System Overview
+
+### System Description
+{Brief description of the system being analyzed}
+
+### System Boundaries
+{Clear definition of what is included and excluded from the threat model}
+
+### Assets and Data Classification
+- **Critical Assets:** {List of critical assets requiring protection}
+- **Sensitive Data:** {Types of sensitive data handled by the system}
+- **Data Classification:** {Data classification levels and handling requirements}
+
+## System Architecture
+
+### Architecture Diagram
+{Insert system architecture diagram with trust boundaries marked}
+
+### Components and Services
+- **Component 1:** {Description and security relevance}
+- **Component 2:** {Description and security relevance}
+- **Component N:** {Description and security relevance}
+
+### Trust Boundaries
+{Description of trust boundaries between different system components and external entities}
+
+### Data Flow Analysis
+{Description of how data flows through the system and across trust boundaries}
+
+## Threat Analysis
+
+### Threat Modeling Methodology
+{Description of threat modeling approach used - e.g., STRIDE, PASTA, OCTAVE}
+
+### Identified Threats
+
+#### Spoofing Threats
+| Threat ID | Description | Asset Affected | Likelihood | Impact | Risk Score |
+|-----------|-------------|----------------|------------|---------|------------|
+| S001 | {Threat description} | {Asset} | {High/Medium/Low} | {High/Medium/Low} | {Score} |
+
+#### Tampering Threats
+| Threat ID | Description | Asset Affected | Likelihood | Impact | Risk Score |
+|-----------|-------------|----------------|------------|---------|------------|
+| T001 | {Threat description} | {Asset} | {High/Medium/Low} | {High/Medium/Low} | {Score} |
+
+#### Repudiation Threats
+| Threat ID | Description | Asset Affected | Likelihood | Impact | Risk Score |
+|-----------|-------------|----------------|------------|---------|------------|
+| R001 | {Threat description} | {Asset} | {High/Medium/Low} | {High/Medium/Low} | {Score} |
+
+#### Information Disclosure Threats
+| Threat ID | Description | Asset Affected | Likelihood | Impact | Risk Score |
+|-----------|-------------|----------------|------------|---------|------------|
+| I001 | {Threat description} | {Asset} | {High/Medium/Low} | {High/Medium/Low} | {Score} |
+
+#### Denial of Service Threats
+| Threat ID | Description | Asset Affected | Likelihood | Impact | Risk Score |
+|-----------|-------------|----------------|------------|---------|------------|
+| D001 | {Threat description} | {Asset} | {High/Medium/Low} | {High/Medium/Low} | {Score} |
+
+#### Elevation of Privilege Threats
+| Threat ID | Description | Asset Affected | Likelihood | Impact | Risk Score |
+|-----------|-------------|----------------|------------|---------|------------|
+| E001 | {Threat description} | {Asset} | {High/Medium/Low} | {High/Medium/Low} | {Score} |
+
+## Risk Assessment
+
+### Risk Scoring Methodology
+{Description of how risk scores are calculated}
+
+### High-Risk Threats
+{List of threats with high risk scores requiring immediate attention}
+
+### Medium-Risk Threats
+{List of threats with medium risk scores requiring planned mitigation}
+
+### Low-Risk Threats
+{List of threats with low risk scores for monitoring}
+
+## Security Controls and Mitigations
+
+### Preventive Controls
+| Control ID | Description | Threats Mitigated | Implementation Status |
+|------------|-------------|-------------------|----------------------|
+| PC001 | {Control description} | {Threat IDs} | {Planned/In Progress/Implemented} |
+
+### Detective Controls
+| Control ID | Description | Threats Detected | Implementation Status |
+|------------|-------------|------------------|----------------------|
+| DC001 | {Control description} | {Threat IDs} | {Planned/In Progress/Implemented} |
+
+### Corrective Controls
+| Control ID | Description | Threats Addressed | Implementation Status |
+|------------|-------------|-------------------|----------------------|
+| CC001 | {Control description} | {Threat IDs} | {Planned/In Progress/Implemented} |
+
+## Implementation Roadmap
+
+### Phase 1: Critical Security Controls
+- {Control 1 - Timeline}
+- {Control 2 - Timeline}
+- {Control 3 - Timeline}
+
+### Phase 2: Important Security Controls
+- {Control 1 - Timeline}
+- {Control 2 - Timeline}
+
+### Phase 3: Additional Security Controls
+- {Control 1 - Timeline}
+- {Control 2 - Timeline}
+
+## Monitoring and Validation
+
+### Security Monitoring Requirements
+{Requirements for monitoring security controls and detecting threats}
+
+### Validation Procedures
+{Procedures for validating the effectiveness of security controls}
+
+### Review and Update Schedule
+{Schedule for reviewing and updating the threat model}
+
+## Assumptions and Dependencies
+
+### Security Assumptions
+{Key security assumptions made during threat modeling}
+
+### External Dependencies
+{External security dependencies and their implications}
+
+## Appendices
+
+### Appendix A: Detailed Threat Descriptions
+{Detailed descriptions of complex threats}
+
+### Appendix B: Security Control Specifications
+{Detailed specifications for security controls}
+
+### Appendix C: Risk Assessment Calculations
+{Detailed risk assessment calculations and methodology}
+
+==================== END: threat-model-tmpl ====================
+
+
+==================== START: security-assessment-tmpl ====================
+# {Project Name} Security Assessment Report
+
+## Executive Summary
+
+{High-level overview of security assessment findings, risk level, and key recommendations.}
+
+### Assessment Overview
+- **Assessment Type:** {Vulnerability Assessment/Penetration Test/Security Review}
+- **Assessment Date:** {Date range}
+- **Assessor:** {Assessment team or organization}
+- **Scope:** {Systems and applications assessed}
+
+### Key Findings Summary
+- **Critical Vulnerabilities:** {Number and brief description}
+- **High-Risk Issues:** {Number and brief description}
+- **Medium-Risk Issues:** {Number and brief description}
+- **Overall Risk Rating:** {Critical/High/Medium/Low}
+
+## Assessment Scope and Methodology
+
+### Scope Definition
+- **In Scope:** {Systems, applications, and networks included}
+- **Out of Scope:** {Systems and areas excluded}
+- **Assessment Period:** {Time frame for assessment}
+
+### Methodology
+- **Assessment Framework:** {Framework used - OWASP, NIST, etc.}
+- **Tools Used:** {Security testing tools and scanners}
+- **Testing Approach:** {Automated scanning, manual testing, code review}
+
+## Vulnerability Findings
+
+### Critical Vulnerabilities
+| Vuln ID | Title | CVSS Score | Affected System | Exploitability | Business Impact |
+|---------|-------|------------|-----------------|----------------|-----------------|
+| CRIT-001 | {Vulnerability title} | {Score} | {System} | {High/Medium/Low} | {Description} |
+
+### High-Risk Vulnerabilities
+| Vuln ID | Title | CVSS Score | Affected System | Exploitability | Business Impact |
+|---------|-------|------------|-----------------|----------------|-----------------|
+| HIGH-001 | {Vulnerability title} | {Score} | {System} | {High/Medium/Low} | {Description} |
+
+### Medium-Risk Vulnerabilities
+| Vuln ID | Title | CVSS Score | Affected System | Exploitability | Business Impact |
+|---------|-------|------------|-----------------|----------------|-----------------|
+| MED-001 | {Vulnerability title} | {Score} | {System} | {High/Medium/Low} | {Description} |
+
+### Low-Risk Vulnerabilities
+| Vuln ID | Title | CVSS Score | Affected System | Exploitability | Business Impact |
+|---------|-------|------------|-----------------|----------------|-----------------|
+| LOW-001 | {Vulnerability title} | {Score} | {System} | {High/Medium/Low} | {Description} |
+
+## Detailed Vulnerability Analysis
+
+### {Vulnerability ID}: {Vulnerability Title}
+
+**Risk Level:** {Critical/High/Medium/Low}
+**CVSS Score:** {Score}
+**Affected Systems:** {List of affected systems}
+
+#### Description
+{Detailed description of the vulnerability}
+
+#### Technical Details
+{Technical details of how the vulnerability works}
+
+#### Proof of Concept
+{Steps to reproduce or exploit the vulnerability}
+
+#### Business Impact
+{Potential business impact if exploited}
+
+#### Remediation
+{Specific steps to fix the vulnerability}
+
+#### Timeline
+{Recommended timeline for remediation}
+
+## Risk Assessment
+
+### Risk Calculation Methodology
+{Description of how risk scores are calculated}
+
+### Risk Matrix
+| Risk Level | Count | Percentage |
+|------------|-------|------------|
+| Critical | {Count} | {Percentage} |
+| High | {Count} | {Percentage} |
+| Medium | {Count} | {Percentage} |
+| Low | {Count} | {Percentage} |
+
+### Business Risk Analysis
+{Analysis of business risk and potential impact}
+
+## Remediation Recommendations
+
+### Immediate Actions (0-30 days)
+1. {Critical vulnerability fix 1}
+2. {Critical vulnerability fix 2}
+3. {Critical vulnerability fix 3}
+
+### Short-term Actions (1-3 months)
+1. {High-risk vulnerability fix 1}
+2. {High-risk vulnerability fix 2}
+3. {Security improvement 1}
+
+### Long-term Actions (3-12 months)
+1. {Medium-risk vulnerability fixes}
+2. {Security architecture improvements}
+3. {Security process improvements}
+
+## Compliance Assessment
+
+### Regulatory Compliance
+{Assessment against relevant regulations - GDPR, HIPAA, PCI-DSS, etc.}
+
+### Security Standards Compliance
+{Assessment against security standards - ISO 27001, NIST, etc.}
+
+### Compliance Gaps
+{Identified gaps in compliance and recommendations}
+
+## Security Posture Analysis
+
+### Security Strengths
+{Areas where security is well-implemented}
+
+### Security Weaknesses
+{Areas requiring security improvements}
+
+### Security Maturity Assessment
+{Overall security maturity level and recommendations for improvement}
+
+## Appendices
+
+### Appendix A: Vulnerability Details
+{Detailed technical information for each vulnerability}
+
+### Appendix B: Tool Output
+{Raw output from security scanning tools}
+
+### Appendix C: Remediation Resources
+{Links to patches, security guides, and additional resources}
+
+==================== END: security-assessment-tmpl ====================
+
+
+==================== START: data-pipeline-tmpl ====================
+# {Pipeline Name} Data Pipeline Documentation
+
+## Pipeline Overview
+
+### Purpose and Objectives
+{Description of what the pipeline does and why it exists}
+
+### Business Value
+{Business value and impact of the pipeline}
+
+### Data Flow Summary
+{High-level description of data flow from source to destination}
+
+## Architecture and Design
+
+### Pipeline Architecture
+{Architectural diagram and description of pipeline components}
+
+### Technology Stack
+- **Orchestration:** {Workflow orchestration tool}
+- **Processing Engine:** {Data processing framework}
+- **Storage:** {Data storage systems}
+- **Monitoring:** {Monitoring and alerting tools}
+
+### Design Patterns
+{Data processing patterns used - batch, streaming, lambda, etc.}
+
+## Data Sources and Destinations
+
+### Source Systems
+| Source | Type | Format | Frequency | Volume | Owner |
+|--------|------|--------|-----------|---------|-------|
+| {Source 1} | {Database/API/File} | {Format} | {Frequency} | {Volume} | {Owner} |
+
+### Destination Systems
+| Destination | Type | Format | Purpose | SLA | Owner |
+|-------------|------|--------|---------|-----|-------|
+| {Destination 1} | {Database/Data Lake/API} | {Format} | {Purpose} | {SLA} | {Owner} |
+
+## Data Processing Logic
+
+### Extraction Logic
+{Description of how data is extracted from source systems}
+
+### Transformation Rules
+{Detailed description of data transformation logic}
+
+#### Data Cleansing
+{Data cleaning and validation rules}
+
+#### Data Enrichment
+{Data enrichment and augmentation logic}
+
+#### Business Rules
+{Business logic and calculations applied}
+
+### Loading Strategy
+{Description of how data is loaded into destination systems}
+
+## Data Quality and Validation
+
+### Data Quality Rules
+{Data quality validation rules and checks}
+
+### Quality Metrics
+{Key data quality metrics and thresholds}
+
+### Error Handling
+{How data quality issues and errors are handled}
+
+## Pipeline Configuration
+
+### Environment Configuration
+{Configuration for different environments - dev, staging, prod}
+
+### Parameters and Variables
+{Configurable parameters and their purposes}
+
+### Scheduling Configuration
+{Pipeline scheduling and trigger configuration}
+
+## Monitoring and Alerting
+
+### Key Metrics
+{Important metrics to monitor for pipeline health}
+
+### Alerting Rules
+{Alerting rules and thresholds}
+
+### Dashboard Links
+{Links to monitoring dashboards}
+
+## Operations and Maintenance
+
+### Deployment Process
+{How pipeline changes are deployed}
+
+### Backup and Recovery
+{Backup and disaster recovery procedures}
+
+### Troubleshooting Guide
+{Common issues and their solutions}
+
+### Performance Optimization
+{Performance tuning and optimization guidelines}
+
+## Security and Compliance
+
+### Data Security
+{Data encryption, access controls, and security measures}
+
+### Compliance Requirements
+{Regulatory compliance requirements and implementation}
+
+### Data Privacy
+{Data privacy protection and anonymization}
+
+## Dependencies and Integrations
+
+### Upstream Dependencies
+{Systems and processes this pipeline depends on}
+
+### Downstream Dependencies
+{Systems and processes that depend on this pipeline}
+
+### External Integrations
+{Third-party systems and APIs integrated}
+
+## Performance and Scalability
+
+### Performance Characteristics
+{Current performance metrics and benchmarks}
+
+### Scalability Considerations
+{How the pipeline scales with increased data volume}
+
+### Capacity Planning
+{Current capacity and growth projections}
+
+## Change Management
+
+### Version Control
+{How pipeline code and configuration are versioned}
+
+### Change Process
+{Process for making changes to the pipeline}
+
+### Testing Strategy
+{How pipeline changes are tested}
+
+## Documentation and Support
+
+### Technical Documentation
+{Links to additional technical documentation}
+
+### Support Contacts
+{Contact information for pipeline support}
+
+### Training Resources
+{Training materials and resources}
+
+==================== END: data-pipeline-tmpl ====================
+
+
+==================== START: data-model-tmpl ====================
+# {Data Model Name} Data Model Documentation
+
+## Model Overview
+
+### Purpose and Scope
+{Description of what the data model represents and its scope}
+
+### Business Context
+{Business context and use cases for the data model}
+
+### Model Type
+{Conceptual/Logical/Physical data model}
+
+## Entity Definitions
+
+### {Entity Name 1}
+**Description:** {What this entity represents}
+**Business Rules:** {Key business rules governing this entity}
+
+#### Attributes
+| Attribute | Type | Length | Nullable | Default | Description |
+|-----------|------|--------|----------|---------|-------------|
+| {attribute_1} | {data_type} | {length} | {Y/N} | {default} | {description} |
+| {attribute_2} | {data_type} | {length} | {Y/N} | {default} | {description} |
+
+#### Constraints
+- **Primary Key:** {primary_key_attributes}
+- **Foreign Keys:** {foreign_key_relationships}
+- **Unique Constraints:** {unique_constraints}
+- **Check Constraints:** {check_constraints}
+
+### {Entity Name 2}
+{Repeat structure for each entity}
+
+## Relationships
+
+### {Relationship Name}
+- **Type:** {One-to-One/One-to-Many/Many-to-Many}
+- **Entities:** {Entity 1} → {Entity 2}
+- **Cardinality:** {Cardinality rules}
+- **Business Rule:** {Business rule governing the relationship}
+
+## Data Dictionary
+
+### Domain Definitions
+| Domain | Data Type | Format | Valid Values | Description |
+|--------|-----------|--------|--------------|-------------|
+| {domain_1} | {type} | {format} | {values} | {description} |
+
+### Reference Data
+| Reference Table | Purpose | Source | Update Frequency |
+|-----------------|---------|--------|------------------|
+| {ref_table_1} | {purpose} | {source} | {frequency} |
+
+## Data Quality Rules
+
+### Validation Rules
+{Data validation rules and constraints}
+
+### Data Quality Metrics
+{Key data quality metrics and acceptable thresholds}
+
+### Data Lineage
+{Source systems and transformation rules}
+
+## Physical Implementation
+
+### Database Schema
+{Physical database schema information}
+
+### Indexing Strategy
+{Database indexes and performance optimization}
+
+### Partitioning Strategy
+{Data partitioning approach for large tables}
+
+### Storage Requirements
+{Estimated storage requirements and growth projections}
+
+## Security and Privacy
+
+### Data Classification
+{Data sensitivity classification and handling requirements}
+
+### Access Controls
+{Who can access what data and under what conditions}
+
+### Privacy Considerations
+{PII handling and privacy protection measures}
+
+## Change Management
+
+### Version Control
+{How data model changes are versioned and tracked}
+
+### Change Process
+{Process for making changes to the data model}
+
+### Impact Analysis
+{How to assess impact of data model changes}
+
+## Documentation and Governance
+
+### Data Stewardship
+{Data stewards and ownership responsibilities}
+
+### Documentation Standards
+{Standards for documenting data model changes}
+
+### Review and Approval Process
+{Process for reviewing and approving data model changes}
+
+==================== END: data-model-tmpl ====================
+
+
+==================== START: api-documentation-tmpl ====================
+# {API Name} API Documentation
+
+## API Overview
+
+### Introduction
+{Brief description of what the API does and its purpose}
+
+### Base URL
+```
+{base_url}
+```
+
+### API Version
+**Current Version:** {version}
+**Versioning Scheme:** {versioning_approach}
+
+### Authentication
+{Authentication method and requirements}
+
+## Getting Started
+
+### Prerequisites
+{What developers need before using the API}
+
+### Quick Start
+1. {Step 1 - e.g., Obtain API key}
+2. {Step 2 - e.g., Make first API call}
+3. {Step 3 - e.g., Handle response}
+
+### SDK and Libraries
+{Available SDKs and client libraries}
+
+## Authentication and Authorization
+
+### Authentication Methods
+{Detailed authentication methods - API key, OAuth, JWT, etc.}
+
+### Authorization Scopes
+{Different permission levels and scopes}
+
+### Security Best Practices
+{Security recommendations for API usage}
+
+## API Reference
+
+### {Endpoint Category 1}
+
+#### {HTTP Method} {endpoint_path}
+{Brief description of what this endpoint does}
+
+**Parameters:**
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| {param1} | {type} | {Yes/No} | {description} |
+| {param2} | {type} | {Yes/No} | {description} |
+
+**Request Example:**
+```http
+{HTTP_METHOD} {endpoint_path}
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "example": "request body"
+}
+```
+
+**Response Example:**
+```json
+{
+  "status": "success",
+  "data": {
+    "example": "response data"
+  }
+}
+```
+
+**Response Codes:**
+| Code | Description |
+|------|-------------|
+| 200 | Success |
+| 400 | Bad Request |
+| 401 | Unauthorized |
+| 404 | Not Found |
+| 500 | Internal Server Error |
+
+## Data Models
+
+### {Model Name}
+{Description of the data model}
+
+```json
+{
+  "field1": "string",
+  "field2": "integer",
+  "field3": {
+    "nested_field": "string"
+  }
+}
+```
+
+**Field Descriptions:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| field1 | string | Yes | {description} |
+| field2 | integer | No | {description} |
+
+## Error Handling
+
+### Error Response Format
+```json
+{
+  "error": {
+    "code": "ERROR_CODE",
+    "message": "Human readable error message",
+    "details": "Additional error details"
+  }
+}
+```
+
+### Common Error Codes
+| Code | HTTP Status | Description | Resolution |
+|------|-------------|-------------|------------|
+| INVALID_REQUEST | 400 | {description} | {how to fix} |
+| UNAUTHORIZED | 401 | {description} | {how to fix} |
+
+## Rate Limiting
+
+### Rate Limits
+{Rate limiting policies and quotas}
+
+### Rate Limit Headers
+{Headers returned with rate limit information}
+
+### Handling Rate Limits
+{How to handle rate limit responses}
+
+## Webhooks
+
+### Webhook Overview
+{Description of webhook functionality}
+
+### Webhook Events
+{List of available webhook events}
+
+### Webhook Security
+{Webhook signature verification and security}
+
+## Code Examples
+
+### {Programming Language 1}
+```{language}
+{code example}
+```
+
+### {Programming Language 2}
+```{language}
+{code example}
+```
+
+## Testing and Development
+
+### Sandbox Environment
+{Information about test/sandbox environment}
+
+### Postman Collection
+{Link to Postman collection for API testing}
+
+### API Explorer
+{Link to interactive API explorer}
+
+## Support and Resources
+
+### Support Channels
+{How to get help and support}
+
+### Community Resources
+{Links to community forums, Stack Overflow tags, etc.}
+
+### Changelog
+{Link to API changelog and version history}
+
+==================== END: api-documentation-tmpl ====================
+
+
+==================== START: user-guide-tmpl ====================
+# {Product Name} User Guide
+
+## Welcome to {Product Name}
+
+### What is {Product Name}?
+{Brief description of the product and its main purpose}
+
+### Who is this guide for?
+{Target audience for this user guide}
+
+### What you'll learn
+{Overview of what users will learn from this guide}
+
+## Getting Started
+
+### System Requirements
+{Hardware, software, and browser requirements}
+
+### Account Setup
+1. {Step 1 - e.g., Sign up process}
+2. {Step 2 - e.g., Email verification}
+3. {Step 3 - e.g., Profile setup}
+
+### First Login
+{What users see when they first log in}
+
+### Interface Overview
+{Overview of the main interface elements}
+
+## Basic Features
+
+### {Feature 1 Name}
+{Description of what this feature does}
+
+#### How to use {Feature 1}
+1. {Step 1}
+2. {Step 2}
+3. {Step 3}
+
+#### Tips and Best Practices
+{Helpful tips for using this feature effectively}
+
+### {Feature 2 Name}
+{Description of what this feature does}
+
+#### How to use {Feature 2}
+1. {Step 1}
+2. {Step 2}
+3. {Step 3}
+
+## Advanced Features
+
+### {Advanced Feature 1}
+{Description and use cases for advanced feature}
+
+#### Prerequisites
+{What users need to know or have before using this feature}
+
+#### Step-by-Step Instructions
+1. {Detailed step 1}
+2. {Detailed step 2}
+3. {Detailed step 3}
+
+#### Configuration Options
+{Available configuration options and their effects}
+
+## Common Workflows
+
+### {Workflow 1 Name}
+{Description of a common end-to-end workflow}
+
+#### When to use this workflow
+{Scenarios where this workflow is appropriate}
+
+#### Step-by-Step Process
+1. {Step 1 with screenshots}
+2. {Step 2 with screenshots}
+3. {Step 3 with screenshots}
+
+#### Expected Results
+{What users should see when the workflow is completed successfully}
+
+## Settings and Configuration
+
+### Account Settings
+{How to manage account settings and preferences}
+
+### Notification Settings
+{How to configure notifications and alerts}
+
+### Privacy Settings
+{How to manage privacy and data sharing settings}
+
+### Integration Settings
+{How to set up integrations with other tools}
+
+## Troubleshooting
+
+### Common Issues
+
+#### {Issue 1}
+**Problem:** {Description of the problem}
+**Cause:** {Likely cause of the issue}
+**Solution:** {Step-by-step solution}
+
+#### {Issue 2}
+**Problem:** {Description of the problem}
+**Cause:** {Likely cause of the issue}
+**Solution:** {Step-by-step solution}
+
+### Error Messages
+{Common error messages and their meanings}
+
+### Performance Issues
+{How to resolve common performance problems}
+
+## Tips and Best Practices
+
+### Productivity Tips
+{Tips for using the product more efficiently}
+
+### Security Best Practices
+{Security recommendations for users}
+
+### Data Management
+{Best practices for managing data within the product}
+
+## Getting Help
+
+### In-App Help
+{How to access help within the application}
+
+### Support Channels
+- **Email Support:** {email address}
+- **Live Chat:** {availability and access}
+- **Phone Support:** {phone number and hours}
+
+### Community Resources
+- **User Forum:** {link to user community}
+- **Knowledge Base:** {link to knowledge base}
+- **Video Tutorials:** {link to video resources}
+
+### Training and Certification
+{Available training programs and certification options}
+
+## Appendices
+
+### Appendix A: Keyboard Shortcuts
+{List of useful keyboard shortcuts}
+
+### Appendix B: Glossary
+{Definitions of key terms and concepts}
+
+### Appendix C: Release Notes
+{Link to product release notes and updates}
+
+==================== END: user-guide-tmpl ====================
+
+
+==================== START: technical-specification-tmpl ====================
+# {Component/System Name} Technical Specification
+
+## Document Information
+
+**Document Version:** {version}
+**Last Updated:** {date}
+**Author(s):** {author names}
+**Reviewers:** {reviewer names}
+**Status:** {Draft/Review/Approved}
+
+## Overview
+
+### Purpose
+{What this specification aims to define}
+
+### Scope
+{What is included and excluded from this specification}
+
+### Audience
+{Who should read this specification}
+
+### Related Documents
+{Links to related specifications, requirements, and design documents}
+
+## System Overview
+
+### System Description
+{High-level description of the system or component}
+
+### System Context
+{How this system fits within the larger architecture}
+
+### Key Stakeholders
+{Primary stakeholders and their interests}
+
+## Functional Requirements
+
+### {Requirement Category 1}
+
+#### {Requirement ID}: {Requirement Title}
+**Priority:** {High/Medium/Low}
+**Description:** {Detailed description of the requirement}
+**Acceptance Criteria:**
+- {Criterion 1}
+- {Criterion 2}
+- {Criterion 3}
+
+**Dependencies:** {Other requirements or systems this depends on}
+**Assumptions:** {Key assumptions made}
+
+## Non-Functional Requirements
+
+### Performance Requirements
+{Performance requirements and benchmarks}
+
+### Scalability Requirements
+{Scalability requirements and growth projections}
+
+### Security Requirements
+{Security requirements and compliance needs}
+
+### Reliability Requirements
+{Availability, fault tolerance, and recovery requirements}
+
+### Usability Requirements
+{User experience and accessibility requirements}
+
+## Technical Architecture
+
+### Architecture Overview
+{High-level technical architecture description}
+
+### Component Architecture
+{Detailed component breakdown and interactions}
+
+### Data Architecture
+{Data models, storage, and flow}
+
+### Integration Architecture
+{External system integrations and APIs}
+
+## Detailed Design
+
+### {Component/Module 1}
+
+#### Purpose and Responsibilities
+{What this component does and why}
+
+#### Interface Specification
+{APIs, methods, and data contracts}
+
+#### Implementation Details
+{Key implementation considerations and constraints}
+
+#### Dependencies
+{Other components or systems this depends on}
+
+## Data Specifications
+
+### Data Models
+{Detailed data model specifications}
+
+### Database Schema
+{Database design and schema definitions}
+
+### Data Flow
+{How data moves through the system}
+
+### Data Validation
+{Data validation rules and constraints}
+
+## API Specifications
+
+### {API Name}
+{API purpose and overview}
+
+#### Endpoints
+{Detailed endpoint specifications}
+
+#### Authentication
+{Authentication and authorization requirements}
+
+#### Data Formats
+{Request and response data formats}
+
+#### Error Handling
+{Error response formats and codes}
+
+## Security Specifications
+
+### Security Architecture
+{Security design and controls}
+
+### Authentication and Authorization
+{Identity and access management specifications}
+
+### Data Protection
+{Data encryption and privacy protection}
+
+### Security Monitoring
+{Security logging and monitoring requirements}
+
+## Deployment and Operations
+
+### Deployment Architecture
+{How the system is deployed and configured}
+
+### Environment Requirements
+{Infrastructure and environment specifications}
+
+### Configuration Management
+{Configuration parameters and management}
+
+### Monitoring and Alerting
+{Operational monitoring and alerting requirements}
+
+## Testing Specifications
+
+### Testing Strategy
+{Overall testing approach and coverage}
+
+### Test Cases
+{Key test scenarios and acceptance criteria}
+
+### Performance Testing
+{Performance testing requirements and benchmarks}
+
+### Security Testing
+{Security testing requirements and procedures}
+
+## Implementation Plan
+
+### Development Phases
+{Planned development phases and milestones}
+
+### Resource Requirements
+{Team structure and skill requirements}
+
+### Timeline and Milestones
+{Project timeline and key deliverables}
+
+### Risk Assessment
+{Technical risks and mitigation strategies}
+
+## Appendices
+
+### Appendix A: Glossary
+{Technical terms and definitions}
+
+### Appendix B: References
+{External references and standards}
+
+### Appendix C: Change Log
+{Document change history}
+
+==================== END: technical-specification-tmpl ====================
+
+
+==================== START: performance-test-plan-tmpl ====================
+# {System Name} Performance Test Plan
+
+## Test Plan Overview
+
+### Objectives
+{Primary objectives of performance testing}
+
+### Scope
+{What will and will not be performance tested}
+
+### Success Criteria
+{Criteria for determining test success}
+
+## Performance Requirements
+
+### Response Time Requirements
+| Transaction | Target Response Time | Maximum Acceptable |
+|-------------|----------------------|-------------------|
+| {Transaction 1} | {target time} | {max time} |
+| {Transaction 2} | {target time} | {max time} |
+
+### Throughput Requirements
+| Metric | Target | Peak Load |
+|--------|--------|-----------|
+| Transactions per second | {target} | {peak} |
+| Concurrent users | {target} | {peak} |
+
+### Resource Utilization Limits
+| Resource | Normal Load | Peak Load | Maximum |
+|----------|-------------|-----------|---------|
+| CPU Utilization | {normal %} | {peak %} | {max %} |
+| Memory Usage | {normal %} | {peak %} | {max %} |
+| Disk I/O | {normal %} | {peak %} | {max %} |
+
+## Test Environment
+
+### Infrastructure Specifications
+{Detailed test environment specifications}
+
+### Test Data Requirements
+{Test data volume and characteristics}
+
+### Environment Limitations
+{Known limitations of test environment vs. production}
+
+## Test Scenarios
+
+### Load Test Scenarios
+
+#### Scenario 1: Normal Load
+**Objective:** {Test objective}
+**User Load:** {Number of concurrent users}
+**Duration:** {Test duration}
+**Ramp-up:** {Ramp-up pattern}
+**User Behavior:** {User transaction mix and think time}
+
+#### Scenario 2: Peak Load
+**Objective:** {Test objective}
+**User Load:** {Number of concurrent users}
+**Duration:** {Test duration}
+**Ramp-up:** {Ramp-up pattern}
+**User Behavior:** {User transaction mix and think time}
+
+### Stress Test Scenarios
+
+#### Scenario 3: Stress Test
+**Objective:** {Find system breaking point}
+**User Load:** {Progressive load increase}
+**Duration:** {Test duration}
+**Load Pattern:** {How load is increased}
+**Monitoring:** {Key metrics to watch}
+
+### Spike Test Scenarios
+
+#### Scenario 4: Spike Test
+**Objective:** {Test sudden load increases}
+**Load Pattern:** {Spike pattern description}
+**Duration:** {Test duration}
+**Recovery:** {How system should recover}
+
+## Test Execution
+
+### Test Tools
+{Performance testing tools and configuration}
+
+### Test Scripts
+{Test script development and maintenance}
+
+### Test Data Management
+{Test data setup and cleanup procedures}
+
+### Monitoring Strategy
+{What metrics to monitor during tests}
+
+## Results Analysis
+
+### Key Performance Indicators
+{Primary metrics for evaluating performance}
+
+### Baseline Comparison
+{How to compare results against baseline}
+
+### Bottleneck Identification
+{How to identify performance bottlenecks}
+
+### Trend Analysis
+{How to analyze performance trends}
+
+## Reporting
+
+### Test Execution Reports
+{Format and content of execution reports}
+
+### Performance Analysis Reports
+{Format and content of analysis reports}
+
+### Recommendations
+{How to provide performance improvement recommendations}
+
+## Risk Management
+
+### Testing Risks
+{Risks associated with performance testing}
+
+### Mitigation Strategies
+{How to mitigate identified risks}
+
+### Contingency Plans
+{Backup plans for test execution issues}
+
+==================== END: performance-test-plan-tmpl ====================
+
+
+==================== START: load-testing-report-tmpl ====================
+# {System Name} Load Testing Report
+
+## Executive Summary
+
+### Test Overview
+{Brief overview of load testing conducted}
+
+### Key Findings
+{Summary of main performance findings}
+
+### Recommendations
+{High-level recommendations for performance improvements}
+
+## Test Configuration
+
+### Test Environment
+{Description of test environment and configuration}
+
+### Test Scenarios Executed
+{List of test scenarios that were run}
+
+### Test Duration and Load
+{Duration of tests and load patterns applied}
+
+## Performance Results
+
+### Response Time Analysis
+
+#### Average Response Times
+| Transaction | Target | Actual | Status |
+|-------------|--------|--------|--------|
+| {Transaction 1} | {target} | {actual} | {Pass/Fail} |
+| {Transaction 2} | {target} | {actual} | {Pass/Fail} |
+
+#### Response Time Distribution
+{Percentile analysis - 50th, 90th, 95th, 99th percentiles}
+
+### Throughput Analysis
+
+#### Transaction Throughput
+| Metric | Target | Achieved | Status |
+|--------|--------|----------|--------|
+| Transactions/sec | {target} | {actual} | {Pass/Fail} |
+| Requests/sec | {target} | {actual} | {Pass/Fail} |
+
+#### Concurrent User Capacity
+{Maximum concurrent users supported}
+
+### Resource Utilization
+
+#### System Resource Usage
+| Resource | Average | Peak | Threshold | Status |
+|----------|---------|------|-----------|--------|
+| CPU | {avg %} | {peak %} | {threshold %} | {Pass/Fail} |
+| Memory | {avg %} | {peak %} | {threshold %} | {Pass/Fail} |
+| Disk I/O | {avg %} | {peak %} | {threshold %} | {Pass/Fail} |
+| Network | {avg %} | {peak %} | {threshold %} | {Pass/Fail} |
+
+## Performance Analysis
+
+### Bottleneck Identification
+{Identified performance bottlenecks and their impact}
+
+### Scalability Analysis
+{How the system scales with increased load}
+
+### Stability Analysis
+{System stability under sustained load}
+
+### Error Analysis
+{Analysis of errors encountered during testing}
+
+## Comparison with Requirements
+
+### SLA Compliance
+{How results compare to SLA requirements}
+
+### Performance Goals Achievement
+{Achievement of performance goals and targets}
+
+### Regression Analysis
+{Comparison with previous test results}
+
+## Recommendations
+
+### Immediate Actions
+{Critical performance issues requiring immediate attention}
+
+### Short-term Improvements
+{Performance improvements for next release}
+
+### Long-term Optimizations
+{Strategic performance improvements}
+
+### Infrastructure Recommendations
+{Infrastructure scaling and optimization recommendations}
+
+## Appendices
+
+### Appendix A: Detailed Test Results
+{Detailed performance metrics and graphs}
+
+### Appendix B: System Configuration
+{Detailed system and test configuration}
+
+### Appendix C: Raw Data
+{Links to raw test data and logs}
+
+==================== END: load-testing-report-tmpl ====================
+
+
+==================== START: release-plan-tmpl ====================
+# {Release Name/Version} Release Plan
+
+## Release Overview
+
+### Release Information
+- **Release Name/Version:** {version}
+- **Release Type:** {Major/Minor/Patch/Hotfix}
+- **Planned Release Date:** {date}
+- **Release Manager:** {name}
+
+### Release Objectives
+{Primary objectives and goals for this release}
+
+### Release Scope
+{What is included and excluded from this release}
+
+## Features and Changes
+
+### New Features
+| Feature | Description | Owner | Status |
+|---------|-------------|-------|--------|
+| {Feature 1} | {description} | {owner} | {status} |
+| {Feature 2} | {description} | {owner} | {status} |
+
+### Enhancements
+| Enhancement | Description | Owner | Status |
+|-------------|-------------|-------|--------|
+| {Enhancement 1} | {description} | {owner} | {status} |
+
+### Bug Fixes
+| Bug ID | Description | Severity | Owner | Status |
+|--------|-------------|----------|-------|--------|
+| {Bug 1} | {description} | {severity} | {owner} | {status} |
+
+### Technical Debt
+| Item | Description | Impact | Owner | Status |
+|------|-------------|--------|-------|--------|
+| {Debt Item 1} | {description} | {impact} | {owner} | {status} |
+
+## Release Timeline
+
+### Development Phase
+- **Start Date:** {date}
+- **End Date:** {date}
+- **Key Milestones:**
+  - {Milestone 1}: {date}
+  - {Milestone 2}: {date}
+
+### Testing Phase
+- **Start Date:** {date}
+- **End Date:** {date}
+- **Testing Activities:**
+  - Unit Testing: {timeline}
+  - Integration Testing: {timeline}
+  - System Testing: {timeline}
+  - User Acceptance Testing: {timeline}
+
+### Release Phase
+- **Release Preparation:** {date}
+- **Production Deployment:** {date}
+- **Post-Release Monitoring:** {date range}
+
+## Quality Gates
+
+### Code Quality Gates
+{Code quality requirements and checkpoints}
+
+### Testing Gates
+{Testing completion criteria and sign-off requirements}
+
+### Security Gates
+{Security review and approval requirements}
+
+### Performance Gates
+{Performance testing and acceptance criteria}
+
+## Risk Assessment
+
+### High-Risk Items
+| Risk | Impact | Probability | Mitigation |
+|------|--------|-------------|------------|
+| {Risk 1} | {impact} | {probability} | {mitigation} |
+
+### Dependencies
+| Dependency | Owner | Status | Risk Level |
+|------------|-------|--------|------------|
+| {Dependency 1} | {owner} | {status} | {risk} |
+
+### Rollback Plan
+{Detailed rollback procedures and criteria}
+
+## Communication Plan
+
+### Stakeholder Communication
+{Communication plan for different stakeholder groups}
+
+### Release Notes
+{Plan for creating and distributing release notes}
+
+### Training and Documentation
+{User training and documentation updates}
+
+## Post-Release Activities
+
+### Monitoring Plan
+{Post-release monitoring and health checks}
+
+### Support Plan
+{Support team preparation and escalation procedures}
+
+### Success Metrics
+{Metrics for measuring release success}
+
+### Retrospective
+{Plan for post-release retrospective and lessons learned}
+
+## Approval and Sign-off
+
+### Required Approvals
+| Approver | Role | Status | Date |
+|----------|------|--------|------|
+| {Name 1} | {role} | {status} | {date} |
+| {Name 2} | {role} | {status} | {date} |
+
+### Go/No-Go Criteria
+{Final criteria for release approval}
+
+==================== END: release-plan-tmpl ====================
+
+
+==================== START: deployment-guide-tmpl ====================
+# {System/Application Name} Deployment Guide
+
+## Deployment Overview
+
+### Purpose
+{Purpose of this deployment guide}
+
+### Scope
+{What deployments this guide covers}
+
+### Prerequisites
+{Prerequisites for deployment}
+
+## Pre-Deployment Checklist
+
+### Environment Verification
+- [ ] {Environment check 1}
+- [ ] {Environment check 2}
+- [ ] {Environment check 3}
+
+### Backup Procedures
+- [ ] {Backup procedure 1}
+- [ ] {Backup procedure 2}
+- [ ] {Backup procedure 3}
+
+### Team Readiness
+- [ ] {Team readiness check 1}
+- [ ] {Team readiness check 2}
+
+## Deployment Procedures
+
+### Step 1: {Deployment Step 1}
+**Duration:** {estimated time}
+**Responsible:** {role/person}
+
+#### Instructions
+1. {Detailed instruction 1}
+2. {Detailed instruction 2}
+3. {Detailed instruction 3}
+
+#### Verification
+{How to verify this step completed successfully}
+
+#### Rollback
+{How to rollback this step if needed}
+
+### Step 2: {Deployment Step 2}
+**Duration:** {estimated time}
+**Responsible:** {role/person}
+
+#### Instructions
+1. {Detailed instruction 1}
+2. {Detailed instruction 2}
+3. {Detailed instruction 3}
+
+#### Verification
+{How to verify this step completed successfully}
+
+#### Rollback
+{How to rollback this step if needed}
+
+## Configuration Management
+
+### Environment-Specific Configurations
+{Configuration differences between environments}
+
+### Configuration Files
+{List of configuration files and their purposes}
+
+### Environment Variables
+{Required environment variables and their values}
+
+### Database Configuration
+{Database connection and configuration requirements}
+
+## Post-Deployment Verification
+
+### Health Checks
+- [ ] {Health check 1}
+- [ ] {Health check 2}
+- [ ] {Health check 3}
+
+### Functional Testing
+- [ ] {Functional test 1}
+- [ ] {Functional test 2}
+- [ ] {Functional test 3}
+
+### Performance Validation
+- [ ] {Performance check 1}
+- [ ] {Performance check 2}
+
+### Security Validation
+- [ ] {Security check 1}
+- [ ] {Security check 2}
+
+## Monitoring and Alerting
+
+### Monitoring Setup
+{Monitoring configuration and setup}
+
+### Key Metrics to Monitor
+{Important metrics to watch post-deployment}
+
+### Alerting Configuration
+{Alert setup and notification procedures}
+
+## Troubleshooting
+
+### Common Issues
+| Issue | Symptoms | Cause | Resolution |
+|-------|----------|-------|------------|
+| {Issue 1} | {symptoms} | {cause} | {resolution} |
+| {Issue 2} | {symptoms} | {cause} | {resolution} |
+
+### Log Locations
+{Where to find relevant log files}
+
+### Diagnostic Commands
+{Useful commands for diagnosing issues}
+
+## Rollback Procedures
+
+### Rollback Triggers
+{Conditions that would trigger a rollback}
+
+### Rollback Steps
+1. {Rollback step 1}
+2. {Rollback step 2}
+3. {Rollback step 3}
+
+### Rollback Verification
+{How to verify rollback was successful}
+
+## Emergency Contacts
+
+### Deployment Team
+| Role | Name | Phone | Email |
+|------|------|-------|-------|
+| {Role 1} | {name} | {phone} | {email} |
+| {Role 2} | {name} | {phone} | {email} |
+
+### Escalation Procedures
+{When and how to escalate deployment issues}
+
+## Documentation and Records
+
+### Deployment Log
+{Template for recording deployment activities}
+
+### Change Records
+{How to document changes made during deployment}
+
+### Post-Deployment Report
+{Template for post-deployment summary}
+
+==================== END: deployment-guide-tmpl ====================
+
+

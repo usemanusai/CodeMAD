@@ -2126,3 +2126,1928 @@ REPEAT by Asking the user if they would like to perform another Reflective, Elic
 ==================== END: validate-infrastructure ====================
 
 
+==================== START: create-test-strategy ====================
+# Create Test Strategy Task
+
+## Purpose
+
+To develop a comprehensive testing strategy that defines the overall approach to quality assurance for the project, including test types, tools, processes, and quality gates.
+
+## Inputs
+
+- Product Requirements Document (PRD)
+- Architecture Document
+- User Stories and Acceptance Criteria
+- Technical Stack Information
+- Quality Requirements and SLAs
+
+## Key Activities & Instructions
+
+### 1. Confirm Interaction Mode
+
+- Ask the user: "How would you like to proceed with creating the test strategy? We can work:
+  A. **Incrementally (Default & Recommended):** We'll go through each testing area step-by-step, discussing approach and getting your feedback before moving to the next area.
+  B. **"YOLO" Mode:** I can produce a comprehensive test strategy document for you to review more broadly first."
+- Request the user to select their preferred mode and proceed accordingly.
+
+### 2. Analyze Testing Requirements
+
+- Review the PRD to understand functional and non-functional requirements
+- Identify critical user journeys and high-risk areas
+- Analyze the architecture to understand system complexity and integration points
+- Document quality requirements, performance targets, and compliance needs
+- Identify testing constraints (timeline, resources, environment limitations)
+
+### 3. Define Test Strategy Framework
+
+- **Test Pyramid Strategy:** Define the balance between unit, integration, and end-to-end tests
+- **Risk-Based Testing:** Identify high-risk areas requiring focused testing attention
+- **Test Types Coverage:** Specify which types of testing will be performed (functional, performance, security, usability, etc.)
+- **Quality Gates:** Define criteria that must be met before code can progress through environments
+- **Test Environment Strategy:** Plan for development, staging, and production-like test environments
+
+### 4. Specify Testing Approaches by Type
+
+- **Unit Testing:**
+  - Coverage targets and measurement approach
+  - Mocking and stubbing strategies
+  - Test-driven development (TDD) adoption
+- **Integration Testing:**
+  - API testing approach and tools
+  - Database integration testing
+  - Third-party service integration testing
+- **System Testing:**
+  - End-to-end user journey testing
+  - Cross-browser and cross-platform testing
+  - Performance and load testing
+- **User Acceptance Testing:**
+  - UAT process and stakeholder involvement
+  - Acceptance criteria validation approach
+
+### 5. Define Test Automation Strategy
+
+- **Automation Framework Selection:** Choose appropriate tools and frameworks
+- **Automation Scope:** Define what should be automated vs. manual testing
+- **CI/CD Integration:** Specify how automated tests integrate with deployment pipeline
+- **Test Data Management:** Strategy for test data creation, management, and cleanup
+- **Maintenance Strategy:** Approach for maintaining and updating automated tests
+
+### 6. Establish Quality Metrics and Reporting
+
+- **Key Quality Metrics:** Define metrics to track (defect density, test coverage, pass rates)
+- **Reporting Strategy:** Specify how quality metrics will be collected and reported
+- **Quality Dashboards:** Plan for real-time quality visibility
+- **Defect Management:** Process for defect tracking, prioritization, and resolution
+
+### 7. Create Test Strategy Document
+
+Using the `test-plan-tmpl` template, create a comprehensive document that includes:
+- Executive summary of testing approach
+- Detailed testing strategy by type
+- Tool and framework selections
+- Quality gates and acceptance criteria
+- Risk assessment and mitigation strategies
+- Resource and timeline requirements
+
+## Output Deliverables
+
+- **Test Strategy Document** (`docs/test-strategy.md`)
+- **Quality Gates Definition** (integrated into CI/CD documentation)
+- **Test Automation Framework Specification**
+- **Quality Metrics Dashboard Requirements**
+
+==================== END: create-test-strategy ====================
+
+
+==================== START: generate-test-cases ====================
+# Generate Test Cases Task
+
+## Purpose
+
+To create comprehensive test cases based on user stories, acceptance criteria, and system requirements, ensuring thorough coverage of functional and non-functional scenarios.
+
+## Inputs
+
+- User Stories with Acceptance Criteria
+- System Requirements and Specifications
+- UI/UX Mockups or Prototypes
+- API Documentation
+- Risk Assessment and Priority Matrix
+
+## Key Activities & Instructions
+
+### 1. Analyze Requirements for Testing
+
+- Review user stories and break down acceptance criteria into testable scenarios
+- Identify positive, negative, and edge case scenarios
+- Analyze business rules and validation requirements
+- Consider integration points and data flow scenarios
+- Identify security and performance testing requirements
+
+### 2. Design Test Case Structure
+
+- **Test Case Organization:** Group test cases by feature, user story, or system component
+- **Test Case Format:** Use consistent format including:
+  - Test Case ID and Title
+  - Preconditions and Test Data Requirements
+  - Step-by-step Test Procedures
+  - Expected Results and Acceptance Criteria
+  - Priority and Risk Level
+- **Traceability Matrix:** Link test cases back to requirements and user stories
+
+### 3. Create Functional Test Cases
+
+- **Happy Path Scenarios:** Test normal user workflows and expected behaviors
+- **Boundary Value Testing:** Test limits, minimums, maximums, and edge cases
+- **Negative Testing:** Test error handling, invalid inputs, and failure scenarios
+- **Business Rule Validation:** Test complex business logic and validation rules
+- **User Interface Testing:** Test UI elements, navigation, and user interactions
+
+### 4. Design Non-Functional Test Cases
+
+- **Performance Test Cases:** Load, stress, and scalability testing scenarios
+- **Security Test Cases:** Authentication, authorization, and data protection testing
+- **Usability Test Cases:** User experience and accessibility testing
+- **Compatibility Test Cases:** Cross-browser, cross-platform, and device testing
+- **Data Integrity Test Cases:** Data validation, backup, and recovery testing
+
+### 5. Create API and Integration Test Cases
+
+- **API Endpoint Testing:** Test all API endpoints with various input combinations
+- **Data Format Validation:** Test request/response data formats and schemas
+- **Error Response Testing:** Test API error handling and status codes
+- **Integration Flow Testing:** Test end-to-end data flow between systems
+- **Third-Party Integration Testing:** Test external service integrations
+
+### 6. Develop Automation Test Scripts
+
+- **Automated Test Case Selection:** Identify test cases suitable for automation
+- **Test Script Development:** Create automated test scripts using selected frameworks
+- **Test Data Management:** Implement test data setup and cleanup procedures
+- **Continuous Integration:** Integrate automated tests into CI/CD pipeline
+- **Maintenance Strategy:** Plan for test script maintenance and updates
+
+## Output Deliverables
+
+- **Test Case Repository** (organized by feature/component)
+- **Automated Test Scripts** (for selected test cases)
+- **Test Data Sets** (for various testing scenarios)
+- **Traceability Matrix** (linking tests to requirements)
+
+==================== END: generate-test-cases ====================
+
+
+==================== START: review-code-quality ====================
+# Review Code Quality Task
+
+## Purpose
+
+To conduct comprehensive code quality reviews focusing on maintainability, performance, security, and adherence to coding standards and best practices.
+
+## Inputs
+
+- Source Code (pull requests, commits, or complete modules)
+- Coding Standards and Style Guidelines
+- Architecture Documentation
+- Security Requirements
+- Performance Requirements
+
+## Key Activities & Instructions
+
+### 1. Setup Code Review Process
+
+- **Review Scope:** Define what code will be reviewed (new features, bug fixes, refactoring)
+- **Review Criteria:** Establish quality criteria and checklists for reviews
+- **Tool Integration:** Set up code review tools and static analysis integration
+- **Review Timeline:** Define review timelines and approval processes
+
+### 2. Conduct Static Code Analysis
+
+- **Automated Analysis:** Run static analysis tools to identify potential issues
+- **Code Metrics:** Analyze complexity, maintainability, and technical debt metrics
+- **Security Scanning:** Perform automated security vulnerability scanning
+- **Dependency Analysis:** Review third-party dependencies for security and licensing issues
+- **Code Coverage:** Analyze test coverage and identify untested code paths
+
+### 3. Manual Code Review
+
+- **Architecture Compliance:** Verify code follows architectural patterns and principles
+- **Coding Standards:** Check adherence to established coding standards and conventions
+- **Logic Review:** Analyze business logic for correctness and edge case handling
+- **Error Handling:** Review error handling and exception management
+- **Performance Considerations:** Identify potential performance bottlenecks
+
+### 4. Security Code Review
+
+- **Input Validation:** Review input sanitization and validation mechanisms
+- **Authentication/Authorization:** Verify proper access controls and security checks
+- **Data Protection:** Review encryption, data handling, and privacy compliance
+- **Injection Prevention:** Check for SQL injection, XSS, and other injection vulnerabilities
+- **Secure Configuration:** Review security configurations and hardening measures
+
+### 5. Quality Assessment and Recommendations
+
+- **Issue Prioritization:** Categorize findings by severity and impact
+- **Improvement Recommendations:** Provide specific, actionable improvement suggestions
+- **Best Practice Guidance:** Share relevant best practices and patterns
+- **Technical Debt Assessment:** Identify and document technical debt items
+- **Knowledge Sharing:** Facilitate learning and knowledge transfer through reviews
+
+### 6. Generate Review Report
+
+- **Summary Dashboard:** Create overview of code quality metrics and trends
+- **Detailed Findings:** Document specific issues with locations and recommendations
+- **Action Items:** Create prioritized list of improvements and fixes needed
+- **Quality Trends:** Track quality improvements or degradation over time
+- **Team Feedback:** Provide constructive feedback to development team
+
+## Output Deliverables
+
+- **Code Review Report** (with findings and recommendations)
+- **Quality Metrics Dashboard** (automated quality tracking)
+- **Action Item List** (prioritized improvements)
+- **Best Practices Guide** (team-specific recommendations)
+
+==================== END: review-code-quality ====================
+
+
+==================== START: create-automation-framework ====================
+# Create Automation Framework Task
+
+## Purpose
+
+To design and implement a comprehensive test automation framework that enables efficient, maintainable, and scalable automated testing across the application stack.
+
+## Inputs
+
+- Test Strategy Document
+- Application Architecture
+- Technology Stack Information
+- Testing Tool Requirements
+- CI/CD Pipeline Configuration
+
+## Key Activities & Instructions
+
+### 1. Framework Architecture Design
+
+- **Framework Type Selection:** Choose appropriate framework pattern (Page Object Model, Keyword-Driven, Data-Driven, Hybrid)
+- **Tool Stack Selection:** Select testing tools, libraries, and frameworks based on technology stack
+- **Layer Architecture:** Design framework layers (test data, page objects, utilities, test cases)
+- **Configuration Management:** Plan for environment-specific configurations and settings
+- **Reporting Integration:** Design test reporting and result management system
+
+### 2. Core Framework Components
+
+- **Base Test Classes:** Create foundational test classes with common setup/teardown
+- **Page Object Model:** Implement page objects for UI elements and interactions
+- **Data Management:** Create test data management system with data providers
+- **Utility Libraries:** Develop common utilities for database, API, file operations
+- **Configuration Handler:** Implement configuration management for different environments
+
+### 3. Test Execution Engine
+
+- **Test Runner Configuration:** Set up test execution engine with parallel execution support
+- **Environment Management:** Configure framework for multiple test environments
+- **Browser/Device Management:** Implement cross-browser and cross-device testing support
+- **Test Scheduling:** Set up automated test scheduling and execution triggers
+- **Failure Handling:** Implement retry mechanisms and failure recovery strategies
+
+### 4. Reporting and Analytics
+
+- **Test Reporting:** Implement comprehensive test reporting with screenshots and logs
+- **Metrics Collection:** Set up collection of test execution metrics and trends
+- **Dashboard Integration:** Create real-time test execution dashboards
+- **Notification System:** Implement test result notifications and alerts
+- **Historical Analysis:** Enable trend analysis and test execution history tracking
+
+### 5. CI/CD Integration
+
+- **Pipeline Integration:** Integrate framework with CI/CD pipeline tools
+- **Trigger Configuration:** Set up automated test triggers for different events
+- **Environment Provisioning:** Coordinate with infrastructure for test environment setup
+- **Artifact Management:** Manage test artifacts, reports, and evidence collection
+- **Quality Gates:** Implement automated quality gates based on test results
+
+### 6. Framework Documentation and Training
+
+- **Setup Documentation:** Create comprehensive framework setup and configuration guide
+- **Usage Guidelines:** Document how to create and maintain automated tests
+- **Best Practices:** Establish automation best practices and coding standards
+- **Training Materials:** Create training materials for team onboarding
+- **Maintenance Guide:** Document framework maintenance and update procedures
+
+## Output Deliverables
+
+- **Automation Framework** (complete codebase with documentation)
+- **Framework Setup Guide** (installation and configuration instructions)
+- **Test Creation Templates** (standardized test case templates)
+- **CI/CD Integration Scripts** (pipeline integration components)
+- **Training Documentation** (team onboarding materials)
+
+==================== END: create-automation-framework ====================
+
+
+==================== START: create-threat-model ====================
+# Create Threat Model Task
+
+## Purpose
+
+To systematically identify, analyze, and mitigate security threats and vulnerabilities in the system architecture and design, ensuring comprehensive security coverage.
+
+## Inputs
+
+- System Architecture Document
+- Data Flow Diagrams
+- User Stories and Use Cases
+- Compliance Requirements
+- Asset Inventory and Classification
+
+## Key Activities & Instructions
+
+### 1. Define Threat Modeling Scope
+
+- **System Boundaries:** Clearly define what components, data flows, and interactions are included
+- **Assets Identification:** Catalog all assets including data, systems, and processes that need protection
+- **Trust Boundaries:** Identify trust boundaries between different system components and external entities
+- **Entry Points:** Map all system entry points including APIs, user interfaces, and integrations
+- **Assumptions and Dependencies:** Document security assumptions and external dependencies
+
+### 2. Create System Model
+
+- **Architecture Decomposition:** Break down the system into components, data stores, and processes
+- **Data Flow Mapping:** Map how data flows through the system and between components
+- **Trust Zones:** Define different trust zones and security contexts within the system
+- **External Dependencies:** Model interactions with external systems and third-party services
+- **User Roles and Permissions:** Map different user types and their access levels
+
+### 3. Identify Threats Using STRIDE
+
+- **Spoofing:** Identify threats related to identity spoofing and impersonation
+- **Tampering:** Analyze data and system integrity threats
+- **Repudiation:** Identify non-repudiation and audit trail threats
+- **Information Disclosure:** Analyze confidentiality and data exposure threats
+- **Denial of Service:** Identify availability and service disruption threats
+- **Elevation of Privilege:** Analyze authorization and privilege escalation threats
+
+### 4. Assess Risk and Impact
+
+- **Threat Likelihood:** Assess the probability of each identified threat occurring
+- **Impact Assessment:** Evaluate the potential business and technical impact of each threat
+- **Risk Scoring:** Calculate risk scores using likelihood and impact assessments
+- **Risk Prioritization:** Prioritize threats based on risk scores and business criticality
+- **Attack Vector Analysis:** Analyze how threats could be exploited and attack paths
+
+### 5. Design Security Controls
+
+- **Preventive Controls:** Design controls to prevent threats from occurring
+- **Detective Controls:** Implement monitoring and detection mechanisms
+- **Corrective Controls:** Plan response and recovery procedures for security incidents
+- **Control Mapping:** Map security controls to specific threats and vulnerabilities
+- **Defense in Depth:** Ensure multiple layers of security controls for critical assets
+
+### 6. Create Threat Model Documentation
+
+Using the `threat-model-tmpl` template, create comprehensive documentation including:
+- Executive summary of security posture
+- Detailed threat analysis and risk assessment
+- Security control recommendations
+- Implementation roadmap and priorities
+- Monitoring and validation requirements
+
+## Output Deliverables
+
+- **Threat Model Document** (`docs/threat-model.md`)
+- **Risk Assessment Matrix** (threats prioritized by risk)
+- **Security Control Specifications** (detailed control requirements)
+- **Security Architecture Updates** (recommended architecture changes)
+
+==================== END: create-threat-model ====================
+
+
+==================== START: security-code-review ====================
+# Security Code Review Task
+
+## Purpose
+
+To conduct comprehensive security-focused code reviews to identify vulnerabilities, security weaknesses, and ensure adherence to secure coding practices.
+
+## Inputs
+
+- Source Code (pull requests, commits, or modules)
+- Security Coding Standards
+- Threat Model and Security Requirements
+- Known Vulnerability Databases
+- Security Testing Results
+
+## Key Activities & Instructions
+
+### 1. Prepare Security Review
+
+- **Review Scope:** Define code components and security areas to focus on
+- **Security Checklist:** Prepare security-specific review checklist
+- **Tool Setup:** Configure static analysis security testing (SAST) tools
+- **Baseline Assessment:** Establish security baseline and comparison metrics
+- **Risk Context:** Review relevant threats and security requirements
+
+### 2. Automated Security Analysis
+
+- **SAST Scanning:** Run static application security testing tools
+- **Dependency Scanning:** Analyze third-party dependencies for known vulnerabilities
+- **Secret Detection:** Scan for hardcoded secrets, keys, and credentials
+- **Configuration Review:** Analyze security configurations and settings
+- **Compliance Checking:** Verify adherence to security coding standards
+
+### 3. Manual Security Code Review
+
+- **Input Validation:** Review all input validation and sanitization mechanisms
+- **Authentication Logic:** Analyze authentication implementation and session management
+- **Authorization Controls:** Review access control and permission checking logic
+- **Cryptographic Implementation:** Examine encryption, hashing, and key management
+- **Error Handling:** Review error handling to prevent information disclosure
+
+### 4. Vulnerability Pattern Analysis
+
+- **Injection Flaws:** Check for SQL injection, XSS, command injection vulnerabilities
+- **Broken Authentication:** Review authentication bypass and session management issues
+- **Sensitive Data Exposure:** Analyze data protection and encryption implementation
+- **XML External Entities:** Check for XXE vulnerabilities in XML processing
+- **Broken Access Control:** Review authorization and access control implementation
+- **Security Misconfiguration:** Identify insecure default configurations
+- **Cross-Site Scripting:** Analyze XSS prevention mechanisms
+- **Insecure Deserialization:** Review object deserialization security
+- **Known Vulnerable Components:** Check for use of components with known vulnerabilities
+- **Insufficient Logging:** Review security event logging and monitoring
+
+### 5. Security Architecture Review
+
+- **Design Pattern Security:** Verify secure implementation of architectural patterns
+- **Trust Boundary Validation:** Review security at trust boundaries
+- **Privilege Management:** Analyze least privilege implementation
+- **Secure Communication:** Review encryption and secure communication protocols
+- **Data Flow Security:** Analyze security throughout data processing flows
+
+### 6. Generate Security Review Report
+
+- **Vulnerability Summary:** Categorize findings by severity and type
+- **Risk Assessment:** Assess business risk and exploitability of findings
+- **Remediation Guidance:** Provide specific fix recommendations and secure coding examples
+- **Security Metrics:** Track security debt and improvement trends
+- **Compliance Status:** Report on adherence to security standards and requirements
+
+## Output Deliverables
+
+- **Security Review Report** (detailed findings and recommendations)
+- **Vulnerability Tracking** (prioritized security issues)
+- **Secure Coding Guidelines** (team-specific recommendations)
+- **Security Metrics Dashboard** (ongoing security posture tracking)
+
+==================== END: security-code-review ====================
+
+
+==================== START: vulnerability-assessment ====================
+# Vulnerability Assessment Task
+
+## Purpose
+
+To systematically identify, analyze, and prioritize security vulnerabilities across the application, infrastructure, and supporting systems.
+
+## Inputs
+
+- Application Architecture and Deployment Information
+- Network Topology and Infrastructure Details
+- System Configuration and Settings
+- Previous Assessment Results
+- Threat Intelligence and Vulnerability Databases
+
+## Key Activities & Instructions
+
+### 1. Assessment Planning
+
+- **Scope Definition:** Define systems, applications, and networks to be assessed
+- **Assessment Types:** Plan for network, web application, and infrastructure assessments
+- **Tool Selection:** Choose appropriate vulnerability scanning and assessment tools
+- **Timeline and Resources:** Plan assessment schedule and resource allocation
+- **Baseline Establishment:** Document current security posture for comparison
+
+### 2. Automated Vulnerability Scanning
+
+- **Network Scanning:** Perform network vulnerability scans to identify open ports and services
+- **Web Application Scanning:** Conduct dynamic application security testing (DAST)
+- **Infrastructure Scanning:** Scan servers, databases, and supporting infrastructure
+- **Configuration Assessment:** Analyze system and application configurations for security issues
+- **Compliance Scanning:** Check compliance with security standards and benchmarks
+
+### 3. Manual Security Testing
+
+- **Penetration Testing:** Conduct manual testing of critical vulnerabilities
+- **Business Logic Testing:** Test application-specific business logic for security flaws
+- **Authentication Testing:** Manually test authentication and session management
+- **Authorization Testing:** Verify access controls and privilege escalation protections
+- **Data Validation Testing:** Test input validation and output encoding mechanisms
+
+### 4. Vulnerability Analysis and Validation
+
+- **False Positive Elimination:** Validate and filter out false positive results
+- **Exploitability Assessment:** Analyze the exploitability and attack vectors for each vulnerability
+- **Business Impact Analysis:** Assess the potential business impact of successful exploitation
+- **Risk Scoring:** Calculate risk scores based on likelihood and impact
+- **Vulnerability Correlation:** Identify related vulnerabilities that could be chained together
+
+### 5. Risk Prioritization and Remediation Planning
+
+- **Critical Path Analysis:** Identify vulnerabilities that pose the highest risk
+- **Remediation Roadmap:** Create prioritized plan for vulnerability remediation
+- **Compensating Controls:** Identify temporary mitigations while permanent fixes are developed
+- **Resource Planning:** Estimate effort and resources required for remediation
+- **Timeline Development:** Create realistic timelines for vulnerability fixes
+
+### 6. Assessment Reporting and Tracking
+
+Using the `security-assessment-tmpl` template, create comprehensive documentation including:
+- Executive summary of security posture
+- Detailed vulnerability findings with evidence
+- Risk assessment and business impact analysis
+- Prioritized remediation recommendations
+- Metrics and trends analysis
+
+## Output Deliverables
+
+- **Vulnerability Assessment Report** (`docs/vulnerability-assessment.md`)
+- **Risk-Prioritized Vulnerability List** (actionable remediation backlog)
+- **Remediation Roadmap** (timeline and resource planning)
+- **Security Metrics Dashboard** (ongoing vulnerability tracking)
+
+==================== END: vulnerability-assessment ====================
+
+
+==================== START: security-architecture-review ====================
+# Security Architecture Review Task
+
+## Purpose
+
+To evaluate the security architecture design and implementation to ensure it adequately protects against identified threats and meets security requirements.
+
+## Inputs
+
+- System Architecture Documentation
+- Security Requirements and Policies
+- Threat Model and Risk Assessment
+- Compliance Requirements
+- Security Control Framework
+
+## Key Activities & Instructions
+
+### 1. Architecture Security Analysis
+
+- **Security Design Principles:** Verify implementation of security design principles (defense in depth, least privilege, fail secure)
+- **Trust Boundaries:** Analyze trust boundaries and security zones within the architecture
+- **Attack Surface Analysis:** Identify and minimize the attack surface of the system
+- **Security Control Placement:** Review placement and effectiveness of security controls
+- **Integration Security:** Analyze security of system integrations and interfaces
+
+### 2. Authentication and Authorization Review
+
+- **Identity Management:** Review identity provider integration and user management
+- **Authentication Mechanisms:** Analyze authentication methods and multi-factor authentication
+- **Session Management:** Review session handling, timeout, and security controls
+- **Authorization Model:** Analyze role-based access control and permission management
+- **Privilege Management:** Review privilege escalation protections and administrative access
+
+### 3. Data Protection Analysis
+
+- **Data Classification:** Review data classification and handling requirements
+- **Encryption Implementation:** Analyze encryption at rest and in transit
+- **Key Management:** Review cryptographic key management and rotation
+- **Data Loss Prevention:** Analyze data leakage prevention mechanisms
+- **Privacy Controls:** Review privacy protection and data minimization implementation
+
+### 4. Network Security Review
+
+- **Network Segmentation:** Analyze network segmentation and micro-segmentation
+- **Firewall Configuration:** Review firewall rules and network access controls
+- **Secure Communication:** Analyze secure communication protocols and implementation
+- **Network Monitoring:** Review network monitoring and intrusion detection capabilities
+- **DMZ and Perimeter Security:** Analyze perimeter security controls and DMZ configuration
+
+### 5. Infrastructure Security Assessment
+
+- **Server Hardening:** Review server security configurations and hardening
+- **Container Security:** Analyze container security and orchestration platform security
+- **Cloud Security:** Review cloud security configurations and shared responsibility model
+- **Backup and Recovery:** Analyze backup security and disaster recovery procedures
+- **Patch Management:** Review vulnerability management and patching processes
+
+### 6. Security Architecture Documentation
+
+- **Security Architecture Diagram:** Create or update security architecture diagrams
+- **Control Mapping:** Map security controls to threats and requirements
+- **Gap Analysis:** Identify gaps between current and desired security posture
+- **Improvement Recommendations:** Provide specific architecture improvement recommendations
+- **Implementation Roadmap:** Create roadmap for security architecture enhancements
+
+## Output Deliverables
+
+- **Security Architecture Review Report** (`docs/security-architecture-review.md`)
+- **Security Control Matrix** (controls mapped to threats and requirements)
+- **Gap Analysis and Recommendations** (prioritized improvement plan)
+- **Updated Security Architecture Diagrams** (visual representation of security controls)
+
+==================== END: security-architecture-review ====================
+
+
+==================== START: design-data-architecture ====================
+# Design Data Architecture Task
+
+## Purpose
+
+To design a comprehensive data architecture that supports current and future data needs, ensuring scalability, performance, reliability, and compliance with data governance requirements.
+
+## Inputs
+
+- Product Requirements Document (PRD)
+- System Architecture Document
+- Data Requirements and Use Cases
+- Compliance and Regulatory Requirements
+- Performance and Scalability Requirements
+
+## Key Activities & Instructions
+
+### 1. Data Requirements Analysis
+
+- **Data Sources:** Identify all internal and external data sources
+- **Data Types:** Catalog structured, semi-structured, and unstructured data types
+- **Data Volume:** Estimate current and projected data volumes and growth rates
+- **Data Velocity:** Analyze data ingestion rates and real-time processing requirements
+- **Data Variety:** Document different data formats, schemas, and sources
+- **Data Quality Requirements:** Define data accuracy, completeness, and consistency needs
+
+### 2. Data Architecture Design
+
+- **Data Storage Strategy:** Design storage solutions for different data types and access patterns
+- **Data Lake vs Data Warehouse:** Determine appropriate data storage architectures
+- **Data Partitioning:** Design data partitioning strategies for performance and scalability
+- **Data Retention:** Define data lifecycle management and retention policies
+- **Data Archival:** Plan for data archival and long-term storage strategies
+- **Backup and Recovery:** Design data backup and disaster recovery procedures
+
+### 3. Data Processing Architecture
+
+- **Batch Processing:** Design batch data processing workflows and schedules
+- **Stream Processing:** Architect real-time data processing and streaming analytics
+- **ETL/ELT Pipelines:** Design extract, transform, load processes and data pipelines
+- **Data Transformation:** Plan data cleansing, enrichment, and transformation logic
+- **Data Orchestration:** Design workflow orchestration and dependency management
+- **Error Handling:** Implement data processing error handling and recovery mechanisms
+
+### 4. Data Integration and APIs
+
+- **Data Integration Patterns:** Design patterns for data integration across systems
+- **API Strategy:** Plan data APIs for internal and external consumption
+- **Data Synchronization:** Design real-time and batch data synchronization mechanisms
+- **Change Data Capture:** Implement CDC for tracking data changes
+- **Data Federation:** Plan for federated data access across multiple sources
+- **Master Data Management:** Design master data management and data governance
+
+### 5. Data Security and Governance
+
+- **Data Classification:** Implement data classification and sensitivity labeling
+- **Access Controls:** Design role-based access controls for data assets
+- **Data Encryption:** Plan encryption at rest and in transit for sensitive data
+- **Data Lineage:** Implement data lineage tracking and metadata management
+- **Compliance Controls:** Ensure compliance with GDPR, CCPA, and other regulations
+- **Data Quality Monitoring:** Design data quality monitoring and alerting systems
+
+### 6. Performance and Scalability
+
+- **Query Optimization:** Design indexing and query optimization strategies
+- **Caching Strategy:** Implement data caching for frequently accessed data
+- **Horizontal Scaling:** Plan for horizontal scaling of data processing and storage
+- **Performance Monitoring:** Design performance monitoring and optimization processes
+- **Capacity Planning:** Plan for data storage and processing capacity growth
+- **Cost Optimization:** Optimize data architecture for cost efficiency
+
+## Output Deliverables
+
+- **Data Architecture Document** (`docs/data-architecture.md`)
+- **Data Flow Diagrams** (visual representation of data movement)
+- **Data Model Specifications** (logical and physical data models)
+- **Data Pipeline Designs** (ETL/ELT process specifications)
+
+==================== END: design-data-architecture ====================
+
+
+==================== START: create-etl-pipeline ====================
+# Create ETL Pipeline Task
+
+## Purpose
+
+To design and implement robust, scalable ETL (Extract, Transform, Load) pipelines that efficiently process data from various sources to target destinations while ensuring data quality and reliability.
+
+## Inputs
+
+- Data Architecture Document
+- Source System Specifications
+- Target System Requirements
+- Data Transformation Rules
+- Performance and SLA Requirements
+
+## Key Activities & Instructions
+
+### 1. Pipeline Requirements Analysis
+
+- **Source Analysis:** Analyze source systems, data formats, and extraction methods
+- **Target Requirements:** Define target system requirements and data formats
+- **Transformation Logic:** Document all data transformation and business rules
+- **Performance Requirements:** Define throughput, latency, and SLA requirements
+- **Error Handling:** Specify error handling and data quality requirements
+- **Scheduling Requirements:** Define batch schedules and real-time processing needs
+
+### 2. Pipeline Architecture Design
+
+- **Pipeline Pattern:** Choose appropriate pattern (batch, streaming, micro-batch, lambda)
+- **Tool Selection:** Select ETL tools and frameworks based on requirements
+- **Infrastructure Design:** Plan compute, storage, and network infrastructure
+- **Scalability Design:** Design for horizontal and vertical scaling
+- **Monitoring Architecture:** Plan pipeline monitoring and observability
+- **Security Architecture:** Design data security and access controls
+
+### 3. Data Extraction Design
+
+- **Source Connectors:** Design connectors for various source systems
+- **Incremental Extraction:** Implement change data capture and incremental loading
+- **Full vs Incremental:** Define strategies for full and incremental data loads
+- **Data Validation:** Implement source data validation and quality checks
+- **Error Recovery:** Design extraction error handling and retry mechanisms
+- **Rate Limiting:** Implement rate limiting to avoid overwhelming source systems
+
+### 4. Data Transformation Implementation
+
+- **Data Cleansing:** Implement data cleaning and standardization logic
+- **Data Enrichment:** Design data enrichment from reference data sources
+- **Business Rules:** Implement complex business logic and calculations
+- **Data Aggregation:** Design aggregation and summarization processes
+- **Data Validation:** Implement transformation validation and quality checks
+- **Schema Evolution:** Handle schema changes and data format evolution
+
+### 5. Data Loading Strategy
+
+- **Loading Patterns:** Implement appropriate loading patterns (insert, upsert, merge)
+- **Batch vs Streaming:** Design batch and streaming loading mechanisms
+- **Partitioning Strategy:** Implement data partitioning for performance
+- **Indexing Strategy:** Design indexing for optimal query performance
+- **Conflict Resolution:** Handle data conflicts and duplicate resolution
+- **Transaction Management:** Ensure data consistency and transaction integrity
+
+### 6. Pipeline Operations and Monitoring
+
+- **Orchestration:** Implement workflow orchestration and dependency management
+- **Monitoring and Alerting:** Set up comprehensive pipeline monitoring
+- **Performance Optimization:** Implement performance tuning and optimization
+- **Error Handling:** Design comprehensive error handling and notification
+- **Data Quality Monitoring:** Implement ongoing data quality monitoring
+- **Maintenance Procedures:** Document pipeline maintenance and troubleshooting
+
+## Output Deliverables
+
+- **ETL Pipeline Implementation** (complete pipeline code and configuration)
+- **Pipeline Documentation** (`docs/etl-pipeline-{name}.md`)
+- **Monitoring Dashboard** (pipeline health and performance monitoring)
+- **Operational Runbooks** (troubleshooting and maintenance procedures)
+
+==================== END: create-etl-pipeline ====================
+
+
+==================== START: data-quality-framework ====================
+# Data Quality Framework Task
+
+## Purpose
+
+To establish a comprehensive data quality framework that ensures data accuracy, completeness, consistency, and reliability across all data assets and processes.
+
+## Inputs
+
+- Data Architecture Document
+- Business Data Requirements
+- Data Sources and Systems Inventory
+- Regulatory and Compliance Requirements
+- Data Quality Standards and Policies
+
+## Key Activities & Instructions
+
+### 1. Data Quality Requirements Definition
+
+- **Quality Dimensions:** Define data quality dimensions (accuracy, completeness, consistency, timeliness, validity, uniqueness)
+- **Business Rules:** Document business rules and data validation requirements
+- **Quality Metrics:** Define measurable data quality metrics and KPIs
+- **Quality Thresholds:** Establish acceptable quality thresholds and SLAs
+- **Stakeholder Requirements:** Gather data quality requirements from business stakeholders
+- **Regulatory Requirements:** Ensure compliance with data quality regulations
+
+### 2. Data Profiling and Assessment
+
+- **Data Discovery:** Profile existing data sources to understand current quality state
+- **Quality Assessment:** Assess current data quality against defined metrics
+- **Issue Identification:** Identify common data quality issues and root causes
+- **Impact Analysis:** Analyze business impact of data quality issues
+- **Baseline Establishment:** Establish baseline data quality metrics for improvement tracking
+- **Gap Analysis:** Identify gaps between current and desired data quality state
+
+### 3. Data Quality Rules and Validation
+
+- **Validation Rules:** Design comprehensive data validation rules and checks
+- **Business Rule Implementation:** Implement business logic validation
+- **Cross-Reference Validation:** Design validation against reference data and master data
+- **Anomaly Detection:** Implement statistical and ML-based anomaly detection
+- **Real-time Validation:** Design real-time data quality validation for streaming data
+- **Batch Validation:** Implement comprehensive batch data quality checks
+
+### 4. Data Quality Monitoring and Alerting
+
+- **Quality Dashboards:** Design real-time data quality monitoring dashboards
+- **Alerting System:** Implement automated alerting for data quality issues
+- **Trend Analysis:** Monitor data quality trends and degradation patterns
+- **Root Cause Analysis:** Implement tools for data quality issue root cause analysis
+- **Quality Reporting:** Design regular data quality reporting for stakeholders
+- **SLA Monitoring:** Monitor data quality SLAs and compliance metrics
+
+### 5. Data Quality Remediation
+
+- **Issue Classification:** Classify data quality issues by type and severity
+- **Remediation Workflows:** Design workflows for data quality issue resolution
+- **Data Cleansing:** Implement automated and manual data cleansing processes
+- **Source System Fixes:** Coordinate with source system owners for upstream fixes
+- **Quarantine Processes:** Implement data quarantine for poor quality data
+- **Quality Improvement:** Design continuous data quality improvement processes
+
+### 6. Data Quality Governance
+
+- **Quality Policies:** Establish data quality policies and standards
+- **Roles and Responsibilities:** Define data quality roles and accountability
+- **Quality Processes:** Document data quality processes and procedures
+- **Training and Awareness:** Develop data quality training and awareness programs
+- **Quality Metrics:** Establish data quality metrics and reporting frameworks
+- **Continuous Improvement:** Implement continuous data quality improvement processes
+
+## Output Deliverables
+
+- **Data Quality Framework Document** (`docs/data-quality-framework.md`)
+- **Quality Monitoring Dashboard** (real-time quality metrics and alerts)
+- **Data Quality Rules Repository** (comprehensive validation rules)
+- **Quality Improvement Roadmap** (prioritized improvement initiatives)
+
+==================== END: data-quality-framework ====================
+
+
+==================== START: data-migration-strategy ====================
+# Data Migration Strategy Task
+
+## Purpose
+
+To develop a comprehensive strategy for migrating data from legacy systems to new platforms while ensuring data integrity, minimal downtime, and business continuity.
+
+## Inputs
+
+- Current System Architecture and Data Models
+- Target System Architecture and Requirements
+- Business Requirements and Constraints
+- Data Volume and Complexity Assessment
+- Migration Timeline and Resource Constraints
+
+## Key Activities & Instructions
+
+### 1. Migration Assessment and Planning
+
+- **Current State Analysis:** Analyze existing data sources, formats, and quality
+- **Target State Definition:** Define target data architecture and requirements
+- **Gap Analysis:** Identify differences between source and target systems
+- **Risk Assessment:** Identify migration risks and mitigation strategies
+- **Resource Planning:** Plan migration team, tools, and infrastructure resources
+- **Timeline Development:** Create detailed migration timeline and milestones
+
+### 2. Data Migration Strategy Design
+
+- **Migration Approach:** Choose appropriate migration strategy (big bang, phased, parallel run)
+- **Migration Patterns:** Design migration patterns for different data types
+- **Cutover Strategy:** Plan system cutover and rollback procedures
+- **Downtime Minimization:** Design strategies to minimize business disruption
+- **Rollback Planning:** Develop comprehensive rollback and recovery procedures
+- **Business Continuity:** Ensure business operations continuity during migration
+
+### 3. Data Mapping and Transformation
+
+- **Data Mapping:** Create detailed mapping between source and target data structures
+- **Transformation Rules:** Define data transformation and cleansing rules
+- **Business Logic Migration:** Plan migration of business rules and calculations
+- **Data Validation:** Design validation rules for migrated data
+- **Reference Data Migration:** Plan migration of reference and master data
+- **Historical Data Handling:** Define strategy for historical data migration
+
+### 4. Migration Tool and Infrastructure Setup
+
+- **Tool Selection:** Select appropriate data migration tools and platforms
+- **Infrastructure Provisioning:** Set up migration infrastructure and environments
+- **Performance Optimization:** Optimize migration processes for performance
+- **Monitoring Setup:** Implement migration monitoring and progress tracking
+- **Security Configuration:** Ensure secure data transfer and access controls
+- **Backup and Recovery:** Set up backup and recovery for migration processes
+
+### 5. Migration Execution and Validation
+
+- **Pre-migration Validation:** Validate source data quality and readiness
+- **Migration Execution:** Execute migration according to planned procedures
+- **Data Validation:** Perform comprehensive validation of migrated data
+- **Reconciliation:** Reconcile data between source and target systems
+- **Performance Testing:** Test system performance with migrated data
+- **User Acceptance Testing:** Conduct UAT with migrated data and systems
+
+### 6. Post-Migration Activities
+
+- **Go-Live Support:** Provide support during initial go-live period
+- **Issue Resolution:** Resolve any post-migration data or system issues
+- **Performance Monitoring:** Monitor system performance and data quality
+- **Documentation Update:** Update system documentation and procedures
+- **Lessons Learned:** Document lessons learned and best practices
+- **Decommissioning:** Plan decommissioning of legacy systems and data
+
+## Output Deliverables
+
+- **Data Migration Strategy Document** (`docs/data-migration-strategy.md`)
+- **Migration Runbooks** (detailed execution procedures)
+- **Data Mapping Specifications** (source to target mappings)
+- **Validation and Testing Plans** (comprehensive testing procedures)
+
+==================== END: data-migration-strategy ====================
+
+
+==================== START: create-api-documentation ====================
+# Create API Documentation Task
+
+## Purpose
+
+To create comprehensive, user-friendly API documentation that enables developers to effectively understand, integrate with, and use the API services.
+
+## Inputs
+
+- API Specifications (OpenAPI/Swagger, RAML, etc.)
+- System Architecture Document
+- API Design Guidelines and Standards
+- User Stories and Use Cases
+- Authentication and Authorization Requirements
+
+## Key Activities & Instructions
+
+### 1. API Documentation Planning
+
+- **Audience Analysis:** Identify target audiences (internal developers, external partners, public developers)
+- **Documentation Scope:** Define which APIs and endpoints to document
+- **Documentation Standards:** Establish documentation standards and style guidelines
+- **Tool Selection:** Choose appropriate documentation tools and platforms
+- **Information Architecture:** Plan documentation structure and navigation
+- **Maintenance Strategy:** Plan for ongoing documentation maintenance and updates
+
+### 2. API Reference Documentation
+
+- **Endpoint Documentation:** Document all API endpoints with methods, parameters, and responses
+- **Request/Response Examples:** Provide comprehensive examples for all API operations
+- **Error Documentation:** Document all error codes, messages, and resolution guidance
+- **Data Models:** Document all data models, schemas, and field descriptions
+- **Authentication Guide:** Document authentication methods and implementation details
+- **Rate Limiting:** Document rate limits, quotas, and throttling policies
+
+### 3. Getting Started Guide
+
+- **Quick Start Tutorial:** Create step-by-step quick start guide for new users
+- **Authentication Setup:** Guide users through authentication setup and configuration
+- **First API Call:** Walk through making the first successful API call
+- **Common Use Cases:** Document common integration patterns and use cases
+- **SDK and Libraries:** Document available SDKs, libraries, and code samples
+- **Environment Setup:** Guide for setting up development and testing environments
+
+### 4. Advanced Documentation
+
+- **Integration Guides:** Create detailed integration guides for complex scenarios
+- **Best Practices:** Document API usage best practices and recommendations
+- **Performance Optimization:** Guide for optimizing API performance and efficiency
+- **Troubleshooting Guide:** Common issues and their solutions
+- **Migration Guides:** Documentation for API version migrations and updates
+- **Webhook Documentation:** Document webhook implementation and handling
+
+### 5. Interactive Documentation
+
+- **API Explorer:** Implement interactive API testing and exploration tools
+- **Code Samples:** Provide code samples in multiple programming languages
+- **Try It Out:** Enable users to test API calls directly from documentation
+- **Response Visualization:** Show formatted responses and data structures
+- **Postman Collections:** Create and maintain Postman collections for API testing
+- **Sandbox Environment:** Provide sandbox environment for safe testing
+
+### 6. Documentation Quality and Maintenance
+
+- **Review Process:** Establish documentation review and approval process
+- **Accuracy Validation:** Validate documentation accuracy against actual API behavior
+- **User Feedback:** Implement feedback collection and incorporation process
+- **Analytics and Usage:** Track documentation usage and identify improvement areas
+- **Version Management:** Manage documentation versions aligned with API versions
+- **Continuous Updates:** Establish process for keeping documentation current
+
+## Output Deliverables
+
+- **API Documentation Website** (comprehensive, searchable documentation)
+- **Getting Started Guide** (`docs/api-getting-started.md`)
+- **API Reference** (`docs/api-reference.md`)
+- **Integration Examples** (code samples and tutorials)
+
+==================== END: create-api-documentation ====================
+
+
+==================== START: write-user-guide ====================
+# Write User Guide Task
+
+## Purpose
+
+To create comprehensive, user-friendly documentation that helps end users effectively understand and use the software application or system.
+
+## Inputs
+
+- Product Requirements Document (PRD)
+- UI/UX Specifications and Mockups
+- User Stories and Use Cases
+- Feature Specifications
+- User Research and Feedback
+
+## Key Activities & Instructions
+
+### 1. User Guide Planning
+
+- **User Analysis:** Identify target user personas and their skill levels
+- **Content Scope:** Define what features and workflows to document
+- **Information Architecture:** Plan guide structure, sections, and navigation
+- **Content Strategy:** Determine content types (tutorials, how-tos, reference)
+- **Style Guide:** Establish writing style, tone, and formatting standards
+- **Delivery Format:** Choose appropriate formats (web, PDF, in-app help)
+
+### 2. Getting Started Documentation
+
+- **Installation Guide:** Step-by-step installation and setup instructions
+- **Account Setup:** User registration, profile setup, and initial configuration
+- **First Steps Tutorial:** Guided walkthrough of basic functionality
+- **Interface Overview:** Introduction to main interface elements and navigation
+- **Quick Start Checklist:** Essential tasks for new users to get productive quickly
+- **System Requirements:** Hardware, software, and browser requirements
+
+### 3. Feature Documentation
+
+- **Feature Overviews:** High-level explanation of each major feature
+- **Step-by-Step Procedures:** Detailed instructions for common tasks
+- **Workflow Guides:** End-to-end workflows for complex processes
+- **Configuration Options:** Documentation of settings and customization options
+- **Advanced Features:** Documentation for power users and advanced functionality
+- **Integration Guides:** How to integrate with other tools and systems
+
+### 4. Visual Documentation
+
+- **Screenshots and Annotations:** Current, annotated screenshots of interface elements
+- **Video Tutorials:** Screen recordings for complex procedures
+- **Diagrams and Flowcharts:** Visual representation of processes and workflows
+- **Interactive Guides:** In-app guidance and tooltips
+- **Before/After Examples:** Show expected results and outcomes
+- **Mobile and Responsive Views:** Documentation for different device types
+
+### 5. Troubleshooting and Support
+
+- **FAQ Section:** Frequently asked questions and answers
+- **Common Issues:** Known issues and their solutions
+- **Error Messages:** Explanation of error messages and resolution steps
+- **Contact Information:** How to get additional help and support
+- **Community Resources:** Links to forums, communities, and additional resources
+- **Feedback Mechanism:** How users can provide feedback and suggestions
+
+### 6. User Guide Quality and Maintenance
+
+- **User Testing:** Test documentation with actual users for clarity and completeness
+- **Accessibility:** Ensure documentation is accessible to users with disabilities
+- **Search Optimization:** Implement search functionality and optimize content for findability
+- **Analytics and Feedback:** Track usage and gather user feedback for improvements
+- **Version Control:** Maintain documentation versions aligned with software releases
+- **Regular Updates:** Establish process for keeping documentation current with product changes
+
+## Output Deliverables
+
+- **User Guide Website** (comprehensive, searchable user documentation)
+- **Getting Started Guide** (`docs/user-getting-started.md`)
+- **Feature Documentation** (`docs/user-features/`)
+- **Video Tutorial Library** (screen recordings and walkthroughs)
+
+==================== END: write-user-guide ====================
+
+
+==================== START: document-architecture ====================
+# Document Architecture Task
+
+## Purpose
+
+To create comprehensive technical architecture documentation that enables developers, architects, and stakeholders to understand, maintain, and evolve the system effectively.
+
+## Inputs
+
+- System Architecture Design
+- Technical Specifications
+- Design Decisions and Rationale
+- Implementation Details
+- Deployment and Operations Information
+
+## Key Activities & Instructions
+
+### 1. Architecture Documentation Planning
+
+- **Audience Analysis:** Identify documentation audiences (developers, architects, operations, management)
+- **Documentation Scope:** Define what architectural aspects to document
+- **Documentation Standards:** Establish architectural documentation standards and templates
+- **Tool Selection:** Choose appropriate documentation tools and diagramming software
+- **Information Architecture:** Plan documentation structure and cross-references
+- **Maintenance Strategy:** Plan for ongoing documentation updates and reviews
+
+### 2. System Overview Documentation
+
+- **Architecture Vision:** Document the overall architectural vision and goals
+- **System Context:** Describe how the system fits within the broader ecosystem
+- **Key Stakeholders:** Identify and describe key stakeholders and their concerns
+- **Quality Attributes:** Document non-functional requirements and quality attributes
+- **Constraints and Assumptions:** Document architectural constraints and assumptions
+- **Success Metrics:** Define metrics for measuring architectural success
+
+### 3. Architectural Views and Perspectives
+
+- **Logical View:** Document the logical structure and key abstractions
+- **Process View:** Describe the runtime behavior and process interactions
+- **Development View:** Document the development-time structure and organization
+- **Physical View:** Describe the deployment and infrastructure architecture
+- **Scenarios View:** Document key use cases and quality scenarios
+- **Data View:** Describe data architecture and information flow
+
+### 4. Component and Interface Documentation
+
+- **Component Catalog:** Document all major components and their responsibilities
+- **Interface Specifications:** Detail all interfaces and their contracts
+- **Dependency Mapping:** Map dependencies between components and external systems
+- **Communication Patterns:** Document communication patterns and protocols
+- **Data Flow Diagrams:** Visualize data flow through the system
+- **Sequence Diagrams:** Document key interaction sequences
+
+### 5. Design Decisions and Rationale
+
+- **Architectural Decision Records (ADRs):** Document key architectural decisions
+- **Trade-off Analysis:** Document trade-offs considered and rationale for choices
+- **Alternative Approaches:** Document alternatives considered and why they were rejected
+- **Risk Assessment:** Document architectural risks and mitigation strategies
+- **Evolution Strategy:** Document how the architecture can evolve over time
+- **Technical Debt:** Document known technical debt and improvement plans
+
+### 6. Implementation and Operations Guide
+
+- **Development Guidelines:** Document development practices and coding standards
+- **Build and Deployment:** Document build processes and deployment procedures
+- **Configuration Management:** Document configuration and environment management
+- **Monitoring and Observability:** Document monitoring, logging, and alerting strategies
+- **Troubleshooting Guide:** Common issues and their resolution procedures
+- **Performance Considerations:** Document performance characteristics and optimization strategies
+
+## Output Deliverables
+
+- **Architecture Documentation Portal** (comprehensive, navigable documentation)
+- **System Architecture Document** (`docs/system-architecture.md`)
+- **Component Documentation** (`docs/components/`)
+- **Architectural Decision Records** (`docs/decisions/`)
+
+==================== END: document-architecture ====================
+
+
+==================== START: create-developer-onboarding ====================
+# Create Developer Onboarding Task
+
+## Purpose
+
+To create a comprehensive onboarding program that enables new developers to quickly become productive contributors to the project and understand the codebase, processes, and team culture.
+
+## Inputs
+
+- Project Architecture and Codebase
+- Development Processes and Workflows
+- Team Standards and Guidelines
+- Tool and Technology Stack
+- Team Culture and Communication Practices
+
+## Key Activities & Instructions
+
+### 1. Onboarding Program Design
+
+- **Learning Path Design:** Create structured learning path for new developers
+- **Skill Assessment:** Identify required skills and knowledge areas
+- **Timeline Planning:** Define onboarding timeline and milestones
+- **Resource Compilation:** Gather all necessary resources and documentation
+- **Mentorship Program:** Design mentorship and buddy system
+- **Success Metrics:** Define metrics for measuring onboarding success
+
+### 2. Environment Setup Guide
+
+- **Development Environment:** Step-by-step setup of development environment
+- **Tool Installation:** Installation guides for all required tools and software
+- **Access and Permissions:** Process for obtaining necessary access and permissions
+- **Configuration Setup:** Configuration of IDEs, editors, and development tools
+- **Testing Setup:** Setup of testing environments and test data
+- **Troubleshooting Guide:** Common setup issues and their solutions
+
+### 3. Codebase Introduction
+
+- **Architecture Overview:** High-level introduction to system architecture
+- **Code Organization:** Explanation of codebase structure and organization
+- **Coding Standards:** Introduction to coding standards and best practices
+- **Key Components:** Deep dive into critical components and modules
+- **Data Flow:** Understanding of data flow and system interactions
+- **Testing Strategy:** Introduction to testing approaches and frameworks
+
+### 4. Development Process Training
+
+- **Version Control:** Git workflows, branching strategies, and best practices
+- **Code Review Process:** How to submit and review code changes
+- **CI/CD Pipeline:** Understanding of build, test, and deployment processes
+- **Issue Tracking:** How to use issue tracking and project management tools
+- **Documentation Practices:** How to create and maintain documentation
+- **Communication Protocols:** Team communication channels and practices
+
+### 5. Hands-On Learning Activities
+
+- **First Contribution:** Guided first code contribution with mentorship
+- **Practice Projects:** Small, self-contained projects to build familiarity
+- **Code Reading Exercises:** Guided exploration of existing codebase
+- **Debugging Sessions:** Hands-on debugging and troubleshooting practice
+- **Pair Programming:** Collaborative coding sessions with experienced developers
+- **Knowledge Sharing:** Participation in team knowledge sharing sessions
+
+### 6. Ongoing Support and Development
+
+- **Regular Check-ins:** Scheduled check-ins to assess progress and address concerns
+- **Feedback Collection:** Continuous feedback collection and onboarding improvement
+- **Advanced Training:** Advanced topics and specialized knowledge areas
+- **Career Development:** Integration with career development and growth planning
+- **Community Integration:** Integration into broader development community and practices
+- **Knowledge Base Contribution:** Encouraging contribution to team knowledge base
+
+## Output Deliverables
+
+- **Developer Onboarding Portal** (comprehensive onboarding website)
+- **Onboarding Checklist** (`docs/developer-onboarding-checklist.md`)
+- **Environment Setup Guide** (`docs/development-environment-setup.md`)
+- **First Contribution Guide** (`docs/first-contribution-guide.md`)
+
+==================== END: create-developer-onboarding ====================
+
+
+==================== START: create-performance-strategy ====================
+# Create Performance Strategy Task
+
+## Purpose
+
+To develop a comprehensive performance strategy that ensures the system meets performance requirements, scales effectively, and provides optimal user experience under various load conditions.
+
+## Inputs
+
+- System Architecture Document
+- Performance Requirements and SLAs
+- User Load Patterns and Projections
+- Infrastructure Specifications
+- Business Performance Objectives
+
+## Key Activities & Instructions
+
+### 1. Performance Requirements Analysis
+
+- **Performance Goals:** Define specific performance goals and success criteria
+- **SLA Definition:** Establish service level agreements for response times and availability
+- **Load Characteristics:** Analyze expected user load patterns and peak usage scenarios
+- **Performance Budgets:** Set performance budgets for different system components
+- **Baseline Establishment:** Establish current performance baseline measurements
+- **Bottleneck Identification:** Identify potential performance bottlenecks and constraints
+
+### 2. Performance Architecture Design
+
+- **Scalability Strategy:** Design horizontal and vertical scaling approaches
+- **Caching Strategy:** Design multi-level caching architecture and policies
+- **Load Balancing:** Plan load balancing and traffic distribution strategies
+- **Database Performance:** Design database optimization and scaling strategies
+- **CDN Strategy:** Plan content delivery network usage and optimization
+- **Microservices Performance:** Design performance considerations for distributed systems
+
+### 3. Performance Testing Strategy
+
+- **Test Types:** Define load, stress, spike, volume, and endurance testing approaches
+- **Test Environment:** Plan performance testing environments and infrastructure
+- **Test Data:** Design realistic test data sets and user scenarios
+- **Test Automation:** Plan automated performance testing and continuous monitoring
+- **Performance Metrics:** Define key performance indicators and measurement criteria
+- **Test Execution:** Plan performance test execution schedules and procedures
+
+### 4. Monitoring and Observability
+
+- **Performance Monitoring:** Design comprehensive performance monitoring strategy
+- **Real-time Dashboards:** Create real-time performance dashboards and alerts
+- **Application Performance Monitoring (APM):** Implement APM tools and practices
+- **Infrastructure Monitoring:** Monitor infrastructure performance and resource utilization
+- **User Experience Monitoring:** Track real user performance and experience metrics
+- **Alerting Strategy:** Design performance alerting and incident response procedures
+
+### 5. Optimization Framework
+
+- **Performance Optimization Process:** Establish systematic performance optimization process
+- **Profiling Strategy:** Plan application and system profiling approaches
+- **Code Optimization:** Define code-level performance optimization practices
+- **Database Optimization:** Plan database query and schema optimization
+- **Network Optimization:** Optimize network communication and data transfer
+- **Resource Optimization:** Optimize CPU, memory, and storage utilization
+
+### 6. Capacity Planning and Scaling
+
+- **Capacity Modeling:** Create capacity models for different growth scenarios
+- **Auto-scaling Strategy:** Design automatic scaling policies and triggers
+- **Resource Planning:** Plan infrastructure resource allocation and growth
+- **Cost Optimization:** Balance performance requirements with cost considerations
+- **Performance Forecasting:** Predict future performance needs and requirements
+- **Scaling Procedures:** Document manual and automatic scaling procedures
+
+## Output Deliverables
+
+- **Performance Strategy Document** (`docs/performance-strategy.md`)
+- **Performance Testing Plan** (comprehensive testing approach)
+- **Monitoring and Alerting Setup** (performance observability framework)
+- **Capacity Planning Model** (growth and scaling projections)
+
+==================== END: create-performance-strategy ====================
+
+
+==================== START: design-load-tests ====================
+# Design Load Tests Task
+
+## Purpose
+
+To design and implement comprehensive load testing scenarios that validate system performance under various load conditions and identify performance bottlenecks.
+
+## Inputs
+
+- Performance Requirements and SLAs
+- User Journey and Usage Patterns
+- System Architecture and Components
+- Performance Testing Strategy
+- Infrastructure Specifications
+
+## Key Activities & Instructions
+
+### 1. Load Test Planning
+
+- **Test Objectives:** Define specific objectives for each load test scenario
+- **User Scenarios:** Identify and model realistic user behavior patterns
+- **Load Patterns:** Design various load patterns (steady, spike, ramp-up, stress)
+- **Test Environment:** Plan dedicated performance testing environment
+- **Test Data:** Design realistic test data sets and user accounts
+- **Success Criteria:** Define pass/fail criteria for each test scenario
+
+### 2. Test Scenario Design
+
+- **Baseline Testing:** Design baseline performance tests for normal load conditions
+- **Load Testing:** Design tests for expected peak load conditions
+- **Stress Testing:** Design tests to identify system breaking points
+- **Spike Testing:** Design tests for sudden load increases
+- **Volume Testing:** Design tests for large amounts of data processing
+- **Endurance Testing:** Design long-running tests for stability validation
+
+### 3. User Journey Modeling
+
+- **Critical User Paths:** Identify and model critical user journeys
+- **Transaction Mix:** Design realistic mix of different transaction types
+- **Think Time:** Model realistic user think time and interaction patterns
+- **Session Management:** Design realistic user session patterns and duration
+- **Data Variation:** Ensure test scenarios use varied and realistic data
+- **Error Scenarios:** Include realistic error and retry scenarios
+
+### 4. Load Test Implementation
+
+- **Tool Selection:** Choose appropriate load testing tools and frameworks
+- **Script Development:** Develop load test scripts for each scenario
+- **Parameterization:** Implement data parameterization and dynamic data handling
+- **Correlation:** Handle dynamic values and session management
+- **Validation:** Implement response validation and correctness checking
+- **Monitoring Integration:** Integrate with monitoring and observability tools
+
+### 5. Test Execution Framework
+
+- **Test Orchestration:** Design test execution orchestration and scheduling
+- **Environment Preparation:** Automate test environment setup and teardown
+- **Load Generation:** Plan distributed load generation and coordination
+- **Real-time Monitoring:** Implement real-time test execution monitoring
+- **Result Collection:** Automate test result collection and analysis
+- **Reporting:** Generate comprehensive test execution reports
+
+### 6. Analysis and Optimization
+
+- **Performance Analysis:** Analyze test results and identify performance issues
+- **Bottleneck Identification:** Identify system bottlenecks and constraints
+- **Trend Analysis:** Track performance trends across multiple test runs
+- **Optimization Recommendations:** Provide specific optimization recommendations
+- **Regression Testing:** Design performance regression testing procedures
+- **Continuous Improvement:** Establish continuous load testing and optimization process
+
+## Output Deliverables
+
+- **Load Test Suite** (comprehensive test scenarios and scripts)
+- **Test Execution Framework** (automated test execution and reporting)
+- **Performance Baseline** (baseline performance measurements)
+- **Load Testing Documentation** (`docs/load-testing-guide.md`)
+
+==================== END: design-load-tests ====================
+
+
+==================== START: performance-optimization ====================
+# Performance Optimization Task
+
+## Purpose
+
+To systematically identify, analyze, and implement performance optimizations that improve system responsiveness, throughput, and resource efficiency.
+
+## Inputs
+
+- Performance Test Results and Analysis
+- System Monitoring Data and Metrics
+- Application Profiling Results
+- User Experience Feedback
+- Performance Requirements and Goals
+
+## Key Activities & Instructions
+
+### 1. Performance Analysis and Profiling
+
+- **Performance Profiling:** Conduct comprehensive application and system profiling
+- **Bottleneck Identification:** Identify performance bottlenecks and constraints
+- **Resource Utilization Analysis:** Analyze CPU, memory, disk, and network utilization
+- **Database Performance Analysis:** Analyze database query performance and optimization opportunities
+- **Code Hotspot Analysis:** Identify code sections with highest performance impact
+- **User Experience Analysis:** Analyze real user performance and experience metrics
+
+### 2. Application-Level Optimization
+
+- **Algorithm Optimization:** Optimize algorithms and data structures for better performance
+- **Code Optimization:** Optimize critical code paths and eliminate inefficiencies
+- **Memory Management:** Optimize memory usage and garbage collection
+- **Concurrency Optimization:** Optimize threading and parallel processing
+- **I/O Optimization:** Optimize file and network I/O operations
+- **Caching Implementation:** Implement application-level caching strategies
+
+### 3. Database Optimization
+
+- **Query Optimization:** Optimize slow queries and improve query performance
+- **Index Optimization:** Design and implement optimal indexing strategies
+- **Schema Optimization:** Optimize database schema and table structures
+- **Connection Pooling:** Optimize database connection management
+- **Caching Strategy:** Implement database query result caching
+- **Partitioning:** Implement table partitioning for large datasets
+
+### 4. Infrastructure Optimization
+
+- **Server Configuration:** Optimize server configurations and settings
+- **Load Balancing:** Optimize load balancing and traffic distribution
+- **CDN Optimization:** Optimize content delivery network usage
+- **Network Optimization:** Optimize network communication and protocols
+- **Storage Optimization:** Optimize storage performance and configuration
+- **Auto-scaling Optimization:** Optimize automatic scaling policies and triggers
+
+### 5. Frontend Performance Optimization
+
+- **Asset Optimization:** Optimize images, CSS, and JavaScript assets
+- **Bundle Optimization:** Optimize JavaScript and CSS bundling and splitting
+- **Lazy Loading:** Implement lazy loading for images and components
+- **Caching Strategy:** Implement browser and CDN caching strategies
+- **Rendering Optimization:** Optimize rendering performance and user experience
+- **Progressive Loading:** Implement progressive loading and performance budgets
+
+### 6. Monitoring and Validation
+
+- **Performance Monitoring:** Implement continuous performance monitoring
+- **Optimization Validation:** Validate optimization effectiveness through testing
+- **Regression Prevention:** Implement performance regression detection
+- **Continuous Optimization:** Establish ongoing performance optimization process
+- **Performance Budgets:** Enforce performance budgets and quality gates
+- **Documentation:** Document optimization changes and their impact
+
+## Output Deliverables
+
+- **Performance Optimization Report** (detailed analysis and improvements)
+- **Optimized System Configuration** (updated configurations and settings)
+- **Performance Monitoring Dashboard** (ongoing performance tracking)
+- **Optimization Guidelines** (`docs/performance-optimization-guide.md`)
+
+==================== END: performance-optimization ====================
+
+
+==================== START: monitoring-setup ====================
+# Monitoring Setup Task
+
+## Purpose
+
+To implement comprehensive monitoring and observability infrastructure that provides visibility into system performance, health, and user experience.
+
+## Inputs
+
+- System Architecture and Components
+- Performance Requirements and SLAs
+- Infrastructure Specifications
+- Monitoring Strategy and Requirements
+- Alerting and Incident Response Procedures
+
+## Key Activities & Instructions
+
+### 1. Monitoring Architecture Design
+
+- **Monitoring Strategy:** Define comprehensive monitoring strategy and objectives
+- **Tool Selection:** Select appropriate monitoring tools and platforms
+- **Data Collection:** Design data collection strategies for metrics, logs, and traces
+- **Storage Strategy:** Plan monitoring data storage and retention policies
+- **Visualization:** Design monitoring dashboards and visualization strategies
+- **Integration:** Plan integration with existing tools and workflows
+
+### 2. Infrastructure Monitoring
+
+- **Server Monitoring:** Monitor server health, resource utilization, and performance
+- **Network Monitoring:** Monitor network performance, latency, and connectivity
+- **Database Monitoring:** Monitor database performance, queries, and resource usage
+- **Container Monitoring:** Monitor container and orchestration platform health
+- **Cloud Monitoring:** Monitor cloud services and resource utilization
+- **Security Monitoring:** Monitor security events and potential threats
+
+### 3. Application Performance Monitoring (APM)
+
+- **Application Metrics:** Monitor application performance and response times
+- **Transaction Tracing:** Implement distributed tracing for complex transactions
+- **Error Monitoring:** Monitor application errors and exceptions
+- **User Experience Monitoring:** Monitor real user performance and experience
+- **Code-Level Monitoring:** Monitor code performance and resource usage
+- **Dependency Monitoring:** Monitor external service dependencies and integrations
+
+### 4. Logging and Log Management
+
+- **Log Collection:** Implement centralized log collection and aggregation
+- **Log Parsing:** Parse and structure logs for analysis and searching
+- **Log Storage:** Design log storage and retention strategies
+- **Log Analysis:** Implement log analysis and pattern detection
+- **Security Logging:** Implement security event logging and monitoring
+- **Compliance Logging:** Ensure logging meets compliance and audit requirements
+
+### 5. Alerting and Notification
+
+- **Alert Rules:** Define alert rules and thresholds for various metrics
+- **Alert Prioritization:** Implement alert prioritization and escalation procedures
+- **Notification Channels:** Set up multiple notification channels and routing
+- **Alert Correlation:** Implement alert correlation and noise reduction
+- **Incident Management:** Integrate with incident management and response procedures
+- **Alert Testing:** Test alerting systems and notification procedures
+
+### 6. Dashboards and Reporting
+
+- **Real-time Dashboards:** Create real-time monitoring dashboards for different audiences
+- **Executive Dashboards:** Create high-level dashboards for management and stakeholders
+- **Operational Dashboards:** Create detailed dashboards for operations and support teams
+- **Custom Reports:** Implement custom reporting for specific requirements
+- **Trend Analysis:** Implement trend analysis and historical reporting
+- **Mobile Access:** Ensure monitoring dashboards are accessible on mobile devices
+
+## Output Deliverables
+
+- **Monitoring Infrastructure** (complete monitoring setup and configuration)
+- **Monitoring Dashboards** (comprehensive visualization and reporting)
+- **Alerting System** (automated alerting and notification)
+- **Monitoring Documentation** (`docs/monitoring-setup-guide.md`)
+
+==================== END: monitoring-setup ====================
+
+
+==================== START: create-release-strategy ====================
+# Create Release Strategy Task
+
+## Purpose
+
+To develop a comprehensive release strategy that enables frequent, reliable, and low-risk software releases while maintaining high quality and minimizing business disruption.
+
+## Inputs
+
+- System Architecture and Deployment Requirements
+- Business Requirements and Release Objectives
+- Development Team Structure and Processes
+- Infrastructure and Environment Specifications
+- Risk Assessment and Compliance Requirements
+
+## Key Activities & Instructions
+
+### 1. Release Strategy Planning
+
+- **Release Objectives:** Define release goals, frequency, and success criteria
+- **Release Types:** Define different types of releases (major, minor, hotfix, emergency)
+- **Release Cadence:** Establish release schedules and cadence for different release types
+- **Stakeholder Analysis:** Identify all stakeholders and their release requirements
+- **Risk Assessment:** Assess release risks and develop mitigation strategies
+- **Compliance Requirements:** Ensure release strategy meets regulatory and compliance needs
+
+### 2. Release Process Design
+
+- **Release Workflow:** Design end-to-end release workflow and procedures
+- **Quality Gates:** Define quality gates and approval criteria for releases
+- **Environment Strategy:** Plan release progression through environments (dev, staging, prod)
+- **Rollback Procedures:** Design comprehensive rollback and recovery procedures
+- **Communication Plan:** Plan release communication and stakeholder notification
+- **Documentation Requirements:** Define release documentation and record-keeping
+
+### 3. Deployment Strategy
+
+- **Deployment Patterns:** Choose appropriate deployment patterns (blue-green, canary, rolling)
+- **Infrastructure Requirements:** Plan infrastructure needs for different deployment strategies
+- **Automation Strategy:** Design deployment automation and orchestration
+- **Configuration Management:** Plan configuration management and environment-specific settings
+- **Database Migrations:** Plan database schema and data migration strategies
+- **Service Dependencies:** Manage service dependencies and deployment coordination
+
+### 4. Risk Management and Mitigation
+
+- **Risk Identification:** Identify potential release risks and failure scenarios
+- **Mitigation Strategies:** Develop risk mitigation and prevention strategies
+- **Contingency Planning:** Create contingency plans for various failure scenarios
+- **Monitoring and Detection:** Plan release monitoring and issue detection
+- **Incident Response:** Design incident response procedures for release issues
+- **Business Continuity:** Ensure business continuity during releases and incidents
+
+### 5. Release Coordination and Communication
+
+- **Release Planning:** Plan release schedules and coordinate with stakeholders
+- **Change Management:** Integrate with change management and approval processes
+- **Stakeholder Communication:** Design communication plans for different audiences
+- **Release Notes:** Plan release notes and user communication
+- **Training and Support:** Plan user training and support for new releases
+- **Feedback Collection:** Implement feedback collection and improvement processes
+
+### 6. Continuous Improvement
+
+- **Release Metrics:** Define metrics for measuring release success and efficiency
+- **Post-Release Reviews:** Conduct post-release reviews and retrospectives
+- **Process Optimization:** Continuously optimize release processes and procedures
+- **Automation Enhancement:** Continuously improve release automation and tooling
+- **Team Training:** Provide ongoing training and skill development for release teams
+- **Best Practices:** Establish and maintain release best practices and standards
+
+## Output Deliverables
+
+- **Release Strategy Document** (`docs/release-strategy.md`)
+- **Release Process Workflows** (detailed process documentation)
+- **Release Runbooks** (step-by-step execution procedures)
+- **Risk Management Plan** (comprehensive risk mitigation strategies)
+
+==================== END: create-release-strategy ====================
+
+
+==================== START: design-cicd-pipeline ====================
+# Design CI/CD Pipeline Task
+
+## Purpose
+
+To design and implement a comprehensive CI/CD pipeline that automates the build, test, and deployment processes while ensuring code quality, security, and reliable releases.
+
+## Inputs
+
+- Source Code Repository Structure
+- Build and Test Requirements
+- Deployment Strategy and Environments
+- Security and Compliance Requirements
+- Infrastructure and Platform Specifications
+
+## Key Activities & Instructions
+
+### 1. Pipeline Architecture Design
+
+- **Pipeline Strategy:** Define overall CI/CD strategy and objectives
+- **Tool Selection:** Select appropriate CI/CD tools and platforms
+- **Pipeline Structure:** Design pipeline stages, jobs, and workflows
+- **Branching Strategy:** Align pipeline with Git branching and workflow strategy
+- **Environment Management:** Plan pipeline integration with different environments
+- **Security Integration:** Integrate security scanning and compliance checks
+
+### 2. Continuous Integration Design
+
+- **Build Automation:** Design automated build processes and configurations
+- **Test Automation:** Integrate unit, integration, and quality tests
+- **Code Quality Gates:** Implement code quality checks and standards enforcement
+- **Security Scanning:** Integrate static application security testing (SAST)
+- **Dependency Management:** Automate dependency scanning and vulnerability checks
+- **Artifact Management:** Design build artifact storage and versioning
+
+### 3. Continuous Deployment Design
+
+- **Deployment Automation:** Design automated deployment processes
+- **Environment Promotion:** Automate promotion between environments
+- **Configuration Management:** Manage environment-specific configurations
+- **Database Migrations:** Automate database schema and data migrations
+- **Service Orchestration:** Coordinate deployment of multiple services
+- **Rollback Automation:** Implement automated rollback capabilities
+
+### 4. Testing Integration
+
+- **Test Strategy:** Integrate comprehensive testing strategy into pipeline
+- **Test Parallelization:** Design parallel test execution for efficiency
+- **Test Environment Management:** Automate test environment provisioning
+- **Test Data Management:** Manage test data creation and cleanup
+- **Performance Testing:** Integrate performance and load testing
+- **End-to-End Testing:** Integrate E2E testing and user acceptance testing
+
+### 5. Monitoring and Observability
+
+- **Pipeline Monitoring:** Monitor pipeline execution and performance
+- **Deployment Monitoring:** Monitor deployment success and system health
+- **Alerting and Notifications:** Implement pipeline alerting and notifications
+- **Metrics Collection:** Collect pipeline metrics and performance data
+- **Logging and Tracing:** Implement comprehensive pipeline logging
+- **Dashboard Creation:** Create pipeline monitoring dashboards
+
+### 6. Security and Compliance
+
+- **Security Scanning:** Integrate comprehensive security scanning tools
+- **Compliance Checks:** Implement compliance validation and reporting
+- **Secret Management:** Secure management of secrets and credentials
+- **Access Control:** Implement proper access controls and permissions
+- **Audit Logging:** Implement audit logging for compliance and security
+- **Vulnerability Management:** Integrate vulnerability scanning and remediation
+
+## Output Deliverables
+
+- **CI/CD Pipeline Implementation** (complete pipeline configuration and scripts)
+- **Pipeline Documentation** (`docs/cicd-pipeline-guide.md`)
+- **Pipeline Monitoring Dashboard** (real-time pipeline visibility)
+- **Security and Compliance Reports** (automated security and compliance validation)
+
+==================== END: design-cicd-pipeline ====================
+
+
+==================== START: plan-deployment ====================
+# Plan Deployment Task
+
+## Purpose
+
+To create detailed deployment plans that ensure smooth, reliable, and coordinated software releases across different environments and systems.
+
+## Inputs
+
+- Release Strategy and Requirements
+- System Architecture and Dependencies
+- Environment Specifications
+- Infrastructure Requirements
+- Risk Assessment and Mitigation Plans
+
+## Key Activities & Instructions
+
+### 1. Deployment Planning
+
+- **Deployment Scope:** Define what components, services, and changes will be deployed
+- **Deployment Timeline:** Create detailed deployment timeline and schedule
+- **Resource Planning:** Plan human resources, infrastructure, and tools needed
+- **Dependency Analysis:** Analyze and plan for system and service dependencies
+- **Risk Assessment:** Identify deployment risks and mitigation strategies
+- **Success Criteria:** Define deployment success criteria and validation procedures
+
+### 2. Environment Preparation
+
+- **Environment Assessment:** Assess target environments and readiness
+- **Infrastructure Provisioning:** Plan infrastructure provisioning and configuration
+- **Configuration Management:** Plan environment-specific configurations
+- **Data Migration:** Plan database and data migration procedures
+- **Backup Procedures:** Plan pre-deployment backup and recovery procedures
+- **Environment Validation:** Plan environment validation and readiness checks
+
+### 3. Deployment Procedures
+
+- **Deployment Steps:** Define detailed step-by-step deployment procedures
+- **Deployment Sequence:** Plan deployment sequence and coordination
+- **Service Dependencies:** Manage service startup and dependency coordination
+- **Configuration Deployment:** Plan configuration and settings deployment
+- **Database Migrations:** Plan database schema and data migration execution
+- **Verification Procedures:** Define post-deployment verification and validation
+
+### 4. Rollback Planning
+
+- **Rollback Triggers:** Define conditions that would trigger a rollback
+- **Rollback Procedures:** Create detailed rollback procedures and steps
+- **Data Rollback:** Plan data and database rollback procedures
+- **Service Restoration:** Plan service restoration and dependency management
+- **Communication Plan:** Plan rollback communication and stakeholder notification
+- **Recovery Validation:** Define rollback validation and recovery verification
+
+### 5. Coordination and Communication
+
+- **Team Coordination:** Plan coordination between different teams and stakeholders
+- **Communication Plan:** Create communication plan for deployment activities
+- **Status Reporting:** Plan deployment status reporting and updates
+- **Escalation Procedures:** Define escalation procedures for deployment issues
+- **Stakeholder Notification:** Plan stakeholder notification and updates
+- **Documentation:** Plan deployment documentation and record-keeping
+
+### 6. Monitoring and Validation
+
+- **Deployment Monitoring:** Plan real-time deployment monitoring and tracking
+- **Health Checks:** Define system health checks and validation procedures
+- **Performance Monitoring:** Monitor system performance during and after deployment
+- **User Impact Assessment:** Monitor user impact and experience during deployment
+- **Issue Detection:** Plan issue detection and response procedures
+- **Post-Deployment Review:** Plan post-deployment review and lessons learned
+
+## Output Deliverables
+
+- **Deployment Plan Document** (`docs/deployment-plan-{version}.md`)
+- **Deployment Runbooks** (detailed execution procedures)
+- **Rollback Procedures** (comprehensive rollback documentation)
+- **Deployment Checklist** (step-by-step validation checklist)
+
+==================== END: plan-deployment ====================
+
+
+==================== START: release-coordination ====================
+# Release Coordination Task
+
+## Purpose
+
+To coordinate and orchestrate software releases across multiple teams, systems, and stakeholders while ensuring smooth execution and minimal business disruption.
+
+## Inputs
+
+- Release Plan and Schedule
+- Deployment Plans and Procedures
+- Team Assignments and Responsibilities
+- Stakeholder Requirements and Expectations
+- Risk Management and Contingency Plans
+
+## Key Activities & Instructions
+
+### 1. Release Preparation
+
+- **Release Readiness Assessment:** Assess readiness of all components and teams
+- **Pre-Release Checklist:** Execute comprehensive pre-release validation checklist
+- **Team Coordination:** Coordinate all teams involved in the release
+- **Resource Allocation:** Ensure all necessary resources are available and allocated
+- **Communication Setup:** Set up communication channels and coordination mechanisms
+- **Contingency Preparation:** Prepare contingency plans and emergency procedures
+
+### 2. Stakeholder Management
+
+- **Stakeholder Communication:** Communicate release plans and schedules to all stakeholders
+- **Expectation Management:** Manage stakeholder expectations and requirements
+- **Business Coordination:** Coordinate with business teams and end users
+- **Change Management:** Coordinate change management and user communication
+- **Training Coordination:** Coordinate user training and support activities
+- **Feedback Channels:** Establish feedback channels and issue reporting mechanisms
+
+### 3. Release Execution Coordination
+
+- **Release Kickoff:** Conduct release kickoff meeting and final coordination
+- **Real-time Coordination:** Coordinate release execution across all teams
+- **Progress Monitoring:** Monitor release progress and milestone completion
+- **Issue Management:** Coordinate issue resolution and escalation
+- **Decision Making:** Facilitate decision making for release issues and changes
+- **Status Communication:** Provide regular status updates to stakeholders
+
+### 4. Cross-Team Coordination
+
+- **Development Team Coordination:** Coordinate with development teams for code deployment
+- **Operations Team Coordination:** Coordinate with operations teams for infrastructure
+- **QA Team Coordination:** Coordinate with QA teams for testing and validation
+- **Security Team Coordination:** Coordinate with security teams for security validation
+- **Business Team Coordination:** Coordinate with business teams for user communication
+- **Support Team Coordination:** Coordinate with support teams for post-release support
+
+### 5. Risk Management and Issue Resolution
+
+- **Risk Monitoring:** Monitor release risks and trigger mitigation strategies
+- **Issue Escalation:** Manage issue escalation and resolution coordination
+- **Decision Points:** Facilitate go/no-go decisions at critical release points
+- **Rollback Coordination:** Coordinate rollback procedures if necessary
+- **Emergency Response:** Coordinate emergency response for critical issues
+- **Incident Management:** Coordinate incident management and resolution
+
+### 6. Post-Release Activities
+
+- **Release Validation:** Coordinate post-release validation and verification
+- **Issue Tracking:** Track and coordinate resolution of post-release issues
+- **Performance Monitoring:** Monitor system performance and user experience
+- **Stakeholder Updates:** Provide post-release updates to stakeholders
+- **Lessons Learned:** Conduct post-release retrospectives and lessons learned
+- **Process Improvement:** Identify and implement release process improvements
+
+## Output Deliverables
+
+- **Release Coordination Report** (comprehensive release execution summary)
+- **Issue Log and Resolution** (tracking of all release issues and resolutions)
+- **Stakeholder Communication Log** (record of all stakeholder communications)
+- **Lessons Learned Document** (`docs/release-{version}-lessons-learned.md`)
+
+==================== END: release-coordination ====================
+
+
