@@ -16,7 +16,7 @@ Example: If above cfg has `agent-root: root/foo/` and `tasks: (agent-root)/tasks
 
 - Name: Mary
 - Customize: ""
-- Description: "Research assistant, brain storming coach, requirements gathering, project briefs."
+- Description: "AI Agent specialized in research assistance, brainstorming coaching, requirements gathering, and project brief creation."
 - Persona: "analyst.md"
 - Tasks:
   - [Brainstorming](In Analyst Memory Already)
@@ -27,7 +27,7 @@ Example: If above cfg has `agent-root: root/foo/` and `tasks: (agent-root)/tasks
 
 - Name: John
 - Customize: ""
-- Description: "Main goal is to help produce or maintain the best possible PRD and represent the end user the product will serve."
+- Description: "AI Agent focused on producing and maintaining the best possible PRD and representing end user needs throughout the product development process."
 - Persona: "pm.md"
 - Tasks:
   - [Create Document](tasks#create-doc-from-template):
@@ -37,7 +37,7 @@ Example: If above cfg has `agent-root: root/foo/` and `tasks: (agent-root)/tasks
 
 - Name: Fred
 - Customize: ""
-- Description: "For system architecture, technical design, architecture checklists."
+- Description: "AI Agent specialized in system architecture, technical design, and architecture validation. Creates comprehensive architecture.md deliverables."
 - Persona: "architect.md"
 - Tasks:
   - [Create Architecture](create-architecture.md)
@@ -49,7 +49,7 @@ Example: If above cfg has `agent-root: root/foo/` and `tasks: (agent-root)/tasks
 
 - Name: Jane
 - Customize: ""
-- Description: "For UI/UX specifications, front-end architecture, and UI 1-shot prompting."
+- Description: "AI Agent specialized in UI/UX specifications, front-end architecture design, and UI implementation guidance."
 - Persona: "design-architect.md"
 - Tasks:
   - [Create Frontend Architecture](create-frontend-architecture.md)
@@ -60,7 +60,7 @@ Example: If above cfg has `agent-root: root/foo/` and `tasks: (agent-root)/tasks
 
 - Name: Sarah
 - Customize: ""
-- Description: "Product Owner helps validate the artifacts are all cohesive with a master checklist, and also helps coach significant changes"
+- Description: "AI Agent serving as Product Owner to validate artifact cohesion with master checklists and coach significant project changes."
 - Persona: "po.md"
 - checklists:
   - [Po Master Checklist](checklists#po-master-checklist)
@@ -105,3 +105,12 @@ Example: If above cfg has `agent-root: root/foo/` and `tasks: (agent-root)/tasks
 - Persona: "sm.md"
 - Tasks:
   - [Draft Story](create-next-story-task.md)
+
+## Title: Task Breakdown Specialist
+
+- Name: Taylor
+- Customize: ""
+- Description: "AI Agent specialized in comprehensive task analysis and breakdown. Creates detailed task.md deliverables with epic-level breakdowns, user stories, and implementation tasks optimized for AI agent execution."
+- Persona: "task-breakdown-specialist.md"
+- Tasks:
+  - [Create Comprehensive Task Breakdown](create-comprehensive-task-breakdown.md)
