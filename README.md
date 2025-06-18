@@ -323,105 +323,54 @@ The system includes the following specialized AI agents:
 | **Analyst** | Mary | Research, brainstorming, requirements gathering | Project briefs |
 | **Product Owner** | Sarah | Validation, quality assurance, change management | Quality validation |
 
-## 🚀 Getting Started
+## 🚀 Getting Started with AI Agent Orchestration
 
-### Prerequisites
+### Quick Setup (Recommended)
 
-- **Node.js** 18+ or **Python** 3.9+
-- **Git** for version control
-- **Docker** (optional, for containerized deployment)
-- **Cloud Platform Account** (AWS, Azure, or GCP for cloud deployment)
+The BMAD AI Agent Orchestration System is designed to work with AI assistants like ChatGPT or Google Gemini. No traditional software installation required!
 
-### Installation
+#### Web Agent Setup (5 minutes)
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/usemanusai/CodeMAD.git
-   cd CodeMAD
-   ```
+1. **Navigate to** the `web-build-sample/` directory in this repository
+2. **Copy the contents** of `agent-prompt.txt`
+3. **Paste into your AI assistant** (ChatGPT Custom GPT or Google Gemini Gem instructions field)
+4. **Attach the remaining files** from the `web-build-sample/` folder as knowledge base files
+5. **Save your AI agent** with a name like "BMAD AI Agent Orchestrator"
+6. **Start with** `/help` command to explore capabilities
 
-2. **Install dependencies**
-   ```bash
-   # For Node.js setup
-   npm install
+#### Three-Deliverable Workflow Usage
 
-   # For Python setup
-   pip install -r requirements.txt
-   ```
+Once your AI agent orchestrator is set up, you can request comprehensive project documentation:
 
-3. **Configure environment**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
+```
+Request: "I need complete project documentation for a new e-commerce platform"
 
-4. **Initialize the system**
-   ```bash
-   # Start the orchestrator
-   npm start
-   # or
-   python orchestrator.py
-   ```
-
-### Basic Usage Examples
-
-#### Simple Task Assignment
-```bash
-# Request a frontend component creation
-bmad request "Create a responsive navigation component with accessibility features"
-
-# Expected AI agent selection: Frontend Developer AI + Accessibility Engineer AI
-# Estimated completion: 2-3 days
+AI Agent Orchestrator will:
+1. Activate Product Manager AI Agent (John) → Creates prd.md
+2. Activate Architect AI Agent (Fred) → Creates architecture.md
+3. Activate Task Breakdown Specialist AI Agent (Tyler) → Creates tasks.md
 ```
 
-#### Complex Multi-Agent Workflow
-```bash
-# Request a complete feature implementation
-bmad request "Implement user authentication with OAuth, including API, frontend, security review, and testing"
+#### Individual AI Agent Activation
 
-# Expected AI agent selection:
-# - Backend Developer AI (OAuth API)
-# - Frontend Developer AI (Auth UI)
-# - Security Engineer AI (Security review)
-# - QA Engineer AI (Testing strategy)
-# Estimated completion: 1-2 weeks
+You can also work with specific AI agents directly:
+
+```
+/pm - Activate Product Manager AI Agent for PRD creation
+/architect - Activate Architect AI Agent for technical design
+/task-breakdown - Activate Task Breakdown Specialist for comprehensive task analysis
+/design-architect - Activate Design Architect for frontend specifications
 ```
 
-#### Enterprise Architecture Planning
-```bash
-# Request architecture design
-bmad request "Design microservices architecture for e-commerce platform with high availability and security"
+### AI Agent Coordination Configuration
 
-# Expected AI agent selection:
-# - Solutions Architect AI (Overall design)
-# - Security Architect AI (Security strategy)
-# - Cloud Architect AI (Infrastructure)
-# - Performance Engineer AI (Scalability)
-# Estimated completion: 3-4 weeks
-```
+The system uses configuration files to define AI agent capabilities and workflows:
 
-### Configuration
-
-Create a `.env` file with the following configuration:
-
-```env
-# AI Agent Orchestrator Configuration
-ORCHESTRATOR_MODE=intelligent
-AGENT_SELECTION_ALGORITHM=multi-criteria
-WORKFLOW_OPTIMIZATION=enabled
-ADAPTIVE_LEARNING=enabled
-
-# Quality Gates
-ENABLE_CODE_REVIEW=true
-ENABLE_SECURITY_SCAN=true
-ENABLE_PERFORMANCE_TEST=true
-QUALITY_THRESHOLD=85
-
-# Integration Settings
-GITHUB_INTEGRATION=enabled
-SLACK_NOTIFICATIONS=enabled
-MONITORING_ENABLED=true
-```
+- **`agent-config.txt`** - Defines all available AI agents and their specializations
+- **`personas.txt`** - Contains detailed AI agent personality and capability definitions
+- **`tasks.txt`** - Comprehensive task library for AI agent execution
+- **`templates.txt`** - Standardized templates for deliverable creation
+- **`checklists.txt`** - Quality validation checklists for AI agent workflows
 
 ## 🤖 AI Agent Categories Overview
 
@@ -477,126 +426,128 @@ Advanced technical expertise with solutions architects, technical leads, integra
 - **Compliance Support**: Built-in compliance validation and audit trails
 - **Integration Capabilities**: Seamless integration with existing development tools
 
-## 📚 Documentation
+## 📚 AI Agent Orchestration Documentation
 
-### Google Gemini Knowledge Base
-Comprehensive system documentation optimized for AI assistant integration:
+### Core AI Agent System Files
+Essential files for understanding and configuring the AI agent orchestration system:
 
-- **[System Overview & Orchestrator](google-gemini-knowledge-base/01-system-overview-and-orchestrator.md)** - Core system and orchestrator intelligence
-- **[Core Development Agents](google-gemini-knowledge-base/02-core-development-agents.md)** - 12 development specialists
-- **[Infrastructure & Operations](google-gemini-knowledge-base/03-infrastructure-operations-agents.md)** - 10 infrastructure specialists
-- **[Security & Compliance](google-gemini-knowledge-base/04-security-compliance-agents.md)** - 8 security specialists
-- **[Data & AI Agents](google-gemini-knowledge-base/05-data-ai-agents.md)** - 8 data and AI specialists
-- **[Quality & Testing](google-gemini-knowledge-base/06-quality-testing-agents.md)** - 6 quality specialists
-- **[Specialized Technical](google-gemini-knowledge-base/07-specialized-technical-agents.md)** - 6 advanced specialists
-- **[Task Library](google-gemini-knowledge-base/08-comprehensive-task-library.md)** - 200+ detailed tasks
-- **[Templates & Checklists](google-gemini-knowledge-base/09-templates-and-checklists.md)** - Quality frameworks
-- **[Workflows & Examples](google-gemini-knowledge-base/10-workflows-and-examples.md)** - Implementation patterns
+- **[AI Agent Configuration](web-build-sample/agent-config.txt)** - Complete AI agent roster and capabilities
+- **[AI Agent Personas](web-build-sample/personas.txt)** - Detailed AI agent personality definitions
+- **[Task Library](web-build-sample/tasks.txt)** - Comprehensive task specifications for AI agents
+- **[Templates](web-build-sample/templates.txt)** - Standardized templates for deliverable creation
+- **[Quality Checklists](web-build-sample/checklists.txt)** - Validation frameworks for AI agent workflows
 
-### Detailed AI Agent Documentation
+### AI Agent Orchestration Guides
+- **[Comprehensive Deliverable Workflow](codemad-agent/comprehensive-deliverable-workflow.md)** - Complete guide to three-deliverable creation process
+- **[AI Agent Orchestration Correction Summary](AI_AGENT_ORCHESTRATION_CORRECTION_SUMMARY.md)** - Details of system corrections and enhancements
+
+### Individual AI Agent Documentation
 - **[AI Agent Personas](codemad-agent/personas/)** - Individual AI agent personalities and capabilities
 - **[Task Specifications](codemad-agent/tasks/)** - Detailed task requirements and deliverables
 - **[Templates](codemad-agent/templates/)** - Standardized documentation templates
 - **[Checklists](codemad-agent/checklists/)** - Quality validation checklists
 
-### Legacy Documentation
+### Setup and Configuration
+- **[Web Build Sample](web-build-sample/)** - Complete AI agent orchestrator setup files
 - **[Original BMAD Method](docs/readme.md)** - Original method documentation and IDE specifics
-- **[Web Build Sample](web-build-sample/)** - Quick start web agent setup
-- **[Contributing Guidelines](docs/CONTRIBUTING.md)** - How to contribute to the project
-- **[License](docs/LICENSE)** - Project license information
+- **[Contributing Guidelines](docs/CONTRIBUTING.md)** - How to contribute to the AI agent system
 
-## 🤝 Contributing
+## 🤝 Contributing to AI Agent Orchestration
 
-We welcome contributions to the BMAD AI Agent Orchestration System! Here's how you can help:
+We welcome contributions to the BMAD AI Agent Orchestration System! Here's how you can help enhance our AI agent capabilities:
 
 ### Adding New AI Agents
 
 1. **Create AI Agent Persona**
-   ```bash
-   # Create new AI agent persona file
-   touch codemad-agent/personas/new-agent-name.md
-   ```
+   - Define AI agent personality, expertise, and communication style
+   - Add to `codemad-agent/personas/new-agent-name.md`
+   - Include specialization areas and confidence levels
 
 2. **Define AI Agent Capabilities**
-   - Specify core technologies and expertise areas
-   - Define personality and communication style
-   - List key capabilities and specializations
+   - Specify core technologies and expertise domains
+   - Define collaboration patterns with other AI agents
+   - List primary deliverables and output formats
 
 3. **Create AI Agent Tasks**
-   ```bash
-   # Create task directory for new AI agent
-   mkdir codemad-agent/tasks/new-agent-name/
-   # Add 4-8 specialized tasks
-   ```
+   - Develop 4-8 specialized tasks for the AI agent
+   - Add to `codemad-agent/tasks/` directory
+   - Ensure tasks are optimized for AI agent context windows
 
-4. **Update Configuration**
-   - Add AI agent to appropriate category in `comprehensive-agent-config.md`
-   - Update AI agent count and capability matrix
-   - Add to Google Gemini knowledge base files
+4. **Update Configuration Files**
+   - Add AI agent to `web-build-sample/agent-config.txt`
+   - Update `web-build-sample/personas.txt` with full persona definition
+   - Add tasks to `web-build-sample/tasks.txt`
 
-### Adding New Tasks
+### Enhancing AI Agent Workflows
 
-1. **Task Specification**
-   - Define clear inputs, outputs, and success criteria
-   - Specify complexity level (Simple/Moderate/Complex)
-   - Include quality gates and validation requirements
+1. **Task Optimization**
+   - Improve task specifications for better AI agent execution
+   - Add quality gates and validation checkpoints
+   - Optimize for AI agent context window limitations
 
-2. **Documentation**
-   - Create detailed task documentation with examples
-   - Add to comprehensive task library
-   - Update relevant checklists and templates
+2. **Template Development**
+   - Create standardized templates for new deliverable types
+   - Add to `web-build-sample/templates.txt`
+   - Ensure templates support AI agent workflow patterns
 
-### Code Standards
+3. **Quality Assurance**
+   - Develop comprehensive checklists for AI agent validation
+   - Add to `web-build-sample/checklists.txt`
+   - Include AI agent-specific quality criteria
 
-- **Documentation**: All new AI agents and tasks must include comprehensive documentation
-- **Quality Gates**: Include appropriate quality validation and review processes
-- **Testing**: Validate new AI agents and tasks through pilot implementations
-- **Consistency**: Follow existing naming conventions and file structures
+### AI Agent System Standards
 
-### Review Process
+- **Documentation**: All AI agents must include comprehensive persona definitions and task specifications
+- **Quality Gates**: Include validation checkpoints optimized for AI agent workflows
+- **Testing**: Validate AI agent personas through pilot implementations with real AI assistants
+- **Consistency**: Follow established patterns for AI agent coordination and handoffs
+
+### Review Process for AI Agent Enhancements
 
 1. **Fork the repository** and create a feature branch
-2. **Implement changes** following the contribution guidelines
-3. **Create pull request** with detailed description and rationale
-4. **Code review** by maintainers and community members
-5. **Testing and validation** of new AI agent capabilities
-6. **Merge and integration** into main system
+2. **Implement AI agent enhancements** following the contribution guidelines
+3. **Test with AI assistants** (ChatGPT, Gemini) to validate functionality
+4. **Create pull request** with detailed description of AI agent capabilities
+5. **Community review** of AI agent design and implementation
+6. **Integration testing** with existing AI agent orchestration system
 
-### Getting Help
+### Getting Help with AI Agent Development
 
-- **GitHub Issues**: Report bugs or request features
-- **Discussions**: Join community discussions and Q&A
-- **Documentation**: Refer to comprehensive documentation and examples
-- **Community**: Connect with other contributors and users
+- **GitHub Issues**: Report AI agent bugs or request new AI agent capabilities
+- **Discussions**: Join community discussions about AI agent design patterns
+- **Documentation**: Refer to AI agent orchestration guides and examples
+- **Community**: Connect with other AI agent developers and users
 
-## 📊 Success Metrics
+## 📊 AI Agent Orchestration Success Metrics
 
-### Expected Outcomes
-- **50% Developer Productivity Increase** through intelligent AI agent automation
-- **40% Workflow Efficiency Gain** via optimized AI agent task coordination
-- **60% Quality Improvement** through integrated AI agent validation
-- **90% Project Success Rate** with comprehensive AI agent coverage
-- **30% Cost Reduction** via AI agent efficiency gains and optimization
+### Expected AI Agent Coordination Outcomes
+- **Comprehensive Documentation Delivery** - Complete prd.md, architecture.md, and tasks.md creation
+- **AI Agent Workflow Efficiency** - Optimized task handoffs between specialized AI agents
+- **Quality Assurance Integration** - Built-in validation throughout AI agent collaboration
+- **Context Window Optimization** - Tasks sized appropriately for AI agent capabilities
+- **Consistent AI Agent Performance** - Reliable deliverable quality across all AI agent types
 
-### Performance Targets
-- **<2 Second Response Time** for AI agent selection and task assignment
-- **80%+ AI Agent Selection Accuracy** for optimal capability matching
-- **95%+ Quality Gate Pass Rate** for first-time deliverable approval
-- **85%+ User Satisfaction** with AI agent orchestration system effectiveness
+### AI Agent System Performance Targets
+- **Immediate AI Agent Activation** - Instant persona switching and task assignment
+- **100% AI Agent Capability Coverage** - All project requirements addressable by available AI agents
+- **Comprehensive Deliverable Quality** - Complete, actionable documentation from AI agent collaboration
+- **User Satisfaction with AI Agent Coordination** - Effective orchestration and clear AI agent specialization
 
-## 🚀 Quick Start with Web Agent
+## 🚀 Quick Start with AI Agent Orchestrator
 
-For immediate hands-on experience, try our pre-built web agent:
+For immediate hands-on experience with AI agent coordination:
 
 1. **Navigate to** `web-build-sample/` directory
-2. **Copy contents** of `agent-prompt.txt` into Gemini or ChatGPT custom instructions
-3. **Attach remaining files** as shown in setup documentation
-4. **Start with** `/help` command and select option `2` to learn about the method
+2. **Copy contents** of `agent-prompt.txt` into your AI assistant (Gemini or ChatGPT) custom instructions
+3. **Attach remaining files** (`agent-config.txt`, `personas.txt`, `tasks.txt`, `templates.txt`, `checklists.txt`) as knowledge base
+4. **Start with** `/help` command to explore AI agent capabilities
+5. **Try** `/agent-list` to see all available AI agents
+6. **Request** comprehensive project documentation to see the three-deliverable workflow in action
 
-This provides instant access to BMAD AI agent capabilities while you explore the full system architecture and implementation.
+This provides instant access to BMAD AI agent orchestration capabilities with 50+ specialized AI agents ready for coordination.
 
 ---
 
-**Ready to revolutionize your software development workflow with AI agents?** 🚀
+**Ready to experience intelligent AI agent orchestration for your projects?** 🤖
 
-[Get Started](#-getting-started) | [View Documentation](#-documentation) | [Join Community](https://github.com/usemanusai/CodeMAD/discussions) | [Report Issues](https://github.com/usemanusai/CodeMAD/issues)
+[Get Started with AI Agents](#-getting-started-with-ai-agent-orchestration) | [View AI Agent Documentation](#-ai-agent-orchestration-documentation) | [Join Community](https://github.com/usemanusai/CodeMAD/discussions) | [Report Issues](https://github.com/usemanusai/CodeMAD/issues)
