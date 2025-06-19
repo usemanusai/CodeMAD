@@ -1,3 +1,125 @@
+==================== START: documentation-mode-workflow ====================
+# Documentation Mode Workflow Task
+
+## Purpose
+
+Generate exactly 3 complete, final documents ready for developer handoff when Documentation Mode is selected. These documents must be comprehensive, standalone, and require no additional clarification for a developer working in VS Code Insiders.
+
+## Required Deliverables
+
+1. **`prd.md`** - Product Requirements Document describing the complete final product specifications
+2. **`architecture.md`** - Technical architecture document detailing system design, components, and implementation approach
+3. **`checklist.md`** - Development checklist with acceptance criteria and implementation steps
+
+## Task Instructions
+
+### 1. Initial Project Discovery
+
+- **Gather Project Requirements:**
+  - Ask the user to describe their project concept, goals, and target users
+  - Identify the core functionality and key features needed
+  - Understand any technical preferences or constraints
+  - Clarify the scope and timeline expectations
+
+- **Determine Project Type:**
+  - Web application, mobile app, desktop software, API service, etc.
+  - Target platforms and devices
+  - Integration requirements with external services
+
+### 2. Generate Product Requirements Document (prd.md)
+
+Using the `prd-documentation-tmpl` template, create a comprehensive PRD that includes:
+
+- **Executive Summary**: Clear project overview and objectives
+- **Product Vision**: Long-term goals and success metrics
+- **Target Users**: Detailed user personas and use cases
+- **Functional Requirements**: Complete feature specifications with user stories
+- **Non-Functional Requirements**: Performance, security, scalability requirements
+- **Technical Constraints**: Platform requirements, integration needs
+- **Success Criteria**: Measurable goals and acceptance criteria
+- **Timeline and Milestones**: Development phases and delivery schedule
+
+**Quality Standards:**
+- Each feature must have clear acceptance criteria
+- User stories must follow "As a [user], I want [goal] so that [benefit]" format
+- Requirements must be testable and measurable
+- Document must be complete enough for independent development
+
+### 3. Generate Technical Architecture Document (architecture.md)
+
+Using the `architecture-documentation-tmpl` template, create a comprehensive architecture document that includes:
+
+- **System Overview**: High-level architecture and design patterns
+- **Technology Stack**: Specific technologies, frameworks, and versions
+- **Component Architecture**: Detailed system components and their interactions
+- **Data Architecture**: Database design, data models, and data flow
+- **API Design**: Endpoint specifications and integration patterns
+- **Security Architecture**: Authentication, authorization, and security measures
+- **Deployment Architecture**: Infrastructure, hosting, and deployment strategy
+- **Development Guidelines**: Coding standards and best practices
+
+**Quality Standards:**
+- All technology choices must be justified and specific (with versions)
+- Architecture must be scalable and maintainable
+- Security considerations must be comprehensive
+- Implementation details must be clear enough for development teams
+- Include diagrams where helpful (Mermaid format)
+
+### 4. Generate Development Checklist (checklist.md)
+
+Using the `checklist-documentation-tmpl` template, create a comprehensive development checklist that includes:
+
+- **Pre-Development Setup**: Environment setup, tool installation, repository setup
+- **Development Phases**: Organized by logical development stages
+- **Feature Implementation**: Step-by-step implementation guidance for each feature
+- **Testing Requirements**: Unit tests, integration tests, user acceptance testing
+- **Quality Assurance**: Code review, security review, performance testing
+- **Deployment Preparation**: Build processes, environment configuration, deployment steps
+- **Post-Launch**: Monitoring, maintenance, and support procedures
+
+**Quality Standards:**
+- Each checklist item must be actionable and specific
+- Items must be organized in logical development order
+- Dependencies between tasks must be clearly indicated
+- Acceptance criteria must be defined for each major milestone
+- Checklist must be comprehensive enough to guide complete development
+
+### 5. Document Review and Finalization
+
+- **Cross-Reference Validation**: Ensure all three documents are consistent and aligned
+- **Completeness Check**: Verify each document contains all required sections
+- **Clarity Review**: Ensure technical language is clear and unambiguous
+- **Developer Readiness**: Confirm documents provide sufficient detail for independent development
+
+### 6. Final Delivery
+
+Present all three documents in final form with:
+- Clear document titles and version information
+- Table of contents for easy navigation
+- Consistent formatting and structure
+- Ready for copy-paste delivery to development teams
+
+## Success Criteria
+
+Documentation Mode is complete when:
+
+1. All three documents (prd.md, architecture.md, checklist.md) are generated
+2. Each document is comprehensive and standalone
+3. Documents are consistent with each other
+4. Technical specifications are detailed enough for implementation
+5. No additional clarification should be needed for development to begin
+6. Documents are properly formatted and ready for handoff
+
+## Important Notes
+
+- **No Development Work**: Documentation Mode does NOT include any actual development or coding
+- **Complete Specifications**: Each document must be thorough enough for handoff to external developers
+- **Standalone Documents**: Each document should be understandable without requiring this conversation context
+- **Professional Quality**: Documents should be production-ready for client or team handoff
+
+==================== END: documentation-mode-workflow ====================
+
+
 ==================== START: advanced-elicitation ====================
 # Advanced Elicitation Task
 

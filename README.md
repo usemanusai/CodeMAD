@@ -7,11 +7,14 @@
 
 ## 🚀 Project Overview
 
-The **BMAD (Breakthrough Method of Agile AI Agent-Driven Development)** AI Agent Orchestration System is a comprehensive, intelligent platform that coordinates **50+ specialized software development AI agents** to handle virtually any software development scenario through automatic AI agent selection and workflow optimization.
+The **BMAD (Breakthrough Method of Agile AI Agent-Driven Development)** AI Agent Orchestration System is a comprehensive, intelligent platform that coordinates **50+ specialized software development AI agents** to handle virtually any software development scenario. The system now features **mandatory mode selection** to ensure users get exactly what they need: either comprehensive documentation for developer handoff or complete application development within the chat session.
 
 ### 🎯 Key Benefits
 
-- **🤖 Intelligent AI Agent Automation**: Automatically selects optimal AI agents and coordinates workflows based on project requirements
+- **🎯 Mandatory Mode Selection**: Forces explicit choice between Documentation Mode (handoff documents) and Full Development Mode (complete implementation)
+- **📋 Documentation Mode**: Generates exactly 3 complete, standalone documents (prd.md, architecture.md, checklist.md) ready for developer handoff
+- **🚀 Full Development Mode**: Complete application development with intelligent AI agent coordination and workflow optimization
+- **🤖 Intelligent AI Agent Automation**: Automatically selects optimal AI agents and coordinates workflows based on project requirements and selected mode
 - **⚡ 50% Productivity Increase**: Streamlines development processes through specialized AI agent expertise and parallel execution
 - **🛡️ Quality Assurance**: Integrated quality gates and validation throughout all AI agent workflows
 - **📈 Scalable Architecture**: Enterprise-ready system that scales from startup MVPs to complex enterprise projects
@@ -27,53 +30,150 @@ The **BMAD (Breakthrough Method of Agile AI Agent-Driven Development)** AI Agent
 
 ### 🎯 Use Cases
 
+**Documentation Mode (Perfect for Client/Team Handoffs):**
+- **Project Specification**: Generate comprehensive documentation for external development teams
+- **Client Deliverables**: Create professional handoff documents for VS Code developers
+- **Requirement Documentation**: Complete PRD, architecture, and implementation checklists
+- **Vendor Coordination**: Provide detailed specifications for outsourced development
+
+**Full Development Mode (Complete Implementation):**
 - **Feature Development**: End-to-end feature implementation with AI agent quality assurance
 - **System Architecture**: Enterprise-level architecture design and implementation via specialized AI agents
 - **Security Implementation**: Comprehensive security analysis and implementation through AI agent coordination
 - **Data Platform Development**: Advanced data engineering and AI system creation using specialized AI agents
 - **Legacy Modernization**: Complex system migration and modernization projects with AI agent expertise
 
-## AI Agent Orchestration System Enhancements
+## 🎯 Mandatory Mode Selection System
 
-The BMAD Method 3.1 features a comprehensive **AI Agent Orchestration System** that coordinates multiple specialized AI agents working collaboratively toward specific deliverable goals. The system has been enhanced to properly understand that it coordinates AI agents (not human workers) and delivers three comprehensive documentation files through coordinated AI agent collaboration.
+The BMAD Method 3.1 features a **mandatory mode selection system** that ensures users get exactly what they need. Before any AI agent operations begin, users must explicitly choose between two distinct workflows:
 
-### Key System Corrections (Latest Update)
+### 📋 Documentation Mode (Mode 1) - Default & Recommended
+**Perfect for:** Sending specifications to developers working in VS Code Insiders
 
-- **AI Agent Self-Perception**: System now correctly identifies as coordinating "AI agents" rather than "human workers"
-- **Comprehensive Task Breakdown**: Added new Task Breakdown Specialist AI Agent (Tyler) for creating detailed `tasks.md` deliverables
-- **Three-Deliverable Workflow**: Complete workflow for `prd.md`, `architecture.md`, and `tasks.md` creation
+**Generates exactly 3 complete, final documents:**
+- **`prd.md`** - Product Requirements Document (complete final product specifications)
+- **`architecture.md`** - Technical architecture document (system design & implementation approach)
+- **`checklist.md`** - Development checklist (acceptance criteria & implementation steps)
+
+**Key Features:**
+- ✅ Standalone documents requiring no additional clarification
+- ✅ Comprehensive enough for independent development
+- ✅ Professional quality ready for client/team handoff
+- ✅ No actual development or coding included
+
+### 🚀 Full Development Mode (Mode 2)
+**Perfect for:** Complete application development within the chat session
+
+**Features:**
+- 🤖 Complete AI agent orchestration and coordination
+- 🔄 Interactive development workflow with specialized AI agents
+- 🛠️ Full implementation, testing, and deployment
+- 📊 Real-time collaboration between 50+ specialized AI agents
+
+### Key System Enhancements (Latest Update)
+
+- **Mandatory Mode Selection**: Users must explicitly choose their workflow before proceeding
+- **Documentation Mode Workflow**: Complete system for generating handoff-ready documents
+- **AI Agent Self-Perception**: System correctly identifies as coordinating "AI agents" rather than "human workers"
+- **Comprehensive Task Breakdown**: Enhanced Task Breakdown Specialist AI Agent (Tyler) for detailed deliverables
+- **Mode-Based Routing**: Intelligent workflow routing based on user selection
 - **AI Agent Optimization**: Tasks sized and structured specifically for AI agent context windows and capabilities
 
-## Do This First, and all will make sense
+## 🚀 Quick Start - Try the Mode Selection System
 
-There are lots of docs here, but I HIGHLY suggest you just try the Web Agent - it takes just a few minutes to set up in Gemini - and you can use the BMad AI Agent Orchestrator to explain how this method works, how to set up in the IDE, how to set up in the Web, what should be done in the web or ide (although you can choose your own path also!) - all just by talking to the bmad AI agent orchestrator!
+The fastest way to understand the BMAD system is to experience the new mode selection workflow! Set up takes just a few minutes in Gemini or ChatGPT.
 
 ### Web Quickstart Project Setup (Recommended)
 
-AI Agent Orchestrator that coordinates multiple specialized AI agents - already pre-compiled in the `web-build-sample` folder.
+AI Agent Orchestrator with **mandatory mode selection** - already pre-compiled in the `web-build-sample` folder.
 
-- The contents of [Agent Prompt Sample](web-build-sample/agent-prompt.txt) text get pasted into the Gemini Gem, or ChatGPT customGPT 'Instructions' field.
-- The remaining files in that same folder just need to be attached as shown in the screenshot below. Give it a name (such as BMad AI Agent Orchestrator) and save it, and you now have the BMad AI Agent Orchestrator available to help you brainstorm, research, plan, execute on your vision, or understand how this all even works!
-- Once its running, start with typing `/help`, and then type option `2` when it presents 3 options to learn about the method!
+**Setup Steps:**
+1. **Copy** the contents of [Agent Prompt Sample](web-build-sample/agent-prompt.txt)
+2. **Paste** into Gemini Gem or ChatGPT Custom GPT 'Instructions' field
+3. **Attach** the remaining files from `web-build-sample/` folder as knowledge base
+4. **Save** with a name like "BMAD AI Agent Orchestrator"
+
+**First Experience:**
+- The system will **immediately present the mode selection menu**
+- Choose **Mode 1 (Documentation)** to generate handoff documents
+- Choose **Mode 2 (Development)** for full application development
+- Start with `/help` to explore all capabilities
 
 ![image info](docs/images/gem-setup.png)
 
+### Mode Selection Menu Preview
+
+When you first interact with the system, you'll see:
+
+```
+🎯 **BMAD AI Agent System - Mode Selection Required**
+
+Please choose your workflow mode:
+
+**1. Documentation Mode (Default & Recommended)**
+   📋 Generate exactly 3 complete, final documents ready for developer handoff:
+   • prd.md - Product Requirements Document
+   • architecture.md - Technical architecture document
+   • checklist.md - Development checklist
+
+**2. Full Development Mode**
+   🚀 Build the entire project within this chat session
+
+**Please type "1" for Documentation Mode or "2" for Full Development Mode to continue.**
+```
+
 ## 🏗️ System Architecture
 
-### Overall AI Agent Orchestration Architecture
+### Mode Selection System Architecture
 
 ```mermaid
 graph TB
-    subgraph "BMAD AI Agent Orchestration System"
-        O[Enhanced AI Agent Orchestrator<br/>🧠 Natural Language Processing<br/>🎯 AI Agent Selection Algorithm<br/>🔄 Workflow Coordination<br/>📊 Adaptive Learning]
+    subgraph "BMAD AI Agent Orchestration System with Mode Selection"
+        U[User Request] --> MS[Mandatory Mode Selection Menu]
 
-        subgraph "AI Agent Categories"
-            CD[Core Development AI Agents<br/>👨‍💻 12 AI Agents<br/>Frontend, Backend, Mobile<br/>API, Database, Blockchain]
-            IO[Infrastructure & Operations AI Agents<br/>⚙️ 10 AI Agents<br/>DevOps, SRE, Cloud<br/>Kubernetes, Monitoring]
-            SC[Security & Compliance AI Agents<br/>🔒 8 AI Agents<br/>Security, Cybersecurity<br/>Compliance, Privacy]
-            DA[Data & AI Agents<br/>🤖 8 AI Agents<br/>Data Engineering, ML<br/>AI, Analytics]
-            QT[Quality & Testing AI Agents<br/>✅ 6 AI Agents<br/>QA, Automation<br/>Performance, Accessibility]
-            ST[Specialized Technical AI Agents<br/>🎯 6 AI Agents<br/>Architecture, Integration<br/>Migration, Research]
+        MS --> DM[Documentation Mode Selected]
+        MS --> FM[Full Development Mode Selected]
+
+        subgraph "Documentation Mode Workflow"
+            DM --> DW[Documentation Workflow Engine]
+            DW --> PM[Product Manager AI - John]
+            DW --> AR[Architect AI - Fred]
+            DW --> TB[Task Breakdown AI - Tyler]
+
+            PM --> PRD[prd.md<br/>Complete Product Requirements]
+            AR --> ARCH[architecture.md<br/>Technical Architecture]
+            TB --> TASKS[checklist.md<br/>Development Checklist]
+
+            PRD --> DD[Documentation Deliverables]
+            ARCH --> DD
+            TASKS --> DD
+        end
+
+        subgraph "Full Development Mode Workflow"
+            FM --> O[Enhanced AI Agent Orchestrator<br/>🧠 Natural Language Processing<br/>🎯 AI Agent Selection Algorithm<br/>🔄 Workflow Coordination<br/>📊 Adaptive Learning]
+
+            subgraph "AI Agent Categories"
+                CD[Core Development AI Agents<br/>👨‍💻 12 AI Agents<br/>Frontend, Backend, Mobile<br/>API, Database, Blockchain]
+                IO[Infrastructure & Operations AI Agents<br/>⚙️ 10 AI Agents<br/>DevOps, SRE, Cloud<br/>Kubernetes, Monitoring]
+                SC[Security & Compliance AI Agents<br/>🔒 8 AI Agents<br/>Security, Cybersecurity<br/>Compliance, Privacy]
+                DA[Data & AI Agents<br/>🤖 8 AI Agents<br/>Data Engineering, ML<br/>AI, Analytics]
+                QT[Quality & Testing AI Agents<br/>✅ 6 AI Agents<br/>QA, Automation<br/>Performance, Accessibility]
+                ST[Specialized Technical AI Agents<br/>🎯 6 AI Agents<br/>Architecture, Integration<br/>Migration, Research]
+            end
+
+            O --> CD
+            O --> IO
+            O --> SC
+            O --> DA
+            O --> QT
+            O --> ST
+
+            CD --> FD[Full Development Deliverables]
+            IO --> FD
+            SC --> FD
+            DA --> FD
+            QT --> FD
+            ST --> FD
         end
 
         subgraph "Supporting Systems"
@@ -81,26 +181,20 @@ graph TB
             QF[Quality Framework<br/>🎯 Quality Gates<br/>✅ Validation Rules<br/>📊 Metrics & KPIs]
             WE[Workflow Engine<br/>🔄 Task Orchestration<br/>⚡ Parallel Execution<br/>🔗 Dependency Management]
         end
+
+        DW --> KB
+        O --> KB
+        DW --> QF
+        O --> QF
+        DW --> WE
+        O --> WE
     end
 
-    U[User Request] --> O
-    O --> CD
-    O --> IO
-    O --> SC
-    O --> DA
-    O --> QT
-    O --> ST
-
-    CD --> KB
-    IO --> KB
-    SC --> KB
-    DA --> KB
-    QT --> KB
-    ST --> KB
-
-    O --> QF
-    O --> WE
-
+    style MS fill:#ff9800
+    style DM fill:#4caf50
+    style FM fill:#2196f3
+    style DD fill:#8bc34a
+    style FD fill:#03a9f4
     style O fill:#e1f5fe
     style CD fill:#f3e5f5
     style IO fill:#e8f5e8
@@ -110,115 +204,220 @@ graph TB
     style ST fill:#fce4ec
 ```
 
-### AI Agent Workflow Process Flow
+### Mode Selection Workflow Process
 
 ```mermaid
 sequenceDiagram
     participant U as User
+    participant MS as Mode Selection System
+    participant DW as Documentation Workflow
+    participant PM as Product Manager AI
+    participant AR as Architect AI
+    participant TB as Task Breakdown AI
     participant O as AI Agent Orchestrator
-    participant A1 as AI Agent 1
-    participant A2 as AI Agent 2
-    participant A3 as AI Agent 3
+    participant AG as AI Agent Team
     participant QG as Quality Gates
 
-    U->>O: Submit Request
-    Note over O: 🧠 Analyze Request<br/>📊 Extract Requirements<br/>🎯 Assess Complexity
+    U->>MS: Initial Request
+    MS->>MS: Present Mode Selection Menu
+    Note over MS: 🎯 Mandatory Choice Required<br/>📋 Mode 1: Documentation<br/>🚀 Mode 2: Full Development
 
-    O->>O: AI Agent Selection
-    Note over O: 🔍 Capability Matching<br/>⚖️ Workload Balancing<br/>🤝 Collaboration History
+    alt Documentation Mode Selected
+        U->>MS: Select Mode 1 (Documentation)
+        MS->>DW: Activate Documentation Workflow
 
-    O->>A1: Assign Primary Task
-    O->>A2: Assign Secondary Task
-    O->>A3: Assign Supporting Task
+        DW->>PM: Generate PRD
+        PM->>PM: Create prd.md
+        PM->>DW: Complete Product Requirements
 
-    par Parallel Execution
-        A1->>A1: Execute Task 1
-        A2->>A2: Execute Task 2
-        A3->>A3: Execute Task 3
+        DW->>AR: Generate Architecture
+        AR->>AR: Create architecture.md
+        AR->>DW: Complete Technical Architecture
+
+        DW->>TB: Generate Checklist
+        TB->>TB: Create checklist.md
+        TB->>DW: Complete Development Checklist
+
+        DW->>QG: Validate Documentation
+        QG->>QG: Quality Check
+        Note over QG: ✅ Completeness Check<br/>📋 Consistency Validation<br/>🎯 Handoff Readiness
+
+        QG->>U: Deliver 3 Complete Documents
+        Note over U: 📄 prd.md<br/>🏗️ architecture.md<br/>✅ checklist.md
+
+    else Full Development Mode Selected
+        U->>MS: Select Mode 2 (Full Development)
+        MS->>O: Activate AI Agent Orchestrator
+
+        O->>O: AI Agent Selection & Coordination
+        Note over O: 🧠 Analyze Request<br/>🎯 Select Optimal AI Agents<br/>🔄 Coordinate Workflows
+
+        O->>AG: Deploy AI Agent Team
+        AG->>AG: Parallel Development Execution
+
+        AG->>QG: Submit Development Deliverables
+        QG->>QG: Comprehensive Quality Validation
+        Note over QG: ✅ Code Review<br/>🔒 Security Check<br/>⚡ Performance Test
+
+        QG->>U: Deliver Complete Application
+        Note over U: 🚀 Full Implementation<br/>🧪 Tested & Validated<br/>📦 Ready for Deployment
     end
 
-    A1->>QG: Submit Deliverable
-    A2->>QG: Submit Deliverable
-    A3->>QG: Submit Deliverable
-
-    QG->>QG: Quality Validation
-    Note over QG: ✅ Code Review<br/>🔒 Security Check<br/>⚡ Performance Test
-
-    alt Quality Gates Pass
-        QG->>O: Validation Success
-        O->>U: Deliver Results
-    else Quality Issues Found
-        QG->>O: Issues Identified
-        O->>A1: Refinement Required
-        A1->>QG: Resubmit
-    end
-
-    O->>O: Learn from Outcome
-    Note over O: 📈 Update Patterns<br/>🎯 Improve Selection<br/>🔄 Optimize Workflows
+    Note over MS,U: 🎯 Mode Selection Ensures<br/>Appropriate Output for User Needs
 ```
 
-## AI Agent Coordination Workflow
+## Mode-Based AI Agent Coordination
 
-The BMAD Method 3.1 orchestrates multiple AI agents in a coordinated workflow to deliver comprehensive project documentation:
+The BMAD Method 3.1 features two distinct AI agent coordination workflows based on mandatory mode selection:
+
+### Documentation Mode Workflow
 
 ```mermaid
 graph TD
-    A[User Request] --> B[BMad AI Agent Orchestrator]
-    B --> C{Select AI Agent}
-    C --> D[Product Manager AI Agent - John]
-    C --> E[Architect AI Agent - Fred]
-    C --> F[Task Breakdown Specialist AI Agent - Tyler]
-    C --> G[Design Architect AI Agent - Jane]
-    C --> H[Other Specialist AI Agents]
+    A[User Request] --> MS[Mandatory Mode Selection]
+    MS --> DM[Documentation Mode Selected]
 
-    D --> I[Creates prd.md]
-    E --> J[Creates architecture.md]
-    F --> K[Creates tasks.md]
-    G --> L[Creates frontend specs]
+    DM --> B[BMad AI Agent Orchestrator]
+    B --> DW[Documentation Workflow Engine]
 
-    I --> M[Quality Validation]
-    J --> M
-    K --> M
-    L --> M
+    DW --> PM[Product Manager AI - John<br/>📋 PRD Specialist]
+    DW --> AR[Architect AI - Fred<br/>🏗️ Technical Design]
+    DW --> TB[Task Breakdown AI - Tyler<br/>✅ Implementation Planning]
 
-    M --> N[Coordinated Deliverables]
+    PM --> PRD[prd.md<br/>Complete Product Requirements<br/>• User Stories & Acceptance Criteria<br/>• Technical Constraints<br/>• Success Metrics]
 
+    AR --> ARCH[architecture.md<br/>Technical Architecture<br/>• System Design & Components<br/>• Technology Stack<br/>• Security & Deployment]
+
+    TB --> CHECK[checklist.md<br/>Development Checklist<br/>• Phase-based Implementation<br/>• Quality Gates<br/>• Testing & Deployment]
+
+    PRD --> QV[Quality Validation<br/>📊 Completeness Check<br/>🔗 Cross-Reference Validation<br/>🎯 Handoff Readiness]
+    ARCH --> QV
+    CHECK --> QV
+
+    QV --> DD[Documentation Deliverables<br/>Ready for Developer Handoff]
+
+    style MS fill:#ff9800
+    style DM fill:#4caf50
+    style B fill:#e1f5fe
+    style PM fill:#f3e5f5
+    style AR fill:#e8f5e8
+    style TB fill:#fff3e0
+    style DD fill:#8bc34a
+```
+
+### Full Development Mode Workflow
+
+```mermaid
+graph TD
+    A[User Request] --> MS[Mandatory Mode Selection]
+    MS --> FM[Full Development Mode Selected]
+
+    FM --> B[BMad AI Agent Orchestrator]
+    B --> C{Select AI Agent Team}
+
+    C --> D[Product Manager AI - John]
+    C --> E[Architect AI - Fred]
+    C --> F[Task Breakdown AI - Tyler]
+    C --> G[Design Architect AI - Jane]
+    C --> H[Development AI Agents]
+    C --> I[QA & Security AI Agents]
+
+    D --> J[Creates prd.md]
+    E --> K[Creates architecture.md]
+    F --> L[Creates tasks.md]
+    G --> M[Creates frontend specs]
+    H --> N[Implements Features]
+    I --> O[Tests & Validates]
+
+    J --> P[Quality Validation & Integration]
+    K --> P
+    L --> P
+    M --> P
+    N --> P
+    O --> P
+
+    P --> Q[Complete Application<br/>🚀 Fully Implemented<br/>🧪 Tested & Validated<br/>📦 Ready for Deployment]
+
+    style MS fill:#ff9800
+    style FM fill:#2196f3
     style B fill:#e1f5fe
     style D fill:#f3e5f5
     style E fill:#e8f5e8
     style F fill:#fff3e0
     style G fill:#fce4ec
+    style Q fill:#03a9f4
 ```
 
-## Three-Deliverable Creation Process
+## Documentation Mode: Three-Document Creation Process
 
-The system follows a sequential AI agent handoff process to create three comprehensive documentation files:
+When Documentation Mode is selected, the system follows a sequential AI agent handoff process to create three comprehensive, standalone documents ready for developer handoff:
 
 ```mermaid
 sequenceDiagram
     participant User
+    participant MS as Mode Selection System
     participant Orchestrator as BMad AI Agent Orchestrator
-    participant PM as Product Manager AI Agent (John)
-    participant Arch as Architect AI Agent (Fred)
-    participant Task as Task Breakdown Specialist AI Agent (Tyler)
+    participant PM as Product Manager AI (John)
+    participant Arch as Architect AI (Fred)
+    participant Task as Task Breakdown AI (Tyler)
+    participant QV as Quality Validation
 
-    User->>Orchestrator: Request project documentation
+    User->>MS: Request project documentation
+    MS->>MS: Present Mode Selection Menu
+    User->>MS: Select Mode 1 (Documentation)
+
+    MS->>Orchestrator: Activate Documentation Workflow
+
     Orchestrator->>PM: Activate for PRD creation
+    Note over PM: 📋 Gather requirements<br/>👥 Define user personas<br/>🎯 Set success criteria
     PM->>PM: Create comprehensive prd.md
     PM->>Orchestrator: PRD complete with handoff context
 
     Orchestrator->>Arch: Activate for architecture design
-    Arch->>Arch: Analyze PRD and create architecture.md
+    Note over Arch: 🏗️ Analyze PRD requirements<br/>⚙️ Design system architecture<br/>🔧 Select technology stack
+    Arch->>Arch: Create detailed architecture.md
     Arch->>Orchestrator: Architecture complete with handoff context
 
-    Orchestrator->>Task: Activate for task breakdown
-    Task->>Task: Analyze PRD & architecture, create tasks.md
-    Task->>Orchestrator: Task breakdown complete
+    Orchestrator->>Task: Activate for checklist creation
+    Note over Task: ✅ Analyze PRD & architecture<br/>📋 Create implementation phases<br/>🎯 Define acceptance criteria
+    Task->>Task: Create comprehensive checklist.md
+    Task->>Orchestrator: Development checklist complete
 
-    Orchestrator->>User: Three comprehensive deliverables ready
+    Orchestrator->>QV: Validate all documents
+    Note over QV: 🔍 Cross-reference validation<br/>📊 Completeness check<br/>🎯 Handoff readiness
+    QV->>QV: Quality assurance review
 
-    Note over PM,Task: Each AI agent validates inputs and optimizes for AI agent execution
+    QV->>User: Three comprehensive deliverables ready
+    Note over User: 📄 prd.md - Complete specifications<br/>🏗️ architecture.md - Technical design<br/>✅ checklist.md - Implementation guide
+
+    Note over PM,Task: Each document is standalone and<br/>comprehensive for independent development
 ```
+
+### Documentation Mode Output Examples
+
+**📄 prd.md - Product Requirements Document**
+- Executive summary and project vision
+- Detailed user personas and use cases
+- Complete functional requirements with user stories
+- Non-functional requirements (performance, security, scalability)
+- Technical constraints and success criteria
+- Timeline and acceptance criteria
+
+**🏗️ architecture.md - Technical Architecture Document**
+- System overview and design patterns
+- Complete technology stack with specific versions
+- Component architecture and data models
+- API design and security architecture
+- Infrastructure and deployment strategy
+- Development guidelines and coding standards
+
+**✅ checklist.md - Development Checklist**
+- Pre-development setup and environment configuration
+- Phase-based implementation guide (6 phases from setup to post-launch)
+- Specific, actionable tasks for each development stage
+- Quality gates and testing requirements
+- Deployment preparation and launch procedures
+- Post-launch monitoring and maintenance guidelines
 
 ### Multi-Agent Collaboration Patterns
 
@@ -323,7 +522,7 @@ The system includes the following specialized AI agents:
 | **Analyst** | Mary | Research, brainstorming, requirements gathering | Project briefs |
 | **Product Owner** | Sarah | Validation, quality assurance, change management | Quality validation |
 
-## 🚀 Getting Started with AI Agent Orchestration
+## 🚀 Getting Started with Mode Selection System
 
 ### Quick Setup (Recommended)
 
@@ -336,30 +535,51 @@ The BMAD AI Agent Orchestration System is designed to work with AI assistants li
 3. **Paste into your AI assistant** (ChatGPT Custom GPT or Google Gemini Gem instructions field)
 4. **Attach the remaining files** from the `web-build-sample/` folder as knowledge base files
 5. **Save your AI agent** with a name like "BMAD AI Agent Orchestrator"
-6. **Start with** `/help` command to explore capabilities
+6. **Experience the mode selection** - the system will immediately present the mode selection menu
 
-#### Three-Deliverable Workflow Usage
+#### Mode Selection Experience
 
-Once your AI agent orchestrator is set up, you can request comprehensive project documentation:
+Once your AI agent orchestrator is set up, every interaction begins with mode selection:
 
+**For Documentation Handoff (Recommended for most users):**
 ```
 Request: "I need complete project documentation for a new e-commerce platform"
 
+System Response: [Mode Selection Menu]
+Your Choice: "1" (Documentation Mode)
+
 AI Agent Orchestrator will:
-1. Activate Product Manager AI Agent (John) → Creates prd.md
-2. Activate Architect AI Agent (Fred) → Creates architecture.md
-3. Activate Task Breakdown Specialist AI Agent (Tyler) → Creates tasks.md
+1. Activate Product Manager AI (John) → Creates prd.md
+2. Activate Architect AI (Fred) → Creates architecture.md
+3. Activate Task Breakdown AI (Tyler) → Creates checklist.md
+
+Result: 3 complete, standalone documents ready for developer handoff
 ```
 
-#### Individual AI Agent Activation
+**For Full Development (Complete implementation):**
+```
+Request: "I want to build a complete e-commerce platform"
 
-You can also work with specific AI agents directly:
+System Response: [Mode Selection Menu]
+Your Choice: "2" (Full Development Mode)
+
+AI Agent Orchestrator will:
+1. Coordinate 50+ specialized AI agents
+2. Implement complete application with testing
+3. Provide fully functional, deployment-ready solution
+
+Result: Complete application with full implementation
+```
+
+#### Mode Selection Commands
+
+After setup, you can also use direct commands:
 
 ```
-/pm - Activate Product Manager AI Agent for PRD creation
-/architect - Activate Architect AI Agent for technical design
-/task-breakdown - Activate Task Breakdown Specialist for comprehensive task analysis
-/design-architect - Activate Design Architect for frontend specifications
+/help - View all available commands and mode options
+/agent-list - See all 50+ available AI agents (Full Development Mode)
+1 or "Documentation Mode" - Generate handoff documents
+2 or "Full Development Mode" - Build complete application
 ```
 
 ### AI Agent Coordination Configuration
@@ -533,18 +753,25 @@ We welcome contributions to the BMAD AI Agent Orchestration System! Here's how y
 - **Comprehensive Deliverable Quality** - Complete, actionable documentation from AI agent collaboration
 - **User Satisfaction with AI Agent Coordination** - Effective orchestration and clear AI agent specialization
 
-## 🚀 Quick Start with AI Agent Orchestrator
+## 🚀 Quick Start with Mode Selection System
 
-For immediate hands-on experience with AI agent coordination:
+For immediate hands-on experience with the new mode selection system:
 
 1. **Navigate to** `web-build-sample/` directory
 2. **Copy contents** of `agent-prompt.txt` into your AI assistant (Gemini or ChatGPT) custom instructions
 3. **Attach remaining files** (`agent-config.txt`, `personas.txt`, `tasks.txt`, `templates.txt`, `checklists.txt`) as knowledge base
-4. **Start with** `/help` command to explore AI agent capabilities
-5. **Try** `/agent-list` to see all available AI agents
-6. **Request** comprehensive project documentation to see the three-deliverable workflow in action
+4. **Experience mode selection** - the system will immediately present the mandatory mode selection menu
+5. **Try Documentation Mode (1)** to generate 3 complete handoff documents (prd.md, architecture.md, checklist.md)
+6. **Try Full Development Mode (2)** to access 50+ specialized AI agents for complete application development
+7. **Use** `/help` command to explore all capabilities after mode selection
 
-This provides instant access to BMAD AI agent orchestration capabilities with 50+ specialized AI agents ready for coordination.
+**Key Benefits:**
+- **No more automatic development** - you choose what you need
+- **Perfect for AI platforms** like Gemini Gems where you want documentation, not code
+- **Professional handoff documents** ready for VS Code developers
+- **Complete development option** still available when needed
+
+This provides instant access to both documentation generation and full AI agent orchestration capabilities with explicit user control over the workflow.
 
 ---
 

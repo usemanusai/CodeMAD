@@ -1,3 +1,768 @@
+==================== START: prd-documentation-tmpl ====================
+# {Project Name} - Product Requirements Document
+
+## Document Information
+- **Version**: 1.0
+- **Date**: {Current Date}
+- **Status**: Final
+- **Prepared for**: Development Team Handoff
+
+## Executive Summary
+
+### Project Overview
+{Provide a clear, concise overview of the project, its purpose, and primary objectives. This should be understandable by both technical and non-technical stakeholders.}
+
+### Key Success Metrics
+{Define measurable success criteria for the project, including user adoption goals, performance targets, and business objectives.}
+
+## Product Vision
+
+### Vision Statement
+{A clear, inspiring statement of what the product aims to achieve in the long term.}
+
+### Problem Statement
+{Describe the specific problem this product solves, who experiences this problem, and why it's important to solve.}
+
+### Solution Overview
+{High-level description of how the product solves the identified problem.}
+
+## Target Users
+
+### Primary User Personas
+{For each primary user type, include:}
+
+#### {User Persona Name}
+- **Demographics**: {Age, role, technical proficiency, etc.}
+- **Goals**: {What they want to accomplish}
+- **Pain Points**: {Current challenges they face}
+- **Use Cases**: {How they will use the product}
+- **Success Criteria**: {How they measure success}
+
+### Secondary Users
+{Brief description of any secondary users or stakeholders}
+
+## Functional Requirements
+
+### Core Features
+
+#### Feature 1: {Feature Name}
+- **Description**: {Detailed description of the feature}
+- **User Story**: As a {user type}, I want {goal} so that {benefit}
+- **Acceptance Criteria**:
+  - {Specific, testable criterion 1}
+  - {Specific, testable criterion 2}
+  - {Specific, testable criterion 3}
+- **Priority**: {High/Medium/Low}
+- **Dependencies**: {Any dependencies on other features or external systems}
+
+#### Feature 2: {Feature Name}
+{Repeat structure for each core feature}
+
+### Secondary Features
+{List and briefly describe features that are important but not core to MVP}
+
+### Future Enhancements
+{Features planned for future releases}
+
+## Non-Functional Requirements
+
+### Performance Requirements
+- **Response Time**: {Specific timing requirements}
+- **Throughput**: {Expected load and capacity requirements}
+- **Scalability**: {Growth expectations and scaling requirements}
+
+### Security Requirements
+- **Authentication**: {User authentication requirements}
+- **Authorization**: {Access control requirements}
+- **Data Protection**: {Data encryption and privacy requirements}
+- **Compliance**: {Any regulatory compliance requirements}
+
+### Usability Requirements
+- **Accessibility**: {WCAG compliance level and specific requirements}
+- **Browser Support**: {Supported browsers and versions}
+- **Mobile Responsiveness**: {Mobile device support requirements}
+- **User Experience**: {Specific UX requirements and standards}
+
+### Reliability Requirements
+- **Uptime**: {Availability requirements}
+- **Error Handling**: {Error recovery and user feedback requirements}
+- **Data Backup**: {Backup and recovery requirements}
+
+## Technical Constraints
+
+### Platform Requirements
+- **Operating Systems**: {Supported OS versions}
+- **Browsers**: {Minimum browser versions}
+- **Devices**: {Supported device types and screen sizes}
+
+### Integration Requirements
+- **External APIs**: {Required third-party integrations}
+- **Data Sources**: {External data sources and formats}
+- **Authentication Systems**: {SSO or other auth system integrations}
+
+### Technology Preferences
+- **Programming Languages**: {Preferred languages and versions}
+- **Frameworks**: {Preferred frameworks and libraries}
+- **Database**: {Database preferences and requirements}
+- **Hosting**: {Hosting and deployment preferences}
+
+## User Experience Requirements
+
+### User Interface Guidelines
+- **Design System**: {Design system or style guide to follow}
+- **Branding**: {Brand guidelines and visual identity requirements}
+- **Navigation**: {Navigation structure and user flow requirements}
+
+### User Journey
+{Describe the primary user journey from first interaction to goal completion}
+
+### Wireframes and Mockups
+{Reference to design files or describe key screen layouts}
+
+## Data Requirements
+
+### Data Models
+{Describe the main data entities and their relationships}
+
+### Data Sources
+{Identify where data comes from and how it's collected}
+
+### Data Privacy
+{Data privacy requirements and user consent needs}
+
+## Success Criteria and Metrics
+
+### Launch Criteria
+{Specific criteria that must be met before launch}
+
+### Success Metrics
+{Measurable goals for post-launch success}
+
+### Testing Requirements
+{Types of testing required and acceptance criteria}
+
+## Timeline and Milestones
+
+### Development Phases
+{Break down development into logical phases with timelines}
+
+### Key Milestones
+{Important checkpoints and deliverables}
+
+### Dependencies and Risks
+{External dependencies and potential risks to timeline}
+
+## Assumptions and Constraints
+
+### Assumptions
+{Key assumptions made during requirements gathering}
+
+### Constraints
+{Budget, time, resource, or technical constraints}
+
+### Out of Scope
+{Explicitly state what is not included in this project}
+
+## Approval and Sign-off
+
+### Stakeholder Approval
+{Space for stakeholder sign-off}
+
+### Change Management
+{Process for handling requirement changes}
+
+==================== END: prd-documentation-tmpl ====================
+
+
+==================== START: architecture-documentation-tmpl ====================
+# {Project Name} - Technical Architecture Document
+
+## Document Information
+- **Version**: 1.0
+- **Date**: {Current Date}
+- **Status**: Final
+- **Prepared for**: Development Team Handoff
+
+## Executive Summary
+
+### Architecture Overview
+{Provide a high-level summary of the system architecture, key design decisions, and technology choices. This should give readers a quick understanding of the overall system design.}
+
+### Key Design Principles
+{List the fundamental principles that guided the architectural decisions}
+
+## System Overview
+
+### High-Level Architecture
+{Describe the overall system architecture pattern (e.g., microservices, monolith, serverless)}
+
+```mermaid
+graph TB
+    A[User Interface] --> B[Application Layer]
+    B --> C[Business Logic Layer]
+    C --> D[Data Access Layer]
+    D --> E[Database]
+```
+
+### System Context
+{Describe how this system fits into the broader ecosystem and its external dependencies}
+
+## Technology Stack
+
+### Core Technologies
+| Component | Technology | Version | Justification |
+|-----------|------------|---------|---------------|
+| Frontend Framework | {e.g., React} | {e.g., 18.x} | {Why this choice} |
+| Backend Framework | {e.g., Node.js/Express} | {e.g., 20.x/4.x} | {Why this choice} |
+| Database | {e.g., PostgreSQL} | {e.g., 15.x} | {Why this choice} |
+| Authentication | {e.g., Auth0} | {e.g., Latest} | {Why this choice} |
+
+### Development Tools
+- **IDE**: {Recommended development environment}
+- **Version Control**: {Git workflow and branching strategy}
+- **Package Management**: {npm, yarn, etc.}
+- **Build Tools**: {Webpack, Vite, etc.}
+- **Testing Frameworks**: {Jest, Cypress, etc.}
+
+## Component Architecture
+
+### System Components
+{Describe the major components of the system and their responsibilities}
+
+#### Frontend Components
+- **User Interface Layer**: {Description and responsibilities}
+- **State Management**: {How application state is managed}
+- **API Integration**: {How frontend communicates with backend}
+
+#### Backend Components
+- **API Layer**: {REST/GraphQL endpoints and routing}
+- **Business Logic**: {Core application logic and rules}
+- **Data Access**: {Database interaction and ORM}
+- **Authentication/Authorization**: {Security implementation}
+
+#### External Integrations
+- **Third-party APIs**: {External service integrations}
+- **Payment Processing**: {If applicable}
+- **Email/Notifications**: {Communication systems}
+
+### Component Interactions
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant F as Frontend
+    participant A as API
+    participant D as Database
+
+    U->>F: User Action
+    F->>A: API Request
+    A->>D: Query Data
+    D->>A: Return Data
+    A->>F: API Response
+    F->>U: Update UI
+```
+
+## Data Architecture
+
+### Database Design
+{Describe the database structure and key entities}
+
+#### Core Entities
+```sql
+-- Example table structure
+CREATE TABLE users (
+    id UUID PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+```
+
+#### Data Relationships
+{Describe how different data entities relate to each other}
+
+### Data Flow
+{Describe how data moves through the system}
+
+### Data Storage Strategy
+- **Primary Database**: {Main data storage solution}
+- **Caching**: {Caching strategy and tools}
+- **File Storage**: {How files and media are stored}
+- **Backup Strategy**: {Data backup and recovery plan}
+
+## API Design
+
+### API Architecture
+{REST, GraphQL, or other API patterns used}
+
+### Authentication
+{How API authentication and authorization work}
+
+### Core Endpoints
+{Document the main API endpoints}
+
+#### User Management
+- `POST /api/auth/login` - User authentication
+- `GET /api/users/profile` - Get user profile
+- `PUT /api/users/profile` - Update user profile
+
+#### {Feature Category}
+{Document endpoints for each major feature}
+
+### Error Handling
+{How API errors are structured and handled}
+
+### Rate Limiting
+{API rate limiting strategy}
+
+## Security Architecture
+
+### Authentication Strategy
+{How users are authenticated (JWT, OAuth, etc.)}
+
+### Authorization Model
+{How permissions and access control work}
+
+### Data Security
+- **Encryption**: {Data encryption at rest and in transit}
+- **Input Validation**: {How user input is validated and sanitized}
+- **SQL Injection Prevention**: {Database security measures}
+- **XSS Prevention**: {Cross-site scripting prevention}
+
+### Security Headers
+{Required security headers and configurations}
+
+### Compliance Requirements
+{Any regulatory compliance requirements (GDPR, HIPAA, etc.)}
+
+## Infrastructure and Deployment
+
+### Hosting Strategy
+{Where and how the application will be hosted}
+
+### Environment Configuration
+- **Development**: {Local development setup}
+- **Staging**: {Testing environment configuration}
+- **Production**: {Production environment setup}
+
+### CI/CD Pipeline
+{Continuous integration and deployment strategy}
+
+### Monitoring and Logging
+- **Application Monitoring**: {How application performance is monitored}
+- **Error Tracking**: {Error logging and alerting}
+- **Analytics**: {User analytics and tracking}
+
+### Backup and Recovery
+{Data backup and disaster recovery procedures}
+
+## Performance Considerations
+
+### Performance Requirements
+{Specific performance targets and requirements}
+
+### Optimization Strategies
+- **Frontend Optimization**: {Code splitting, lazy loading, etc.}
+- **Backend Optimization**: {Caching, database optimization}
+- **CDN Strategy**: {Content delivery network usage}
+
+### Scalability Plan
+{How the system will scale with increased load}
+
+## Development Guidelines
+
+### Coding Standards
+{Specific coding standards and conventions}
+
+### Code Organization
+{How code should be structured and organized}
+
+### Testing Strategy
+- **Unit Testing**: {Unit test requirements and coverage}
+- **Integration Testing**: {Integration test strategy}
+- **End-to-End Testing**: {E2E test approach}
+
+### Documentation Requirements
+{Code documentation and API documentation standards}
+
+## Deployment Instructions
+
+### Environment Setup
+{Step-by-step environment setup instructions}
+
+### Build Process
+{How to build the application for deployment}
+
+### Deployment Steps
+{Detailed deployment procedures}
+
+### Configuration Management
+{How environment-specific configurations are managed}
+
+## Maintenance and Support
+
+### Monitoring Requirements
+{What needs to be monitored in production}
+
+### Maintenance Procedures
+{Regular maintenance tasks and schedules}
+
+### Support Procedures
+{How to handle support requests and issues}
+
+### Update Strategy
+{How updates and patches will be deployed}
+
+## Risk Assessment
+
+### Technical Risks
+{Potential technical risks and mitigation strategies}
+
+### Security Risks
+{Security vulnerabilities and prevention measures}
+
+### Performance Risks
+{Performance bottlenecks and solutions}
+
+## Future Considerations
+
+### Scalability Roadmap
+{Plans for future scaling and growth}
+
+### Technology Evolution
+{How the architecture can evolve with new technologies}
+
+### Feature Expansion
+{How the architecture supports future feature additions}
+
+==================== END: architecture-documentation-tmpl ====================
+
+
+==================== START: checklist-documentation-tmpl ====================
+# {Project Name} - Development Checklist
+
+## Document Information
+- **Version**: 1.0
+- **Date**: {Current Date}
+- **Status**: Final
+- **Prepared for**: Development Team Handoff
+
+## Overview
+
+This checklist provides a comprehensive guide for developing {Project Name} from initial setup through deployment and maintenance. Each section contains specific, actionable tasks that should be completed in order.
+
+## Pre-Development Setup
+
+### Environment Setup
+- [ ] Install required development tools and IDEs
+- [ ] Set up version control repository
+- [ ] Configure development environment variables
+- [ ] Install and configure required databases
+- [ ] Set up package managers and dependency management
+- [ ] Configure code linting and formatting tools
+- [ ] Set up testing frameworks
+- [ ] Configure build tools and bundlers
+
+### Project Initialization
+- [ ] Create project structure according to architecture document
+- [ ] Initialize frontend application with chosen framework
+- [ ] Initialize backend application with chosen framework
+- [ ] Set up database schema and initial migrations
+- [ ] Configure authentication and authorization systems
+- [ ] Set up API routing and middleware
+- [ ] Create initial configuration files
+- [ ] Set up development scripts and commands
+
+### Documentation Setup
+- [ ] Create README with setup instructions
+- [ ] Document API endpoints and schemas
+- [ ] Create developer onboarding guide
+- [ ] Set up code documentation generation
+- [ ] Create deployment documentation
+- [ ] Document environment configuration
+
+## Phase 1: Core Infrastructure
+
+### Backend Foundation
+- [ ] Implement database models and relationships
+- [ ] Set up database connection and ORM configuration
+- [ ] Create authentication middleware
+- [ ] Implement user registration and login endpoints
+- [ ] Set up password hashing and security measures
+- [ ] Create error handling middleware
+- [ ] Implement logging and monitoring
+- [ ] Set up input validation and sanitization
+- [ ] Create API response standardization
+- [ ] Implement rate limiting and security headers
+
+### Frontend Foundation
+- [ ] Set up routing and navigation structure
+- [ ] Create layout components and page templates
+- [ ] Implement authentication state management
+- [ ] Set up API client and request handling
+- [ ] Create error handling and loading states
+- [ ] Implement responsive design framework
+- [ ] Set up state management (Redux, Context, etc.)
+- [ ] Create reusable UI components
+- [ ] Implement form handling and validation
+- [ ] Set up styling system and theme
+
+### Testing Infrastructure
+- [ ] Set up unit testing framework
+- [ ] Create integration testing setup
+- [ ] Set up end-to-end testing framework
+- [ ] Create test database and data fixtures
+- [ ] Implement test coverage reporting
+- [ ] Set up continuous integration pipeline
+- [ ] Create automated testing workflows
+- [ ] Set up code quality checks
+
+## Phase 2: Core Features Implementation
+
+{For each major feature from the PRD, create a section like this:}
+
+### Feature: {Feature Name}
+- [ ] Design and implement database schema for feature
+- [ ] Create backend API endpoints
+  - [ ] GET endpoints for data retrieval
+  - [ ] POST endpoints for data creation
+  - [ ] PUT/PATCH endpoints for data updates
+  - [ ] DELETE endpoints for data removal
+- [ ] Implement business logic and validation rules
+- [ ] Create frontend components and pages
+- [ ] Implement user interface and interactions
+- [ ] Add form handling and validation
+- [ ] Implement error handling and user feedback
+- [ ] Create unit tests for backend logic
+- [ ] Create unit tests for frontend components
+- [ ] Create integration tests for API endpoints
+- [ ] Test user workflows and edge cases
+- [ ] Update documentation and API specs
+
+### Feature: {Next Feature Name}
+{Repeat structure for each feature}
+
+## Phase 3: Advanced Features
+
+### Security Implementation
+- [ ] Implement role-based access control
+- [ ] Add input sanitization and XSS prevention
+- [ ] Implement CSRF protection
+- [ ] Set up SQL injection prevention
+- [ ] Add security headers and HTTPS configuration
+- [ ] Implement session management
+- [ ] Add audit logging for sensitive operations
+- [ ] Conduct security testing and vulnerability assessment
+- [ ] Implement data encryption for sensitive information
+- [ ] Set up secure password policies
+
+### Performance Optimization
+- [ ] Implement database query optimization
+- [ ] Add caching layers (Redis, in-memory, etc.)
+- [ ] Optimize frontend bundle size and loading
+- [ ] Implement lazy loading and code splitting
+- [ ] Add image optimization and CDN integration
+- [ ] Optimize API response times
+- [ ] Implement database indexing strategy
+- [ ] Add performance monitoring and metrics
+- [ ] Conduct load testing and optimization
+- [ ] Implement graceful error handling and fallbacks
+
+### User Experience Enhancements
+- [ ] Implement responsive design for all screen sizes
+- [ ] Add accessibility features (ARIA labels, keyboard navigation)
+- [ ] Implement progressive web app features
+- [ ] Add offline functionality where appropriate
+- [ ] Implement real-time features (WebSockets, SSE)
+- [ ] Add user onboarding and help features
+- [ ] Implement search and filtering functionality
+- [ ] Add data export and import capabilities
+- [ ] Create user preference and settings management
+- [ ] Implement notification systems
+
+## Phase 4: Integration and Testing
+
+### Third-Party Integrations
+- [ ] Implement payment processing integration
+- [ ] Set up email service integration
+- [ ] Add analytics and tracking integration
+- [ ] Implement social media authentication
+- [ ] Set up external API integrations
+- [ ] Add file upload and storage integration
+- [ ] Implement push notification services
+- [ ] Set up monitoring and alerting services
+- [ ] Add backup and recovery systems
+- [ ] Test all integrations thoroughly
+
+### Comprehensive Testing
+- [ ] Complete unit test coverage for all components
+- [ ] Run integration tests for all API endpoints
+- [ ] Execute end-to-end tests for all user workflows
+- [ ] Perform cross-browser compatibility testing
+- [ ] Conduct mobile device testing
+- [ ] Execute performance and load testing
+- [ ] Perform security penetration testing
+- [ ] Conduct accessibility testing
+- [ ] Test error scenarios and edge cases
+- [ ] Validate data integrity and consistency
+
+### Quality Assurance
+- [ ] Code review for all major components
+- [ ] Security review and vulnerability assessment
+- [ ] Performance review and optimization
+- [ ] Accessibility audit and compliance check
+- [ ] User acceptance testing with stakeholders
+- [ ] Documentation review and updates
+- [ ] Final integration testing
+- [ ] Deployment readiness assessment
+- [ ] Backup and recovery testing
+- [ ] Monitoring and alerting validation
+
+## Phase 5: Deployment Preparation
+
+### Production Environment Setup
+- [ ] Set up production hosting infrastructure
+- [ ] Configure production database
+- [ ] Set up SSL certificates and HTTPS
+- [ ] Configure production environment variables
+- [ ] Set up CDN and static asset hosting
+- [ ] Configure production logging and monitoring
+- [ ] Set up backup and recovery systems
+- [ ] Configure production security settings
+- [ ] Set up domain and DNS configuration
+- [ ] Test production environment connectivity
+
+### Deployment Pipeline
+- [ ] Set up continuous integration/deployment pipeline
+- [ ] Configure automated testing in CI/CD
+- [ ] Set up staging environment for testing
+- [ ] Create deployment scripts and automation
+- [ ] Configure database migration procedures
+- [ ] Set up rollback procedures
+- [ ] Create deployment monitoring and alerting
+- [ ] Test deployment process in staging
+- [ ] Document deployment procedures
+- [ ] Train team on deployment process
+
+### Launch Preparation
+- [ ] Create launch checklist and timeline
+- [ ] Prepare user documentation and help materials
+- [ ] Set up customer support procedures
+- [ ] Configure analytics and tracking
+- [ ] Prepare marketing and communication materials
+- [ ] Set up user feedback collection systems
+- [ ] Create incident response procedures
+- [ ] Prepare post-launch monitoring dashboard
+- [ ] Schedule launch activities and communications
+- [ ] Conduct final pre-launch review
+
+## Phase 6: Launch and Post-Launch
+
+### Launch Activities
+- [ ] Execute final pre-launch testing
+- [ ] Deploy application to production
+- [ ] Verify all systems are operational
+- [ ] Monitor application performance and errors
+- [ ] Activate monitoring and alerting systems
+- [ ] Announce launch to users and stakeholders
+- [ ] Monitor user adoption and feedback
+- [ ] Address any immediate issues or bugs
+- [ ] Collect and analyze launch metrics
+- [ ] Document lessons learned from launch
+
+### Post-Launch Monitoring
+- [ ] Monitor application performance metrics
+- [ ] Track user engagement and adoption
+- [ ] Monitor error rates and system health
+- [ ] Collect and analyze user feedback
+- [ ] Monitor security alerts and incidents
+- [ ] Track business metrics and KPIs
+- [ ] Monitor infrastructure costs and usage
+- [ ] Review and optimize performance bottlenecks
+- [ ] Plan and prioritize future improvements
+- [ ] Conduct post-launch retrospective
+
+### Maintenance and Support
+- [ ] Set up regular backup verification
+- [ ] Establish maintenance schedules and procedures
+- [ ] Create user support documentation and FAQs
+- [ ] Set up customer support ticketing system
+- [ ] Establish bug reporting and tracking procedures
+- [ ] Create procedures for handling security incidents
+- [ ] Set up regular security updates and patches
+- [ ] Establish performance monitoring and optimization
+- [ ] Create procedures for feature requests and enhancements
+- [ ] Document ongoing maintenance requirements
+
+## Success Criteria
+
+### Technical Success Criteria
+- [ ] All features implemented according to PRD specifications
+- [ ] Application meets performance requirements
+- [ ] Security requirements fully implemented
+- [ ] Test coverage meets minimum requirements (80%+)
+- [ ] Application passes all quality assurance checks
+- [ ] Deployment pipeline is fully automated
+- [ ] Monitoring and alerting systems are operational
+- [ ] Documentation is complete and up-to-date
+
+### Business Success Criteria
+- [ ] Application launches on schedule
+- [ ] User acceptance criteria are met
+- [ ] Performance metrics meet targets
+- [ ] Security compliance requirements are satisfied
+- [ ] User feedback is positive
+- [ ] Business KPIs are achieved
+- [ ] Support procedures are effective
+- [ ] Maintenance procedures are established
+
+## Risk Mitigation
+
+### Technical Risks
+- [ ] Identify and document potential technical risks
+- [ ] Create mitigation strategies for each risk
+- [ ] Implement monitoring for risk indicators
+- [ ] Create contingency plans for critical failures
+- [ ] Test disaster recovery procedures
+- [ ] Document escalation procedures
+- [ ] Train team on risk response procedures
+
+### Project Risks
+- [ ] Monitor project timeline and milestones
+- [ ] Track resource allocation and availability
+- [ ] Identify and address scope creep
+- [ ] Manage stakeholder expectations
+- [ ] Communicate progress and issues regularly
+- [ ] Maintain project documentation and decisions
+- [ ] Plan for resource constraints and dependencies
+
+## Final Checklist
+
+### Pre-Launch Verification
+- [ ] All development phases completed successfully
+- [ ] All tests passing and coverage requirements met
+- [ ] Security review completed and approved
+- [ ] Performance testing completed and approved
+- [ ] User acceptance testing completed and approved
+- [ ] Documentation complete and reviewed
+- [ ] Deployment procedures tested and verified
+- [ ] Support procedures established and tested
+- [ ] Monitoring and alerting systems operational
+- [ ] Team trained on support and maintenance procedures
+
+### Launch Readiness
+- [ ] Production environment ready and tested
+- [ ] All stakeholders informed and prepared
+- [ ] Launch timeline confirmed and communicated
+- [ ] Rollback procedures tested and ready
+- [ ] Support team ready and available
+- [ ] Monitoring dashboard configured and accessible
+- [ ] Communication plan ready for execution
+- [ ] Success metrics defined and tracking enabled
+- [ ] Post-launch procedures documented and ready
+- [ ] Final approval from all stakeholders obtained
+
+==================== END: checklist-documentation-tmpl ====================
+
+
 ==================== START: architecture-tmpl ====================
 # {Project Name} Architecture Document
 
