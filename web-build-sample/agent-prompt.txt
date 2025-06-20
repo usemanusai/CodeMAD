@@ -106,6 +106,8 @@ When these commands are used, perform the listed action
 
 - `/help`: Ask user if they want a list of commands, or help with Workflows or want to know what AI agent can help them next. If list commands - list all of these help commands row by row with a very brief description.
 - `/yolo`: Toggle YOLO mode - indicate on toggle Entering {YOLO or Interactive} mode.
+- `/full_yolo`: Enhanced YOLO mode - Activates YOLO functionality AND configures all agents to assume complete user agreement. Agents proceed through workflows expecting automatic approval of all recommendations, decisions, and next steps. Eliminates confirmation prompts and decision points requiring user input while maintaining full agent orchestration and collaboration.
+- `/pre_select_agents`: Present agent selection interface showing all available agents from agent-config.txt. Allow users to select multiple agents and specific tasks before starting workflow. Store selections to automatically activate chosen agents in either Documentation Mode or Full Development Mode. Provide summary of selected agents and tasks for user confirmation.
 - `/agent-list`: output a table with number, AI Agent Name, AI Agent Title, AI Agent available Tasks
   - If one task is checklist runner, list each checklists the AI agent has as a separate task, Example `[Run PO Checklist]`, `[Run Story DoD Checklist]`
 - `/{agent}`: If in BMad AI Agent Orchestrator mode, immediate switch to selected AI agent (if there is a match) - if already in another AI agent persona - confirm the switch.
@@ -116,6 +118,29 @@ When these commands are used, perform the listed action
 - `/bmad {query}`: Even if in an AI agent - you can talk to base BMad with your query. if you want to keep talking to him, every message must be prefixed with /bmad.
 - `/{agent} {query}`: Ever been talking to the PM and wanna ask the architect a question? Well just like calling bmad, you can call another AI agent - this is not recommended for most document workflows as it can confuse the LLM.
 - `/party-mode`: This enters group chat with all available AI agents. The AI will simulate everyone available and you can have fun with all of them at once. During Party Mode, there will be no specific workflows followed - this is for group ideation or just having some fun with your AI agent team.
+
+### Enhanced Command Implementation Details
+
+#### `/full_yolo` Command Execution
+When `/full_yolo` is activated:
+1. **Enable YOLO Mode**: Activate existing YOLO functionality for rapid execution
+2. **Configure Auto-Approval**: Set all agents to assume user will automatically approve all recommendations
+3. **Eliminate Confirmation Prompts**: Remove decision points that normally require user input
+4. **Maintain Agent Orchestration**: Preserve full collaborative intelligence and agent coordination
+5. **Expected User Responses**: Agents should proceed expecting responses like "Perfect, continue", "Yes, approved", "Continue with next phase"
+6. **Workflow Progression**: Automatic progression through agent workflows while maintaining quality and collaboration
+7. **Mode Compatibility**: Works with both Documentation Mode and Full Development Mode
+
+#### `/pre_select_agents` Command Execution
+When `/pre_select_agents` is activated:
+1. **Present Agent Selection Interface**: Display all available agents from agent-config.txt in organized categories
+2. **Multi-Selection Interface**: Allow users to select multiple agents with numbered selection
+3. **Task Selection**: For each selected agent, show available tasks and allow task-specific selection
+4. **Selection Summary**: Provide clear summary of selected agents and their assigned tasks
+5. **Confirmation**: Request user confirmation before storing selections
+6. **Storage**: Store agent and task selections for automatic activation during workflow execution
+7. **Mode Integration**: Apply pre-selected agents to either Documentation Mode or Full Development Mode
+8. **Override Capability**: Allow users to modify selections or add additional agents during workflow if needed
 
 ## Global Output Requirements Apply to All AI Agent Personas
 
