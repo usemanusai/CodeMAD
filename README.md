@@ -50,33 +50,48 @@ The BMAD Method 3.1 features a **mandatory mode selection system** that ensures 
 ### 📋 Documentation Mode (Mode 1) - Default & Recommended
 **Perfect for:** Sending specifications to developers working in VS Code Insiders
 
-**Generates exactly 3 complete, final documents:**
-- **`prd.md`** - Product Requirements Document (complete final product specifications)
-- **`architecture.md`** - Technical architecture document (system design & implementation approach)
-- **`checklist.md`** - Development checklist (acceptance criteria & implementation steps)
+**Full AI Agent Orchestration → Professional Documents:**
+- **🤖 Activates specialized AI agents** (Product Manager, Architect, Security Engineer, etc.)
+- **🔄 Collaborative intelligence** with cross-agent validation and decision-making
+- **📋 Leverages agent expertise** using personas, templates, and checklists
+- **📄 Formats output as 3 complete documents** ready for developer handoff
+
+**Generated Documents:**
+- **`prd.md`** - Product Requirements from collaborative agent analysis
+- **`architecture.md`** - Technical architecture from specialized agent design
+- **`checklist.md`** - Development checklist from agent expertise synthesis
 
 **Key Features:**
-- ✅ Standalone documents requiring no additional clarification
-- ✅ Comprehensive enough for independent development
-- ✅ Professional quality ready for client/team handoff
-- ✅ No actual development or coding included
+- ✅ **Full agent collaboration** with specialized expertise
+- ✅ **Collaborative intelligence** applied to document creation
+- ✅ **Professional quality** ready for client/team handoff
+- ✅ **Standalone documents** requiring no additional clarification
+- ✅ **No actual development** - agents focus on specification and planning
 
 ### 🚀 Full Development Mode (Mode 2)
 **Perfect for:** Complete application development within the chat session
 
-**Features:**
-- 🤖 Complete AI agent orchestration and coordination
-- 🔄 Interactive development workflow with specialized AI agents
-- 🛠️ Full implementation, testing, and deployment
-- 📊 Real-time collaboration between 50+ specialized AI agents
+**Full AI Agent Orchestration → Complete Implementation:**
+- **🤖 Activates specialized AI agents** (same agents as Documentation Mode)
+- **🔄 Collaborative intelligence** with cross-agent validation and decision-making
+- **📋 Leverages agent expertise** using personas, templates, and checklists
+- **💻 Implements complete application** with full code, testing, and deployment
+
+**Key Features:**
+- ✅ **Full agent collaboration** with specialized expertise
+- ✅ **Complete implementation** with code, testing, and deployment
+- ✅ **Interactive development workflow** with real-time agent coordination
+- ✅ **50+ specialized AI agents** available for comprehensive development
 
 ### Key System Enhancements (Latest Update)
 
 - **Mandatory Mode Selection**: Users must explicitly choose their workflow before proceeding
-- **Documentation Mode Workflow**: Complete system for generating handoff-ready documents
+- **Full Agent Orchestration in Both Modes**: Both Documentation and Development modes utilize complete AI agent collaboration
+- **Collaborative Intelligence Preserved**: All modes leverage specialized agent expertise, personas, templates, and checklists
+- **Output Format Differentiation**: Only the final deliverable format differs between modes (documents vs. implementation)
 - **AI Agent Self-Perception**: System correctly identifies as coordinating "AI agents" rather than "human workers"
-- **Comprehensive Task Breakdown**: Enhanced Task Breakdown Specialist AI Agent (Tyler) for detailed deliverables
-- **Mode-Based Routing**: Intelligent workflow routing based on user selection
+- **Enhanced Agent Collaboration**: Cross-agent validation, decision-making, and expertise synthesis in all workflows
+- **Mode-Based Routing**: Intelligent workflow routing based on user selection while maintaining agent orchestration
 - **AI Agent Optimization**: Tasks sized and structured specifically for AI agent context windows and capabilities
 
 ## 🚀 Quick Start - Try the Mode Selection System
@@ -135,45 +150,51 @@ graph TB
         MS --> FM[Full Development Mode Selected]
 
         subgraph "Documentation Mode Workflow"
-            DM --> DW[Documentation Workflow Engine]
-            DW --> PM[Product Manager AI - John]
-            DW --> AR[Architect AI - Fred]
-            DW --> TB[Task Breakdown AI - Tyler]
+            DM --> DW[AI Agent Orchestrator<br/>Documentation Mode]
+            DW --> DPM[Product Manager AI - John<br/>🧠 Full Persona & Expertise]
+            DW --> DAR[Architect AI - Fred<br/>🏗️ Full Technical Analysis]
+            DW --> DTB[Task Breakdown AI - Tyler<br/>📋 Complete Planning]
+            DW --> DSE[Security Engineer AI - Sage<br/>🔒 Security Analysis]
+            DW --> DDE[Design Architect AI - Jane<br/>🎨 UX/UI Expertise]
 
-            PM --> PRD[prd.md<br/>Complete Product Requirements]
-            AR --> ARCH[architecture.md<br/>Technical Architecture]
-            TB --> TASKS[checklist.md<br/>Development Checklist]
+            DPM --> DPRD[Collaborative PRD Analysis]
+            DAR --> DARCH[Collaborative Architecture Design]
+            DTB --> DTASKS[Collaborative Implementation Planning]
+            DSE --> DSEC[Security Requirements]
+            DDE --> DUI[UI/UX Specifications]
 
-            PRD --> DD[Documentation Deliverables]
-            ARCH --> DD
-            TASKS --> DD
+            DPRD --> DD[Documentation Deliverables<br/>📄 prd.md<br/>🏗️ architecture.md<br/>✅ checklist.md]
+            DARCH --> DD
+            DTASKS --> DD
+            DSEC --> DD
+            DUI --> DD
         end
 
         subgraph "Full Development Mode Workflow"
-            FM --> O[Enhanced AI Agent Orchestrator<br/>🧠 Natural Language Processing<br/>🎯 AI Agent Selection Algorithm<br/>🔄 Workflow Coordination<br/>📊 Adaptive Learning]
+            FM --> FO[AI Agent Orchestrator<br/>Full Development Mode]
 
-            subgraph "AI Agent Categories"
-                CD[Core Development AI Agents<br/>👨‍💻 12 AI Agents<br/>Frontend, Backend, Mobile<br/>API, Database, Blockchain]
-                IO[Infrastructure & Operations AI Agents<br/>⚙️ 10 AI Agents<br/>DevOps, SRE, Cloud<br/>Kubernetes, Monitoring]
-                SC[Security & Compliance AI Agents<br/>🔒 8 AI Agents<br/>Security, Cybersecurity<br/>Compliance, Privacy]
-                DA[Data & AI Agents<br/>🤖 8 AI Agents<br/>Data Engineering, ML<br/>AI, Analytics]
-                QT[Quality & Testing AI Agents<br/>✅ 6 AI Agents<br/>QA, Automation<br/>Performance, Accessibility]
-                ST[Specialized Technical AI Agents<br/>🎯 6 AI Agents<br/>Architecture, Integration<br/>Migration, Research]
+            subgraph "AI Agent Categories - Same Agents, Different Output"
+                FCD[Core Development AI Agents<br/>👨‍💻 12 AI Agents<br/>Frontend, Backend, Mobile<br/>API, Database, Blockchain]
+                FIO[Infrastructure & Operations AI Agents<br/>⚙️ 10 AI Agents<br/>DevOps, SRE, Cloud<br/>Kubernetes, Monitoring]
+                FSC[Security & Compliance AI Agents<br/>🔒 8 AI Agents<br/>Security, Cybersecurity<br/>Compliance, Privacy]
+                FDA[Data & AI Agents<br/>🤖 8 AI Agents<br/>Data Engineering, ML<br/>AI, Analytics]
+                FQT[Quality & Testing AI Agents<br/>✅ 6 AI Agents<br/>QA, Automation<br/>Performance, Accessibility]
+                FST[Specialized Technical AI Agents<br/>🎯 6 AI Agents<br/>Architecture, Integration<br/>Migration, Research]
             end
 
-            O --> CD
-            O --> IO
-            O --> SC
-            O --> DA
-            O --> QT
-            O --> ST
+            FO --> FCD
+            FO --> FIO
+            FO --> FSC
+            FO --> FDA
+            FO --> FQT
+            FO --> FST
 
-            CD --> FD[Full Development Deliverables]
-            IO --> FD
-            SC --> FD
-            DA --> FD
-            QT --> FD
-            ST --> FD
+            FCD --> FD[Full Development Deliverables<br/>💻 Complete Implementation<br/>🧪 Testing & Validation<br/>📦 Deployment Ready]
+            FIO --> FD
+            FSC --> FD
+            FDA --> FD
+            FQT --> FD
+            FST --> FD
         end
 
         subgraph "Supporting Systems"
@@ -270,7 +291,7 @@ sequenceDiagram
 
 The BMAD Method 3.1 features two distinct AI agent coordination workflows based on mandatory mode selection:
 
-### Documentation Mode Workflow
+### Documentation Mode Workflow - Full Agent Orchestration
 
 ```mermaid
 graph TD
@@ -278,30 +299,42 @@ graph TD
     MS --> DM[Documentation Mode Selected]
 
     DM --> B[BMad AI Agent Orchestrator]
-    B --> DW[Documentation Workflow Engine]
+    B --> AS[Agent Selection & Activation<br/>🧠 Analyze Project Requirements<br/>🎯 Select Specialized Agents<br/>🔄 Coordinate Collaboration]
 
-    DW --> PM[Product Manager AI - John<br/>📋 PRD Specialist]
-    DW --> AR[Architect AI - Fred<br/>🏗️ Technical Design]
-    DW --> TB[Task Breakdown AI - Tyler<br/>✅ Implementation Planning]
+    AS --> PM[Product Manager AI - John<br/>📋 Full Persona & Expertise<br/>🔍 Requirements Analysis<br/>👥 User Research]
+    AS --> AR[Architect AI - Fred<br/>🏗️ Technical Architecture<br/>⚙️ Technology Selection<br/>🔒 Security Design]
+    AS --> TB[Task Breakdown AI - Tyler<br/>✅ Implementation Planning<br/>📊 Project Management<br/>🎯 Milestone Definition]
+    AS --> SE[Security Engineer AI - Sage<br/>🔒 Security Analysis<br/>🛡️ Threat Modeling<br/>📋 Compliance Review]
+    AS --> DA[Design Architect AI - Jane<br/>🎨 UI/UX Design<br/>📱 User Experience<br/>🖼️ Interface Specifications]
 
-    PM --> PRD[prd.md<br/>Complete Product Requirements<br/>• User Stories & Acceptance Criteria<br/>• Technical Constraints<br/>• Success Metrics]
+    PM --> COLLAB[Agent Collaboration Hub<br/>🤝 Cross-Agent Validation<br/>🔄 Iterative Refinement<br/>📊 Decision Synthesis]
+    AR --> COLLAB
+    TB --> COLLAB
+    SE --> COLLAB
+    DA --> COLLAB
 
-    AR --> ARCH[architecture.md<br/>Technical Architecture<br/>• System Design & Components<br/>• Technology Stack<br/>• Security & Deployment]
+    COLLAB --> PRD[prd.md<br/>Collaborative Product Requirements<br/>• Agent-Validated User Stories<br/>• Cross-Referenced Technical Constraints<br/>• Consensus-Based Success Metrics]
 
-    TB --> CHECK[checklist.md<br/>Development Checklist<br/>• Phase-based Implementation<br/>• Quality Gates<br/>• Testing & Deployment]
+    COLLAB --> ARCH[architecture.md<br/>Collaborative Technical Architecture<br/>• Multi-Agent System Design<br/>• Validated Technology Stack<br/>• Integrated Security & Performance]
 
-    PRD --> QV[Quality Validation<br/>📊 Completeness Check<br/>🔗 Cross-Reference Validation<br/>🎯 Handoff Readiness]
+    COLLAB --> CHECK[checklist.md<br/>Collaborative Development Checklist<br/>• Agent-Optimized Implementation Phases<br/>• Cross-Validated Quality Gates<br/>• Comprehensive Testing Strategy]
+
+    PRD --> QV[Quality Validation by Product Owner AI<br/>📊 Completeness Check<br/>🔗 Cross-Reference Validation<br/>🎯 Handoff Readiness<br/>✅ Agent Consensus Verification]
     ARCH --> QV
     CHECK --> QV
 
-    QV --> DD[Documentation Deliverables<br/>Ready for Developer Handoff]
+    QV --> DD[Documentation Deliverables<br/>🤖 Agent-Collaborated Documents<br/>📋 Professional Quality<br/>🎯 Ready for Developer Handoff]
 
     style MS fill:#ff9800
     style DM fill:#4caf50
     style B fill:#e1f5fe
+    style AS fill:#2196f3
+    style COLLAB fill:#9c27b0
     style PM fill:#f3e5f5
     style AR fill:#e8f5e8
     style TB fill:#fff3e0
+    style SE fill:#ffeb3b
+    style DA fill:#fce4ec
     style DD fill:#8bc34a
 ```
 
@@ -393,31 +426,30 @@ sequenceDiagram
     Note over PM,Task: Each document is standalone and<br/>comprehensive for independent development
 ```
 
-### Documentation Mode Output Examples
+### Documentation Mode Output Examples - Agent Collaboration Results
 
-**📄 prd.md - Product Requirements Document**
-- Executive summary and project vision
-- Detailed user personas and use cases
-- Complete functional requirements with user stories
-- Non-functional requirements (performance, security, scalability)
-- Technical constraints and success criteria
-- Timeline and acceptance criteria
+**📄 prd.md - Product Requirements Document (Agent-Collaborated)**
+- **Product Manager AI (John)**: Executive summary, user research, and business requirements
+- **Security Engineer AI (Sage)**: Security requirements and compliance considerations
+- **Design Architect AI (Jane)**: User experience requirements and interface specifications
+- **Cross-Agent Validation**: Consensus-based feature prioritization and acceptance criteria
+- **Collaborative Output**: Complete functional and non-functional requirements with agent expertise
 
-**🏗️ architecture.md - Technical Architecture Document**
-- System overview and design patterns
-- Complete technology stack with specific versions
-- Component architecture and data models
-- API design and security architecture
-- Infrastructure and deployment strategy
-- Development guidelines and coding standards
+**🏗️ architecture.md - Technical Architecture Document (Agent-Collaborated)**
+- **Architect AI (Fred)**: System design patterns and technology stack selection
+- **Security Engineer AI (Sage)**: Security architecture and threat modeling
+- **Performance Engineer AI (Phoenix)**: Scalability and performance architecture
+- **Platform Engineer AI (Alex)**: Infrastructure and deployment strategy
+- **Cross-Agent Validation**: Technology choices validated by multiple specialist perspectives
+- **Collaborative Output**: Comprehensive technical architecture with multi-agent expertise
 
-**✅ checklist.md - Development Checklist**
-- Pre-development setup and environment configuration
-- Phase-based implementation guide (6 phases from setup to post-launch)
-- Specific, actionable tasks for each development stage
-- Quality gates and testing requirements
-- Deployment preparation and launch procedures
-- Post-launch monitoring and maintenance guidelines
+**✅ checklist.md - Development Checklist (Agent-Collaborated)**
+- **Task Breakdown Specialist AI (Tyler)**: Project management and milestone planning
+- **QA Engineer AI (Quinn)**: Testing strategies and quality gates
+- **Security Engineer AI (Sage)**: Security implementation checkpoints
+- **Platform Engineer AI (Alex)**: Deployment and infrastructure setup tasks
+- **Cross-Agent Validation**: Implementation phases optimized by specialist expertise
+- **Collaborative Output**: Comprehensive development roadmap with agent-validated tasks
 
 ### Multi-Agent Collaboration Patterns
 
@@ -549,11 +581,15 @@ System Response: [Mode Selection Menu]
 Your Choice: "1" (Documentation Mode)
 
 AI Agent Orchestrator will:
-1. Activate Product Manager AI (John) → Creates prd.md
-2. Activate Architect AI (Fred) → Creates architecture.md
-3. Activate Task Breakdown AI (Tyler) → Creates checklist.md
+1. Analyze project requirements and select specialized agents
+2. Activate Product Manager AI (John) with full persona and expertise
+3. Activate Architect AI (Fred) for technical design and analysis
+4. Activate Security Engineer AI (Sage) for security requirements
+5. Activate Design Architect AI (Jane) for UI/UX specifications
+6. Coordinate agent collaboration with cross-validation and consensus
+7. Format collaborative intelligence as 3 professional handoff documents
 
-Result: 3 complete, standalone documents ready for developer handoff
+Result: 3 agent-collaborated, comprehensive documents ready for developer handoff
 ```
 
 **For Full Development (Complete implementation):**
@@ -564,11 +600,14 @@ System Response: [Mode Selection Menu]
 Your Choice: "2" (Full Development Mode)
 
 AI Agent Orchestrator will:
-1. Coordinate 50+ specialized AI agents
-2. Implement complete application with testing
-3. Provide fully functional, deployment-ready solution
+1. Analyze project requirements and select specialized agents (same as Documentation Mode)
+2. Activate Product Manager AI, Architect AI, Security Engineer AI, etc. with full personas
+3. Coordinate agent collaboration for requirements, architecture, and planning
+4. Activate Development AI agents for implementation (Frontend, Backend, Database, etc.)
+5. Execute cross-agent validation, testing, and quality assurance
+6. Deliver complete application with full implementation and deployment
 
-Result: Complete application with full implementation
+Result: Complete application with full agent collaboration and implementation
 ```
 
 #### Mode Selection Commands
@@ -766,12 +805,13 @@ For immediate hands-on experience with the new mode selection system:
 7. **Use** `/help` command to explore all capabilities after mode selection
 
 **Key Benefits:**
-- **No more automatic development** - you choose what you need
-- **Perfect for AI platforms** like Gemini Gems where you want documentation, not code
-- **Professional handoff documents** ready for VS Code developers
-- **Complete development option** still available when needed
+- **Full agent orchestration in both modes** - collaborative intelligence always preserved
+- **Same specialized agents, different output format** - Documentation vs. Implementation
+- **Perfect for AI platforms** like Gemini Gems where you want agent-collaborated documentation
+- **Professional handoff documents** with multi-agent expertise ready for VS Code developers
+- **Complete development option** with same agent collaboration for full implementation
 
-This provides instant access to both documentation generation and full AI agent orchestration capabilities with explicit user control over the workflow.
+This provides instant access to full AI agent orchestration capabilities with explicit user control over the output format while maintaining collaborative intelligence in all workflows.
 
 ---
 

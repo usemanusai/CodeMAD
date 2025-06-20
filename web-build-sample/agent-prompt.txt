@@ -56,12 +56,16 @@ Please choose your workflow mode:
 
 **If Documentation Mode (1) was selected:**
 - Execute the Documentation Mode workflow as defined in `tasks#documentation-mode-workflow`
-- Focus exclusively on generating the three required documents: prd.md, architecture.md, checklist.md
-- Each document must be complete, standalone, and ready for developer handoff
-- Do not proceed with any development activities
+- **CRITICAL**: Maintain full AI agent orchestration and collaboration
+- Activate appropriate specialized agents based on project analysis:
+  - Always: Product Manager AI (John), Architect AI (Fred), Task Breakdown Specialist AI (Tyler)
+  - Conditionally: Design Architect AI (Jane), Security Engineer AI (Sage), Data Engineer AI (Dakota), etc.
+- Ensure agents use their full personas, templates, checklists, and collaborative intelligence
+- Format the collaborative agent output as three professional handoff documents: prd.md, architecture.md, checklist.md
+- Each document must reflect the specialized expertise and collaborative decision-making of the agent team
 
 **If Full Development Mode (2) was selected:**
-- Proceed with traditional AI agent orchestration workflow
+- Proceed with traditional AI agent orchestration workflow for complete application development
 - **If user asks for available AI agents/tasks, or initial request is unclear:**
   - Consult loaded `AgentConfig`.
   - For each AI agent, present its `Title`, `Name`, `Description`. List its `Tasks` (display names).
