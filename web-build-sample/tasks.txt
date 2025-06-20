@@ -3,119 +3,143 @@
 
 ## Purpose
 
-Generate exactly 3 complete, final documents ready for developer handoff when Documentation Mode is selected. These documents must be comprehensive, standalone, and require no additional clarification for a developer working in VS Code Insiders.
+Execute full AI agent orchestration and collaboration to generate exactly 3 complete, final documents ready for developer handoff. This workflow maintains all the collaborative intelligence and specialized expertise of the AI agent system while formatting the output as professional handoff documents.
+
+## Critical Architecture Principle
+
+**MAINTAIN FULL AGENT ORCHESTRATION**: Documentation Mode must activate and coordinate specialized AI agents exactly like Full Development Mode. The only difference is the final deliverable format:
+- **Documentation Mode**: Agent collaboration → 3 handoff documents (prd.md, architecture.md, checklist.md)
+- **Full Development Mode**: Agent collaboration → Complete application code/files
 
 ## Required Deliverables
 
-1. **`prd.md`** - Product Requirements Document describing the complete final product specifications
-2. **`architecture.md`** - Technical architecture document detailing system design, components, and implementation approach
-3. **`checklist.md`** - Development checklist with acceptance criteria and implementation steps
+1. **`prd.md`** - Product Requirements Document from collaborative agent analysis
+2. **`architecture.md`** - Technical architecture from specialized agent design
+3. **`checklist.md`** - Development checklist from agent expertise synthesis
 
-## Task Instructions
+## Agent Orchestration Workflow
 
-### 1. Initial Project Discovery
+### 1. Project Analysis & Agent Selection
 
-- **Gather Project Requirements:**
-  - Ask the user to describe their project concept, goals, and target users
-  - Identify the core functionality and key features needed
-  - Understand any technical preferences or constraints
-  - Clarify the scope and timeline expectations
+**Orchestrator Actions:**
+- Analyze user request to determine project type and complexity
+- Select appropriate specialized agents based on project requirements:
+  - **Always Required**: Product Manager AI (John), Architect AI (Fred)
+  - **Conditionally Required**: Design Architect AI (Jane), Security Engineer AI (Sage), Data Engineer AI (Dakota), etc.
+  - **Project-Specific**: Additional agents based on technology stack and requirements
 
-- **Determine Project Type:**
-  - Web application, mobile app, desktop software, API service, etc.
-  - Target platforms and devices
-  - Integration requirements with external services
+**Agent Selection Examples:**
+- **Web Application**: PM + Architect + Design Architect + Security Engineer
+- **API Service**: PM + Architect + Security Engineer + Performance Engineer
+- **Mobile App**: PM + Architect + Design Architect + Platform Engineer
+- **Data Platform**: PM + Architect + Data Engineer + Security Engineer
 
-### 2. Generate Product Requirements Document (prd.md)
+### 2. Sequential Agent Activation & Collaboration
 
-Using the `prd-documentation-tmpl` template, create a comprehensive PRD that includes:
+**Phase 1: Product Manager AI Agent (John) Activation**
+- Activate Product Manager AI with full persona and capabilities
+- Execute comprehensive requirements gathering using PM templates and checklists
+- Conduct user research, market analysis, and feature prioritization
+- Create detailed user stories with acceptance criteria
+- Collaborate with user through iterative refinement
+- **Output**: Comprehensive PRD content for final document compilation
 
-- **Executive Summary**: Clear project overview and objectives
-- **Product Vision**: Long-term goals and success metrics
-- **Target Users**: Detailed user personas and use cases
-- **Functional Requirements**: Complete feature specifications with user stories
-- **Non-Functional Requirements**: Performance, security, scalability requirements
-- **Technical Constraints**: Platform requirements, integration needs
-- **Success Criteria**: Measurable goals and acceptance criteria
-- **Timeline and Milestones**: Development phases and delivery schedule
+**Phase 2: Architect AI Agent (Fred) Activation**
+- Activate Architect AI with full persona and technical expertise
+- Analyze PRD requirements and technical constraints
+- Design system architecture using architectural patterns and best practices
+- Select technology stack with detailed justification
+- Create security, scalability, and performance architecture
+- Use architecture templates and validation checklists
+- **Output**: Complete technical architecture content for final document compilation
 
-**Quality Standards:**
-- Each feature must have clear acceptance criteria
-- User stories must follow "As a [user], I want [goal] so that [benefit]" format
-- Requirements must be testable and measurable
-- Document must be complete enough for independent development
+**Phase 3: Additional Specialist Agent Coordination**
+- Activate relevant specialist agents based on project requirements:
+  - **Design Architect AI (Jane)**: For UI/UX heavy projects
+  - **Security Engineer AI (Sage)**: For security-critical applications
+  - **Data Engineer AI (Dakota)**: For data-intensive systems
+  - **Performance Engineer AI (Phoenix)**: For high-performance requirements
+- Each agent contributes specialized expertise to their domain
+- Cross-agent collaboration and validation of decisions
+- **Output**: Specialized expertise integrated into final documents
 
-### 3. Generate Technical Architecture Document (architecture.md)
+**Phase 4: Task Breakdown Specialist AI (Tyler) Activation**
+- Activate Task Breakdown Specialist with full analytical capabilities
+- Analyze completed PRD and architecture documents
+- Create comprehensive implementation roadmap
+- Define development phases, dependencies, and acceptance criteria
+- Use task breakdown templates and project management best practices
+- **Output**: Detailed development checklist content for final document compilation
 
-Using the `architecture-documentation-tmpl` template, create a comprehensive architecture document that includes:
+### 3. Agent Collaboration & Cross-Validation
 
-- **System Overview**: High-level architecture and design patterns
-- **Technology Stack**: Specific technologies, frameworks, and versions
-- **Component Architecture**: Detailed system components and their interactions
-- **Data Architecture**: Database design, data models, and data flow
-- **API Design**: Endpoint specifications and integration patterns
-- **Security Architecture**: Authentication, authorization, and security measures
-- **Deployment Architecture**: Infrastructure, hosting, and deployment strategy
-- **Development Guidelines**: Coding standards and best practices
+**Inter-Agent Communication:**
+- Agents review and validate each other's work
+- Cross-reference requirements, architecture, and implementation plans
+- Resolve conflicts and ensure consistency across all deliverables
+- Apply quality gates and validation checklists from each agent's expertise
 
-**Quality Standards:**
-- All technology choices must be justified and specific (with versions)
-- Architecture must be scalable and maintainable
-- Security considerations must be comprehensive
-- Implementation details must be clear enough for development teams
-- Include diagrams where helpful (Mermaid format)
+**Collaborative Decision Making:**
+- Technology stack decisions validated by multiple agents
+- Security requirements reviewed by Security Engineer AI
+- Performance considerations validated by Performance Engineer AI
+- User experience decisions reviewed by Design Architect AI
 
-### 4. Generate Development Checklist (checklist.md)
+### 4. Document Compilation & Professional Formatting
 
-Using the `checklist-documentation-tmpl` template, create a comprehensive development checklist that includes:
+**Final Document Assembly:**
+- Compile agent collaboration results into 3 professional documents
+- Apply documentation templates for consistent formatting
+- Ensure cross-references and consistency between documents
+- Add professional document headers, version control, and navigation
+- Format for immediate handoff to development teams
 
-- **Pre-Development Setup**: Environment setup, tool installation, repository setup
-- **Development Phases**: Organized by logical development stages
-- **Feature Implementation**: Step-by-step implementation guidance for each feature
-- **Testing Requirements**: Unit tests, integration tests, user acceptance testing
-- **Quality Assurance**: Code review, security review, performance testing
-- **Deployment Preparation**: Build processes, environment configuration, deployment steps
-- **Post-Launch**: Monitoring, maintenance, and support procedures
+**Quality Assurance:**
+- Final review by Product Owner AI (Sarah) for completeness
+- Cross-document validation for consistency
+- Professional formatting and presentation standards
+- Developer handoff readiness verification
 
-**Quality Standards:**
-- Each checklist item must be actionable and specific
-- Items must be organized in logical development order
-- Dependencies between tasks must be clearly indicated
-- Acceptance criteria must be defined for each major milestone
-- Checklist must be comprehensive enough to guide complete development
+## Agent Utilization Requirements
 
-### 5. Document Review and Finalization
+### Mandatory Agent Activations
+- **Product Manager AI (John)**: Always required for PRD creation
+- **Architect AI (Fred)**: Always required for technical architecture
+- **Task Breakdown Specialist AI (Tyler)**: Always required for implementation planning
 
-- **Cross-Reference Validation**: Ensure all three documents are consistent and aligned
-- **Completeness Check**: Verify each document contains all required sections
-- **Clarity Review**: Ensure technical language is clear and unambiguous
-- **Developer Readiness**: Confirm documents provide sufficient detail for independent development
+### Conditional Agent Activations
+Based on project analysis, activate additional agents:
+- **Design Architect AI (Jane)**: UI/UX heavy projects
+- **Security Engineer AI (Sage)**: Security-critical applications
+- **Data Engineer AI (Dakota)**: Data-intensive systems
+- **Performance Engineer AI (Phoenix)**: Performance-critical applications
+- **Platform Engineer AI (Alex)**: Infrastructure-heavy projects
+- **QA Engineer AI (Quinn)**: Quality-critical applications
 
-### 6. Final Delivery
-
-Present all three documents in final form with:
-- Clear document titles and version information
-- Table of contents for easy navigation
-- Consistent formatting and structure
-- Ready for copy-paste delivery to development teams
+### Agent Collaboration Patterns
+- **Sequential Handoff**: PM → Architect → Specialists → Task Breakdown
+- **Parallel Consultation**: Multiple specialists contribute simultaneously
+- **Iterative Refinement**: Agents review and improve each other's work
+- **Cross-Validation**: Each agent validates others' decisions in their domain
 
 ## Success Criteria
 
 Documentation Mode is complete when:
 
-1. All three documents (prd.md, architecture.md, checklist.md) are generated
-2. Each document is comprehensive and standalone
-3. Documents are consistent with each other
-4. Technical specifications are detailed enough for implementation
-5. No additional clarification should be needed for development to begin
-6. Documents are properly formatted and ready for handoff
+1. **Full Agent Orchestration Executed**: All appropriate specialized agents activated and collaborated
+2. **Agent Expertise Utilized**: Each agent's persona, templates, and checklists fully leveraged
+3. **Collaborative Intelligence Applied**: Cross-agent validation and decision-making completed
+4. **Professional Documents Generated**: 3 comprehensive documents ready for developer handoff
+5. **Consistency Maintained**: All documents aligned and cross-referenced
+6. **Quality Standards Met**: Professional formatting and completeness achieved
 
-## Important Notes
+## Critical Implementation Notes
 
-- **No Development Work**: Documentation Mode does NOT include any actual development or coding
-- **Complete Specifications**: Each document must be thorough enough for handoff to external developers
-- **Standalone Documents**: Each document should be understandable without requiring this conversation context
-- **Professional Quality**: Documents should be production-ready for client or team handoff
+- **NEVER bypass agent orchestration**: Always activate and coordinate specialized agents
+- **Maintain collaborative intelligence**: Use full agent personas, templates, and expertise
+- **Preserve system value**: The multi-agent collaboration is the core differentiator
+- **Format output appropriately**: Present agent collaboration results as professional handoff documents
+- **Ensure agent interaction**: Agents must review, validate, and improve each other's work
 
 ==================== END: documentation-mode-workflow ====================
 
