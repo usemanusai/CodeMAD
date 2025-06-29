@@ -1,0 +1,2762 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-06-29T20:17:59.765693",
+    "total_agents": 153,
+    "source": "Agent Directory Service"
+  },
+  "agents": {
+    "bmad_enhanced_orchestrator": {
+      "id": "bmad_enhanced_orchestrator",
+      "title": "BMAD Enhanced Orchestrator",
+      "name": "BMAD",
+      "description": "Enhanced AI orchestrator for complex software development workflows with 50+ specialized agents and intelligent workflow management.",
+      "persona": "personas/enhanced-orchestrator.md",
+      "specializations": [
+        "Research Paper Architecture",
+        "Methodology Design",
+        "Literature Review Synthesis",
+        "Citation Excellence",
+        "Academic Writing Standards",
+        "Peer Review Process"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.422540",
+      "last_updated": "2025-06-29T20:00:56.422556"
+    },
+    "research_paper_specialist": {
+      "id": "research_paper_specialist",
+      "title": "Research Paper Specialist",
+      "name": "Dr. Alexandra Chen",
+      "description": "Research Paper Specialist & Academic Writing Expert focused on comprehensive academic research paper development and scholarly writing excellence.",
+      "persona": "personas/academic-research/research-paper-specialist.md",
+      "specializations": [
+        "Research Paper Architecture",
+        "Methodology Design",
+        "Literature Review Synthesis",
+        "Citation Excellence",
+        "Academic Writing Standards",
+        "Peer Review Process"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.422688",
+      "last_updated": "2025-06-29T20:00:56.422690"
+    },
+    "citation_specialist": {
+      "id": "citation_specialist",
+      "title": "Citation Specialist",
+      "name": "Dr. Marcus Rodriguez",
+      "description": "Citation Specialist & Academic Reference Expert focused on comprehensive citation management, reference formatting, and academic integrity.",
+      "persona": "personas/academic-research/citation-specialist.md",
+      "specializations": [
+        "Citation Style Mastery",
+        "Reference Management",
+        "Academic Integrity",
+        "Database Navigation",
+        "Bibliography Construction",
+        "Source Verification"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.422817",
+      "last_updated": "2025-06-29T20:00:56.422819"
+    },
+    "thesis_statement_generator": {
+      "id": "thesis_statement_generator",
+      "title": "Thesis Statement Generator",
+      "name": "Dr. Sarah Mitchell",
+      "description": "Thesis Statement Generator & Academic Argument Specialist focused on developing strong, clear thesis statements for academic papers.",
+      "persona": "personas/academic-research/thesis-statement-specialist.md",
+      "specializations": [
+        "Argument Development",
+        "Thesis Construction",
+        "Academic Logic",
+        "Claim Formulation",
+        "Evidence Integration",
+        "Counterargument Anticipation"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.422947",
+      "last_updated": "2025-06-29T20:00:56.422949"
+    },
+    "academic_simplifier": {
+      "id": "academic_simplifier",
+      "title": "Academic Simplifier",
+      "name": "Dr. Rachel Kim",
+      "description": "Academic Simplifier & Knowledge Translation Specialist focused on complex academic content simplification, knowledge translation, and accessible communication.",
+      "persona": "personas/academic-research/academic-simplifier.md",
+      "specializations": [
+        "Academic Jargon Translation",
+        "Multi-Audience Adaptation",
+        "Concept Clarification",
+        "Accuracy Preservation",
+        "Cross-Disciplinary Communication",
+        "Educational Content Development"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.423066",
+      "last_updated": "2025-06-29T20:00:56.423068"
+    },
+    "ai_content_humanizer": {
+      "id": "ai_content_humanizer",
+      "title": "AI Content Humanizer",
+      "name": "Alex",
+      "description": "AI Content Humanizer & Natural Language Specialist focused on transforming AI-generated content into authentic human writing.",
+      "persona": "personas/content-generation/ai-content-humanizer.md",
+      "specializations": [
+        "Text Humanization",
+        "Voice Development",
+        "Style Adaptation",
+        "Flow Enhancement",
+        "Readability Optimization",
+        "Authenticity Validation"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.423186",
+      "last_updated": "2025-06-29T20:00:56.423187"
+    },
+    "professional_writing_specialist": {
+      "id": "professional_writing_specialist",
+      "title": "Professional Writing Specialist",
+      "name": "Jordan",
+      "description": "Professional Writing Specialist & Business Communication Expert focused on creating effective business documents and communications.",
+      "persona": "personas/content-generation/professional-writing-specialist.md",
+      "specializations": [
+        "Business Email Communication",
+        "Professional Document Creation",
+        "Executive Communication",
+        "Corporate Proposals",
+        "Internal Communications",
+        "Client Communications"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.423320",
+      "last_updated": "2025-06-29T20:00:56.423322"
+    },
+    "mind_map_generator": {
+      "id": "mind_map_generator",
+      "title": "Mind Map Generator",
+      "name": "Phoenix",
+      "description": "Mind Map Generator & Visual Learning Specialist focused on creating interactive mind maps from diverse content sources.",
+      "persona": "personas/visual-content/mind-map-generator.md",
+      "specializations": [
+        "YouTube Video Processing",
+        "Website Content Mapping",
+        "PDF/Document Processing",
+        "Custom Input Processing",
+        "Interactive Mind Mapping",
+        "Learning Enhancement"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.423549",
+      "last_updated": "2025-06-29T20:00:56.423552"
+    },
+    "creative_writing_assistant": {
+      "id": "creative_writing_assistant",
+      "title": "Creative Writing Assistant",
+      "name": "Casey",
+      "description": "Creative Writing Assistant & Narrative Development Specialist focused on story creation, character development, and creative content enhancement.",
+      "persona": "personas/creative-writing/creative-writing-assistant.md",
+      "specializations": [
+        "Story Creation",
+        "Character Development",
+        "Plot Development",
+        "Dialogue Enhancement",
+        "World Building",
+        "Narrative Structure"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.423678",
+      "last_updated": "2025-06-29T20:00:56.423680"
+    },
+    "social_media_content_creator": {
+      "id": "social_media_content_creator",
+      "title": "Social Media Content Creator",
+      "name": "Riley",
+      "description": "Social Media Content Creator & Multi-Platform Engagement Specialist focused on platform-optimized content and community building.",
+      "persona": "personas/social-media/social-media-content-creator.md",
+      "specializations": [
+        "Multi-Platform Content",
+        "Engagement Optimization",
+        "Hashtag Strategy",
+        "Visual Content Creation",
+        "Community Building",
+        "Trend Integration"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.423811",
+      "last_updated": "2025-06-29T20:00:56.423812"
+    },
+    "social_media_strategist": {
+      "id": "social_media_strategist",
+      "title": "Social Media Strategist",
+      "name": "Maya Chen",
+      "description": "Social Media Strategist & Multi-Platform Content Specialist focused on comprehensive social media strategy, content creation, and engagement optimization across all major platforms.",
+      "persona": "personas/marketing-social/social-media-strategist.md",
+      "specializations": [
+        "Multi-Platform Strategy",
+        "Content Creation & Curation",
+        "AI-Powered Marketing",
+        "Influencer Collaboration",
+        "Social Commerce",
+        "Community Building"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.423935",
+      "last_updated": "2025-06-29T20:00:56.423937"
+    },
+    "ad_copy_generator": {
+      "id": "ad_copy_generator",
+      "title": "Ad Copy Generator",
+      "name": "Marcus Thompson",
+      "description": "Ad Copy Generator & Conversion Optimization Specialist focused on high-converting advertising copy creation across all digital platforms and media formats.",
+      "persona": "personas/marketing-social/ad-copy-generator.md",
+      "specializations": [
+        "Multi-Platform Ad Copy",
+        "Conversion Psychology",
+        "A/B Testing & Optimization",
+        "Direct Response Copywriting",
+        "AI-Enhanced Copywriting",
+        "Landing Page Copy"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.424055",
+      "last_updated": "2025-06-29T20:00:56.424056"
+    },
+    "email_marketing_specialist": {
+      "id": "email_marketing_specialist",
+      "title": "Email Marketing Specialist",
+      "name": "Sarah Rodriguez",
+      "description": "Email Marketing Specialist & Automation Expert focused on comprehensive email marketing strategy, automation, personalization, and performance optimization.",
+      "persona": "personas/marketing-social/email-marketing-specialist.md",
+      "specializations": [
+        "Email Automation & Workflows",
+        "AI-Powered Personalization",
+        "Deliverability Optimization",
+        "Performance Analytics",
+        "List Building & Segmentation",
+        "Cross-Channel Integration"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.424184",
+      "last_updated": "2025-06-29T20:00:56.424186"
+    },
+    "executive_summary_creator": {
+      "id": "executive_summary_creator",
+      "title": "Executive Summary Creator",
+      "name": "Dr. Victoria Sterling",
+      "description": "Executive Summary Creator & Strategic Communication Specialist focused on high-impact executive summaries, strategic document creation, and C-level communication.",
+      "persona": "personas/business-professional/executive-summary-creator.md",
+      "specializations": [
+        "Executive Summary Architecture",
+        "Strategic Communication",
+        "Business Case Development",
+        "Stakeholder Alignment",
+        "AI-Enhanced Writing",
+        "Document Strategy"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.424312",
+      "last_updated": "2025-06-29T20:00:56.424313"
+    },
+    "professional_email_drafter": {
+      "id": "professional_email_drafter",
+      "title": "Professional Email Drafter",
+      "name": "Jennifer Walsh",
+      "description": "Professional Email Drafter & Business Communication Expert focused on professional email composition, business correspondence optimization, and corporate communication excellence.",
+      "persona": "personas/business-professional/professional-email-drafter.md",
+      "specializations": [
+        "Professional Email Composition",
+        "Tone and Style Optimization",
+        "Cross-Cultural Communication",
+        "Executive Communication",
+        "Email Efficiency Systems",
+        "Crisis Communication"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.424551",
+      "last_updated": "2025-06-29T20:00:56.424553"
+    },
+    "api_documentation_specialist": {
+      "id": "api_documentation_specialist",
+      "title": "API Documentation Specialist",
+      "name": "Dr. Alex Chen",
+      "description": "API Documentation Specialist & Developer Experience Expert focused on comprehensive API documentation, interactive developer experiences, and technical communication excellence.",
+      "persona": "personas/technical-documentation/api-documentation-specialist.md",
+      "specializations": [
+        "Interactive API Documentation",
+        "OpenAPI/Swagger Standards",
+        "Developer Experience (DX)",
+        "AI-Optimized Documentation",
+        "Multi-Audience Communication",
+        "Documentation Automation"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.424687",
+      "last_updated": "2025-06-29T20:00:56.424689"
+    },
+    "code_explainer": {
+      "id": "code_explainer",
+      "title": "Code Explainer",
+      "name": "Dr. Morgan Kim",
+      "description": "Code Explainer & Technical Education Specialist focused on comprehensive code analysis, explanation, and technical education across all programming languages and frameworks.",
+      "persona": "personas/technical-documentation/code-explainer.md",
+      "specializations": [
+        "Multi-Language Code Analysis",
+        "Algorithm Explanation",
+        "Architecture Documentation",
+        "Code Quality Assessment",
+        "Educational Communication",
+        "Debugging and Troubleshooting"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.424807",
+      "last_updated": "2025-06-29T20:00:56.424809"
+    },
+    "master_electrician": {
+      "id": "master_electrician",
+      "title": "Master Electrician",
+      "name": "Marcus Rodriguez",
+      "description": "Master Electrician & Electrical Systems Specialist focused on advanced electrical systems, renewable energy integration, smart home automation, and AI-enhanced electrical diagnostics.",
+      "persona": "personas/skilled-trades/master-electrician.md",
+      "specializations": [
+        "Renewable Energy Systems",
+        "Smart Home Automation",
+        "Industrial Electrical Systems",
+        "Electrical Code Compliance",
+        "AI-Enhanced Diagnostics",
+        "Green Energy Integration"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.424929",
+      "last_updated": "2025-06-29T20:00:56.424931"
+    },
+    "ai_architect": {
+      "id": "ai_architect",
+      "title": "AI Architect",
+      "name": "Dr. Priya Sharma",
+      "description": "AI Architect & Machine Learning Systems Designer focused on enterprise AI architecture, machine learning infrastructure, and intelligent system design.",
+      "persona": "personas/technical-roles/ai-architect.md",
+      "specializations": [
+        "Enterprise AI Architecture",
+        "Machine Learning Infrastructure",
+        "AI Strategy and Planning",
+        "Multi-Modal AI Systems",
+        "AI Ethics and Governance",
+        "Cloud AI Platforms"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.425044",
+      "last_updated": "2025-06-29T20:00:56.425045"
+    },
+    "ai_sales_specialist": {
+      "id": "ai_sales_specialist",
+      "title": "AI Sales Specialist",
+      "name": "Alexandra Chen",
+      "description": "AI Sales Specialist & Digital Revenue Strategist focused on AI-powered sales automation, predictive lead generation, and intelligent customer relationship management.",
+      "persona": "personas/sales-positions/ai-sales-specialist.md",
+      "specializations": [
+        "AI-Powered Lead Generation",
+        "Sales Funnel Optimization",
+        "CRM and Sales Automation",
+        "Predictive Sales Analytics",
+        "Digital Sales Techniques",
+        "Sales Technology Integration"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.425164",
+      "last_updated": "2025-06-29T20:00:56.425166"
+    },
+    "ai_executive_assistant": {
+      "id": "ai_executive_assistant",
+      "title": "AI Executive Assistant",
+      "name": "Sarah Kim",
+      "description": "AI Executive Assistant & Digital Productivity Specialist focused on AI-powered executive support, intelligent task automation, and strategic administrative management.",
+      "persona": "personas/administrative-support/ai-executive-assistant.md",
+      "specializations": [
+        "AI-Powered Task Automation",
+        "Executive Communication Management",
+        "Digital Productivity Optimization",
+        "Intelligent Calendar Management",
+        "Data-Driven Executive Support",
+        "AI Tool Integration"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.425290",
+      "last_updated": "2025-06-29T20:00:56.425292"
+    },
+    "ai_healthcare_specialist": {
+      "id": "ai_healthcare_specialist",
+      "title": "AI Healthcare Specialist",
+      "name": "Dr. Maria Santos",
+      "description": "AI Healthcare Specialist & Digital Health Innovation Leader focused on AI-powered healthcare systems, clinical decision support, and intelligent patient care optimization.",
+      "persona": "personas/healthcare/ai-healthcare-specialist.md",
+      "specializations": [
+        "Clinical Decision Support Systems (CDSS)",
+        "Predictive Healthcare Analytics",
+        "AI-Powered Patient Monitoring",
+        "Healthcare AI Ethics and Safety",
+        "Digital Health Integration",
+        "AI-Enhanced Medical Education"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.425475",
+      "last_updated": "2025-06-29T20:00:56.425477"
+    },
+    "ai_curriculum_developer": {
+      "id": "ai_curriculum_developer",
+      "title": "AI Curriculum Developer",
+      "name": "Dr. Jennifer Park",
+      "description": "AI Curriculum Developer & Educational Technology Innovation Specialist focused on AI-powered curriculum design, personalized learning systems, and intelligent educational content creation.",
+      "persona": "personas/education/ai-curriculum-developer.md",
+      "specializations": [
+        "AI-Powered Curriculum Design",
+        "Learning Analytics and Assessment",
+        "Personalized Learning Systems",
+        "AI Literacy Education",
+        "Educational Content Automation",
+        "Digital Learning Experience Design"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.425609",
+      "last_updated": "2025-06-29T20:00:56.425610"
+    },
+    "ai_financial_advisor": {
+      "id": "ai_financial_advisor",
+      "title": "AI Financial Advisor",
+      "name": "Victoria Sterling",
+      "description": "AI Financial Advisor & Wealth Management Technology Specialist focused on AI-powered financial planning, intelligent investment strategies, and automated wealth management systems.",
+      "persona": "personas/financial-services/ai-financial-advisor.md",
+      "specializations": [
+        "AI-Powered Financial Planning",
+        "Robo-Advisory and Automated Investing",
+        "Predictive Financial Analytics",
+        "Personalized Wealth Management",
+        "RegTech and Compliance Automation",
+        "Digital Financial Education"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.425734",
+      "last_updated": "2025-06-29T20:00:56.425735"
+    },
+    "ai_production_manager": {
+      "id": "ai_production_manager",
+      "title": "AI Production Manager",
+      "name": "Robert Chen",
+      "description": "AI Production Manager & Smart Manufacturing Operations Leader focused on AI-powered production optimization, intelligent manufacturing systems, and automated quality control.",
+      "persona": "personas/manufacturing/ai-production-manager.md",
+      "specializations": [
+        "AI-Powered Production Optimization",
+        "Smart Manufacturing Systems",
+        "Automated Quality Control",
+        "Predictive Maintenance and Analytics",
+        "Collaborative Robotics (Cobots)",
+        "Digital Twin and Simulation"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.425865",
+      "last_updated": "2025-06-29T20:00:56.425869"
+    },
+    "ai_logistics_coordinator": {
+      "id": "ai_logistics_coordinator",
+      "title": "AI Logistics Coordinator",
+      "name": "Elena Rodriguez",
+      "description": "AI Logistics Coordinator & Smart Supply Chain Operations Manager focused on AI-powered logistics optimization, autonomous transportation systems, and intelligent supply chain management.",
+      "persona": "personas/transportation-logistics/ai-logistics-coordinator.md",
+      "specializations": [
+        "AI-Powered Logistics Optimization",
+        "Autonomous Transportation Systems",
+        "Smart Supply Chain Management",
+        "Predictive Logistics Analytics",
+        "Last-Mile Delivery Innovation",
+        "Freight and Cargo Automation"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.425998",
+      "last_updated": "2025-06-29T20:00:56.425999"
+    },
+    "ai_hospitality_manager": {
+      "id": "ai_hospitality_manager",
+      "title": "AI Hospitality Manager",
+      "name": "Isabella Chen",
+      "description": "AI Hospitality Manager & Guest Experience Innovation Leader focused on AI-powered hospitality operations, intelligent guest services, and automated customer experience optimization.",
+      "persona": "personas/hospitality-service/ai-hospitality-manager.md",
+      "specializations": [
+        "AI-Powered Guest Experience",
+        "Smart Hotel Operations",
+        "Contactless Service Technology",
+        "Revenue Management AI",
+        "Robotic Service Integration",
+        "Sustainability and Eco-Intelligence"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.426213",
+      "last_updated": "2025-06-29T20:00:56.426215"
+    },
+    "ai_content_creator": {
+      "id": "ai_content_creator",
+      "title": "AI Content Creator",
+      "name": "Maya Rodriguez",
+      "description": "AI Content Creator & Digital Media Innovation Specialist focused on AI-powered content creation, generative media production, and intelligent creative workflow optimization.",
+      "persona": "personas/creative-media/ai-content-creator.md",
+      "specializations": [
+        "AI-Powered Content Generation",
+        "Digital Media Production",
+        "Creative AI Integration",
+        "Personalized Content Strategy",
+        "Generative Media Technologies",
+        "Creative Operations Management"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.426363",
+      "last_updated": "2025-06-29T20:00:56.426365"
+    },
+    "ai_precision_agriculture_specialist": {
+      "id": "ai_precision_agriculture_specialist",
+      "title": "AI Precision Agriculture Specialist",
+      "name": "Dr. Carlos Mendoza",
+      "description": "AI Precision Agriculture Specialist & Sustainable Farming Technology Leader focused on AI-powered precision farming, intelligent crop management, and sustainable agricultural automation systems.",
+      "persona": "personas/agriculture-environment/ai-precision-agriculture-specialist.md",
+      "specializations": [
+        "AI-Powered Crop Management",
+        "Precision Farming Technology",
+        "Smart Irrigation and Resource Management",
+        "Agricultural Robotics and Automation",
+        "Climate-Smart Agriculture",
+        "Agricultural Data Analytics"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.426555",
+      "last_updated": "2025-06-29T20:00:56.426558"
+    },
+    "ai_public_administration_specialist": {
+      "id": "ai_public_administration_specialist",
+      "title": "AI Public Administration Specialist",
+      "name": "Dr. Sarah Washington",
+      "description": "AI Public Administration Specialist & Digital Government Innovation Leader focused on AI-powered government operations, intelligent public service delivery, and automated administrative process optimization.",
+      "persona": "personas/government-public-service/ai-public-administration-specialist.md",
+      "specializations": [
+        "AI-Powered Government Operations",
+        "Digital Public Service Delivery",
+        "Policy Analytics and Intelligence",
+        "Government Process Automation",
+        "Citizen Engagement Technology",
+        "Public Sector AI Governance"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.426705",
+      "last_updated": "2025-06-29T20:00:56.426706"
+    },
+    "ai_smart_grid_engineer": {
+      "id": "ai_smart_grid_engineer",
+      "title": "AI Smart Grid Engineer",
+      "name": "Dr. Elena Vasquez",
+      "description": "AI Smart Grid Engineer & Renewable Energy Integration Specialist focused on AI-powered smart grid systems, renewable energy integration, and intelligent power distribution optimization.",
+      "persona": "personas/energy-utilities/ai-smart-grid-engineer.md",
+      "specializations": [
+        "AI-Powered Grid Management",
+        "Renewable Energy Integration",
+        "Smart Grid Analytics",
+        "Energy Storage Optimization",
+        "Grid Cybersecurity and Resilience",
+        "Digital Twin Technology"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.426841",
+      "last_updated": "2025-06-29T20:00:56.426842"
+    },
+    "ai_construction_project_manager": {
+      "id": "ai_construction_project_manager",
+      "title": "AI Construction Project Manager",
+      "name": "Marcus Thompson",
+      "description": "AI Construction Project Manager & Smart Building Technology Leader focused on AI-powered construction management, intelligent building systems, and automated project optimization.",
+      "persona": "personas/construction-real-estate/ai-construction-project-manager.md",
+      "specializations": [
+        "AI-Powered Project Management",
+        "Smart Building Integration",
+        "Construction Technology Implementation",
+        "Automated Quality Control",
+        "Predictive Project Analytics",
+        "Workforce Management AI"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.426986",
+      "last_updated": "2025-06-29T20:00:56.426987"
+    },
+    "ai_customer_experience_specialist": {
+      "id": "ai_customer_experience_specialist",
+      "title": "AI Customer Experience Specialist",
+      "name": "Sofia Martinez",
+      "description": "AI Customer Experience Specialist & Digital Commerce Innovation Leader focused on AI-powered customer experience optimization, intelligent commerce platforms, and automated personalization systems.",
+      "persona": "personas/retail-consumer-services/ai-customer-experience-specialist.md",
+      "specializations": [
+        "AI-Powered Personalization",
+        "Agentic AI Commerce",
+        "Customer Journey Optimization",
+        "Digital Commerce Innovation",
+        "Predictive Customer Analytics",
+        "Conversational Commerce"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.427133",
+      "last_updated": "2025-06-29T20:00:56.427134"
+    },
+    "ai_sports_performance_analyst": {
+      "id": "ai_sports_performance_analyst",
+      "title": "AI Sports Performance Analyst",
+      "name": "Dr. Marcus Johnson",
+      "description": "AI Sports Performance Analyst & Athletic Intelligence Specialist focused on AI-powered sports analytics, intelligent performance optimization, and data-driven athletic development systems.",
+      "persona": "personas/sports-recreation/ai-sports-performance-analyst.md",
+      "specializations": [
+        "AI-Powered Performance Analytics",
+        "Wearable Technology Integration",
+        "Injury Prevention and Recovery",
+        "Training Program Optimization",
+        "Game Strategy and Tactical Analysis",
+        "Fan Engagement Analytics"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.427274",
+      "last_updated": "2025-06-29T20:00:56.427276"
+    },
+    "ai_social_impact_coordinator": {
+      "id": "ai_social_impact_coordinator",
+      "title": "AI Social Impact Coordinator",
+      "name": "Dr. Amara Patel",
+      "description": "AI Social Impact Coordinator & Community Development Innovation Leader focused on AI-powered social services optimization, intelligent community development, and automated impact measurement systems.",
+      "persona": "personas/nonprofit-social-services/ai-social-impact-coordinator.md",
+      "specializations": [
+        "AI-Powered Service Delivery",
+        "Predictive Social Analytics",
+        "Community Engagement Technology",
+        "Impact Measurement and Evaluation",
+        "Resource Optimization AI",
+        "Ethical AI Governance"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.427526",
+      "last_updated": "2025-06-29T20:00:56.427529"
+    },
+    "ai_narrative_designer": {
+      "id": "ai_narrative_designer",
+      "title": "AI Narrative Designer",
+      "name": "Dr. Isabella Chen",
+      "description": "AI Narrative Designer & Interactive Storytelling Specialist focused on AI-powered narrative design, interactive storytelling systems, and intelligent character development for multimedia experiences.",
+      "persona": "personas/creative-writing/ai-narrative-designer.md",
+      "specializations": [
+        "AI-Powered Story Development",
+        "Interactive Character Creation",
+        "Branching Narrative Design",
+        "Dialogue and Voice Systems",
+        "World Building and Lore Creation",
+        "Narrative Analytics and Optimization"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.427665",
+      "last_updated": "2025-06-29T20:00:56.427666"
+    },
+    "ai_research_specialist": {
+      "id": "ai_research_specialist",
+      "title": "AI Research Specialist",
+      "name": "Dr. Marcus Thompson",
+      "description": "AI Research Specialist & Scholarly Intelligence Systems Leader focused on AI-powered research methodology, intelligent academic writing systems, and automated scholarly analysis platforms.",
+      "persona": "personas/academic-research/ai-research-specialist.md",
+      "specializations": [
+        "AI-Powered Research Methodology",
+        "Scholarly Writing Systems",
+        "Research Analytics and Intelligence",
+        "Citation and Reference Management",
+        "Academic Content Generation",
+        "Research Integrity and Quality Assurance"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.427807",
+      "last_updated": "2025-06-29T20:00:56.427809"
+    },
+    "ai_visual_design_specialist": {
+      "id": "ai_visual_design_specialist",
+      "title": "AI Visual Design Specialist",
+      "name": "Alexandra Rivera",
+      "description": "AI Visual Design Specialist & Digital Creative Innovation Leader focused on AI-powered visual content creation, intelligent design automation, and generative visual media systems.",
+      "persona": "personas/visual-content-creation/ai-visual-design-specialist.md",
+      "specializations": [
+        "AI-Powered Visual Generation",
+        "Generative Design Systems",
+        "3D and Immersive Visual Creation",
+        "Brand Visual Identity AI",
+        "Motion Graphics and Animation",
+        "Visual Analytics and Optimization"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.427951",
+      "last_updated": "2025-06-29T20:00:56.427952"
+    },
+    "ai_digital_marketing_strategist": {
+      "id": "ai_digital_marketing_strategist",
+      "title": "AI Digital Marketing Strategist",
+      "name": "Dr. Sarah Kim",
+      "description": "AI Digital Marketing Strategist & Social Media Intelligence Leader focused on AI-powered marketing automation, intelligent social media management, and data-driven campaign optimization systems.",
+      "persona": "personas/marketing-social-media/ai-digital-marketing-strategist.md",
+      "specializations": [
+        "AI-Powered Campaign Optimization",
+        "Social Media Intelligence",
+        "Marketing Analytics and Insights",
+        "Content Marketing Automation",
+        "Customer Journey AI",
+        "Influencer and Partnership AI"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.428101",
+      "last_updated": "2025-06-29T20:00:56.428102"
+    },
+    "ai_technical_documentation_specialist": {
+      "id": "ai_technical_documentation_specialist",
+      "title": "AI Technical Documentation Specialist",
+      "name": "Dr. Michael Chen",
+      "description": "AI Technical Documentation Specialist & Developer Experience Innovation Leader focused on AI-powered technical writing, intelligent documentation systems, and automated developer experience optimization.",
+      "persona": "personas/technical-documentation/ai-technical-documentation-specialist.md",
+      "specializations": [
+        "AI-Powered Technical Writing",
+        "API Documentation Excellence",
+        "Developer Experience Engineering",
+        "Documentation Systems Architecture",
+        "Code Documentation Automation",
+        "Interactive Documentation Design"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.428262",
+      "last_updated": "2025-06-29T20:00:56.428264"
+    },
+    "ai_business_development_strategist": {
+      "id": "ai_business_development_strategist",
+      "title": "AI Business Development Strategist",
+      "name": "Dr. Victoria Chen",
+      "description": "AI Business Development Strategist & Entrepreneurship Innovation Leader focused on AI-powered business development, intelligent startup consulting, and automated strategic planning systems.",
+      "persona": "personas/business-development/ai-business-development-strategist.md",
+      "specializations": [
+        "AI-Powered Strategic Planning",
+        "Startup Development and Acceleration",
+        "Business Proposal and Pitch Creation",
+        "Market Intelligence and Analysis",
+        "Innovation Management Systems",
+        "Partnership and Alliance Development"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.428466",
+      "last_updated": "2025-06-29T20:00:56.428469"
+    },
+    "ai_instructional_design_specialist": {
+      "id": "ai_instructional_design_specialist",
+      "title": "AI Instructional Design Specialist",
+      "name": "Dr. Sarah Martinez",
+      "description": "AI Instructional Design Specialist & Educational Technology Innovation Leader focused on AI-powered instructional design, intelligent learning systems, and automated curriculum development platforms.",
+      "persona": "personas/educational-technology/ai-instructional-design-specialist.md",
+      "specializations": [
+        "AI-Powered Curriculum Development",
+        "Personalized Learning Systems",
+        "Learning Analytics and Assessment",
+        "Educational Content Creation",
+        "Learning Experience Design",
+        "Educational Technology Integration"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.428624",
+      "last_updated": "2025-06-29T20:00:56.428625"
+    },
+    "ai_talent_management_specialist": {
+      "id": "ai_talent_management_specialist",
+      "title": "AI Talent Management Specialist",
+      "name": "Dr. Jennifer Park",
+      "description": "AI Talent Management Specialist & Human Resources Innovation Leader focused on AI-powered talent management, intelligent recruitment systems, and automated employee development platforms.",
+      "persona": "personas/human-resources/ai-talent-management-specialist.md",
+      "specializations": [
+        "AI-Powered Recruitment and Selection",
+        "Employee Development and Performance Management",
+        "Workforce Analytics and Planning",
+        "Employee Experience and Engagement",
+        "Compensation and Benefits Optimization",
+        "HR Process Automation"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.428774",
+      "last_updated": "2025-06-29T20:00:56.428775"
+    },
+    "ai_legal_compliance_specialist": {
+      "id": "ai_legal_compliance_specialist",
+      "title": "AI Legal Compliance Specialist",
+      "name": "Dr. David Rodriguez",
+      "description": "AI Legal Compliance Specialist & Regulatory Technology Innovation Leader focused on AI-powered legal compliance, intelligent contract management, and automated regulatory analysis systems.",
+      "persona": "personas/legal-compliance/ai-legal-compliance-specialist.md",
+      "specializations": [
+        "AI-Powered Contract Management",
+        "Regulatory Compliance Automation",
+        "Legal Document Generation",
+        "Legal Research and Analysis",
+        "Risk Assessment and Mitigation",
+        "Legal Process Optimization"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.428928",
+      "last_updated": "2025-06-29T20:00:56.428929"
+    },
+    "ai_event_planning_specialist": {
+      "id": "ai_event_planning_specialist",
+      "title": "AI Event Planning Specialist",
+      "name": "Maria Gonzalez",
+      "description": "AI Event Planning Specialist & Experience Innovation Leader focused on AI-powered event management, intelligent venue coordination, and automated attendee experience optimization.",
+      "persona": "personas/event-management/ai-event-planning-specialist.md",
+      "specializations": [
+        "AI-Powered Event Planning",
+        "Virtual and Hybrid Event Technology",
+        "Attendee Experience Optimization",
+        "Event Marketing and Promotion",
+        "Venue and Vendor Management",
+        "Event Analytics and Performance"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.429073",
+      "last_updated": "2025-06-29T20:00:56.429074"
+    },
+    "ai_compliance_specialist": {
+      "id": "ai_compliance_specialist",
+      "title": "AI Compliance Specialist",
+      "name": "David Chen",
+      "description": "AI Compliance Specialist & Regulatory Technology Expert focused on AI-powered compliance automation, regulatory intelligence, and intelligent risk management systems.",
+      "persona": "personas/legal-compliance/ai-compliance-specialist.md",
+      "specializations": [
+        "Regulatory Intelligence Automation",
+        "Compliance Process Automation",
+        "AI Ethics and Governance",
+        "Cybersecurity Compliance",
+        "RegTech Implementation",
+        "Risk Assessment and Prediction"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.429213",
+      "last_updated": "2025-06-29T20:00:56.429214"
+    },
+    "ai_project_manager": {
+      "id": "ai_project_manager",
+      "title": "AI Project Manager",
+      "name": "Michael Thompson",
+      "description": "AI Project Manager & Digital Transformation Leader focused on AI-enhanced project management, intelligent team coordination, and data-driven project optimization.",
+      "persona": "personas/management-functions/ai-project-manager.md",
+      "specializations": [
+        "AI-Enhanced Project Planning",
+        "Risk Prediction and Mitigation",
+        "Team Performance Optimization",
+        "Intelligent Resource Management",
+        "Data-Driven Decision Making",
+        "Digital Project Transformation"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.429368",
+      "last_updated": "2025-06-29T20:00:56.429370"
+    },
+    "visual_content_creator": {
+      "id": "visual_content_creator",
+      "title": "Visual Content Creator",
+      "name": "Isabella Martinez",
+      "description": "Visual Content Creator & AI-Powered Design Specialist focused on comprehensive visual content creation, AI-assisted design, and brand-consistent graphic development.",
+      "persona": "personas/visual-content/visual-content-creator.md",
+      "specializations": [
+        "AI-Powered Visual Creation",
+        "Brand Visual Identity",
+        "Multi-Platform Design",
+        "Design Automation",
+        "Visual Storytelling",
+        "Trend Integration"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.429551",
+      "last_updated": "2025-06-29T20:00:56.429554"
+    },
+    "logo_generator": {
+      "id": "logo_generator",
+      "title": "Logo Generator",
+      "name": "David Chen",
+      "description": "Logo Generator & Brand Identity Specialist focused on AI-powered logo creation, brand identity development, and visual brand system design.",
+      "persona": "personas/visual-content/logo-generator.md",
+      "specializations": [
+        "AI-Powered Logo Creation",
+        "Brand Identity Systems",
+        "Logo Psychology and Strategy",
+        "Multi-Format Logo Optimization",
+        "Brand Consistency Management",
+        "Industry-Specific Logo Design"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.429684",
+      "last_updated": "2025-06-29T20:00:56.429685"
+    },
+    "story_plot_generator": {
+      "id": "story_plot_generator",
+      "title": "Story Plot Generator",
+      "name": "Luna Blackwood",
+      "description": "Story Plot Generator & Narrative Architecture Specialist focused on creative plot development, story structure design, and narrative innovation.",
+      "persona": "personas/creative-writing/story-plot-generator.md",
+      "specializations": [
+        "Plot Architecture",
+        "Genre Expertise",
+        "Character-Driven Plotting",
+        "Conflict Engineering",
+        "Narrative Innovation",
+        "Plot Problem-Solving"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.429825",
+      "last_updated": "2025-06-29T20:00:56.429827"
+    },
+    "character_creator": {
+      "id": "character_creator",
+      "title": "Character Creator",
+      "name": "Jordan",
+      "description": "Character Creator & Multi-Dimensional Character Development Specialist focused on creating authentic, complex characters.",
+      "persona": "personas/creative-writing/character-creator.md",
+      "specializations": [
+        "Character Psychology",
+        "Personality Design",
+        "Trait Integration",
+        "Backstory Development",
+        "Character Voice",
+        "Relationship Dynamics"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.429959",
+      "last_updated": "2025-06-29T20:00:56.429960"
+    },
+    "world_builder": {
+      "id": "world_builder",
+      "title": "World Builder",
+      "name": "Sage",
+      "description": "World Builder & Fictional Universe Architect focused on creating comprehensive fictional worlds with geography, culture, and history.",
+      "persona": "personas/creative-writing/world-builder.md",
+      "specializations": [
+        "Geography Design",
+        "Culture Development",
+        "Magic Systems",
+        "Political Structures",
+        "Economic Systems",
+        "Historical Timelines"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.439815",
+      "last_updated": "2025-06-29T20:00:56.439816"
+    },
+    "dialogue_enhancer": {
+      "id": "dialogue_enhancer",
+      "title": "Dialogue Enhancer",
+      "name": "River",
+      "description": "Dialogue Enhancer & Conversation Specialist focused on crafting natural, compelling dialogue with subtext and character voice.",
+      "persona": "personas/creative-writing/dialogue-enhancer.md",
+      "specializations": [
+        "Subtext Integration",
+        "Character Voice Differentiation",
+        "Dialogue Flow Optimization",
+        "Emotional Depth Enhancement",
+        "Conflict Through Conversation",
+        "Genre-Specific Dialogue"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.430746",
+      "last_updated": "2025-06-29T20:00:56.430747"
+    },
+    "metaphor_generator": {
+      "id": "metaphor_generator",
+      "title": "Metaphor Generator",
+      "name": "Dr. Sophia Chen",
+      "description": "Metaphor Generator & Literary Device Specialist focused on creative metaphor development, symbolic language creation, and figurative expression enhancement.",
+      "persona": "personas/creative-writing/metaphor-generator.md",
+      "specializations": [
+        "Metaphor Creation and Development",
+        "Cross-Cultural Metaphorical Systems",
+        "Conceptual Metaphor Theory",
+        "Symbolic Language Integration",
+        "Genre-Specific Metaphorical Styles",
+        "Extended Metaphor Development"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.430383",
+      "last_updated": "2025-06-29T20:00:56.430385"
+    },
+    "conflict_intensifier": {
+      "id": "conflict_intensifier",
+      "title": "Conflict Intensifier",
+      "name": "Marcus Blackwood",
+      "description": "Conflict Intensifier & Dramatic Tension Specialist focused on story conflict escalation, dramatic tension creation, and narrative crisis development.",
+      "persona": "personas/creative-writing/conflict-intensifier.md",
+      "specializations": [
+        "Conflict Escalation Techniques",
+        "Multi-Layered Conflict Development",
+        "Crisis Point Engineering",
+        "Character-Driven Conflict",
+        "Genre-Specific Tension",
+        "Pacing and Rhythm Control"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.430560",
+      "last_updated": "2025-06-29T20:00:56.430563"
+    },
+    "story_structure_adapter": {
+      "id": "story_structure_adapter",
+      "title": "Story Structure Adapter",
+      "name": "Alex",
+      "description": "Story Structure Adapter & Narrative Framework Specialist focused on applying proven storytelling structures.",
+      "persona": "personas/creative-writing/story-structure-adapter.md",
+      "specializations": [
+        "Narrative Frameworks",
+        "Genre Conventions",
+        "Pacing Optimization",
+        "Plot Organization",
+        "Adaptation Techniques",
+        "Structure Innovation"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.430705",
+      "last_updated": "2025-06-29T20:00:56.430706"
+    },
+    "business_proposal_writer": {
+      "id": "business_proposal_writer",
+      "title": "Business Proposal Writer",
+      "name": "Cameron",
+      "description": "Business Proposal Writer & Strategic Document Specialist focused on creating compelling proposals that drive business results.",
+      "persona": "personas/business/business-proposal-writer.md",
+      "specializations": [
+        "Proposal Strategy Development",
+        "Value Proposition Articulation",
+        "Financial Modeling",
+        "Risk Assessment",
+        "Executive Communication",
+        "Competitive Positioning"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.430895",
+      "last_updated": "2025-06-29T20:00:56.430897"
+    },
+    "blog_content_generator": {
+      "id": "blog_content_generator",
+      "title": "Blog Content Generator",
+      "name": "Sage",
+      "description": "Blog Content Generator & Digital Content Specialist focused on SEO-optimized blog content and audience engagement.",
+      "persona": "personas/content-generation/blog-content-generator.md",
+      "specializations": [
+        "SEO Content Writing",
+        "Audience Research",
+        "Content Strategy Development",
+        "Multi-Format Content",
+        "Content Performance Optimization",
+        "Brand Storytelling"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.431039",
+      "last_updated": "2025-06-29T20:00:56.431040"
+    },
+    "conclusion_writer": {
+      "id": "conclusion_writer",
+      "title": "Conclusion Writer",
+      "name": "Casey",
+      "description": "Conclusion Writer & Narrative Closure Specialist focused on creating impactful endings and argument synthesis.",
+      "persona": "personas/writing-enhancement/conclusion-writer.md",
+      "specializations": [
+        "Narrative Closure",
+        "Argument Synthesis",
+        "Thematic Reinforcement",
+        "Emotional Resolution",
+        "Call-to-Action Integration",
+        "Memorable Endings"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.431178",
+      "last_updated": "2025-06-29T20:00:56.431179"
+    },
+    "attention_grabber": {
+      "id": "attention_grabber",
+      "title": "Attention Grabber",
+      "name": "Morgan",
+      "description": "Attention Grabber & Hook Creation Specialist focused on creating powerful opening lines and attention-capturing content.",
+      "persona": "personas/writing-enhancement/attention-grabber.md",
+      "specializations": [
+        "Hook Psychology",
+        "Opening Line Mastery",
+        "Curiosity Gap Engineering",
+        "Emotional Triggers",
+        "Format Adaptation",
+        "Audience Targeting"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.431316",
+      "last_updated": "2025-06-29T20:00:56.431318"
+    },
+    "essay_outliner": {
+      "id": "essay_outliner",
+      "title": "Essay Outliner",
+      "name": "Taylor",
+      "description": "Essay Outliner & Academic Structure Specialist focused on creating comprehensive outlines for effective essay development.",
+      "persona": "personas/writing-enhancement/essay-outliner.md",
+      "specializations": [
+        "Academic Essay Structure",
+        "Argument Organization",
+        "Thesis Development",
+        "Research Integration",
+        "Citation Planning",
+        "Discipline-Specific Conventions"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.431564",
+      "last_updated": "2025-06-29T20:00:56.431567"
+    },
+    "frontend_developer": {
+      "id": "frontend_developer",
+      "title": "Frontend Developer",
+      "name": "Alex",
+      "description": "Frontend specialist focused on UI/UX implementation, responsive design, and modern web technologies.",
+      "persona": "personas/frontend-developer.md",
+      "specializations": [
+        "React",
+        "Vue.js",
+        "Angular",
+        "TypeScript",
+        "CSS3",
+        "HTML5",
+        "Responsive Design",
+        "PWA"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.431712",
+      "last_updated": "2025-06-29T20:00:56.431714"
+    },
+    "backend_developer": {
+      "id": "backend_developer",
+      "title": "Backend Developer",
+      "name": "Jordan",
+      "description": "Backend specialist focused on server-side logic, API development, and scalable system architecture.",
+      "persona": "personas/backend-developer.md",
+      "specializations": [
+        "Node.js",
+        "Python",
+        "Java",
+        "Go",
+        "REST APIs",
+        "GraphQL",
+        "Microservices",
+        "Database Design"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.431857",
+      "last_updated": "2025-06-29T20:00:56.431858"
+    },
+    "full_stack_developer": {
+      "id": "full_stack_developer",
+      "title": "Full-Stack Developer",
+      "name": "Casey",
+      "description": "Full-stack specialist capable of end-to-end application development across all layers.",
+      "persona": "personas/fullstack-developer.md",
+      "specializations": [
+        "MEAN Stack",
+        "MERN Stack",
+        "Django",
+        "Rails",
+        "Next.js",
+        "Nuxt.js",
+        "Full-Stack Architecture"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.431999",
+      "last_updated": "2025-06-29T20:00:56.432001"
+    },
+    "mobile_developer": {
+      "id": "mobile_developer",
+      "title": "Mobile Developer",
+      "name": "Morgan",
+      "description": "Mobile specialist focused on iOS/Android native and cross-platform application development.",
+      "persona": "personas/mobile-developer.md",
+      "specializations": [
+        "React Native",
+        "Flutter",
+        "Swift",
+        "Kotlin",
+        "Xamarin",
+        "Mobile UI/UX",
+        "App Store Optimization"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.432137",
+      "last_updated": "2025-06-29T20:00:56.432139"
+    },
+    "web_developer": {
+      "id": "web_developer",
+      "title": "Web Developer",
+      "name": "Riley",
+      "description": "Web specialist focused on web applications, progressive web apps, and modern web technologies.",
+      "persona": "personas/web-developer.md",
+      "specializations": [
+        "Progressive Web Apps",
+        "Web APIs",
+        "Service Workers",
+        "WebAssembly",
+        "Web Performance",
+        "Browser Compatibility"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.432271",
+      "last_updated": "2025-06-29T20:00:56.432272"
+    },
+    "api_developer": {
+      "id": "api_developer",
+      "title": "API Developer",
+      "name": "Avery",
+      "description": "API specialist focused on RESTful/GraphQL API design, implementation, and governance.",
+      "persona": "personas/api-developer.md",
+      "specializations": [
+        "REST API Design",
+        "GraphQL",
+        "API Gateway",
+        "OpenAPI",
+        "API Security",
+        "API Versioning",
+        "Developer Experience"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.432462",
+      "last_updated": "2025-06-29T20:00:56.432464"
+    },
+    "database_developer": {
+      "id": "database_developer",
+      "title": "Database Developer",
+      "name": "Quinn",
+      "description": "Database specialist focused on database design, optimization, and data architecture.",
+      "persona": "personas/database-developer.md",
+      "specializations": [
+        "SQL",
+        "NoSQL",
+        "Database Design",
+        "Query Optimization",
+        "Data Modeling",
+        "Database Security",
+        "Replication"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.432614",
+      "last_updated": "2025-06-29T20:00:56.432616"
+    },
+    "microservices_developer": {
+      "id": "microservices_developer",
+      "title": "Microservices Developer",
+      "name": "Sage",
+      "description": "Microservices specialist focused on distributed systems, service architecture, and scalable design patterns.",
+      "persona": "personas/microservices-developer.md",
+      "specializations": [
+        "Service Mesh",
+        "Domain-Driven Design",
+        "Event-Driven Architecture",
+        "Service Discovery",
+        "Circuit Breakers",
+        "Distributed Tracing"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.432763",
+      "last_updated": "2025-06-29T20:00:56.432764"
+    },
+    "game_developer": {
+      "id": "game_developer",
+      "title": "Game Developer",
+      "name": "Phoenix",
+      "description": "Game development specialist focused on game engines, graphics, gameplay mechanics, and interactive entertainment.",
+      "persona": "personas/game-developer.md",
+      "specializations": [
+        "Unity",
+        "Unreal Engine",
+        "C#",
+        "C++",
+        "Game Physics",
+        "3D Graphics",
+        "Gameplay Programming",
+        "Game Optimization"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.432911",
+      "last_updated": "2025-06-29T20:00:56.432912"
+    },
+    "embedded_developer": {
+      "id": "embedded_developer",
+      "title": "Embedded Developer",
+      "name": "Taylor",
+      "description": "Embedded systems specialist focused on IoT, firmware, hardware integration, and real-time systems.",
+      "persona": "personas/embedded-developer.md",
+      "specializations": [
+        "C/C++",
+        "Embedded Linux",
+        "RTOS",
+        "IoT Protocols",
+        "Hardware Interfaces",
+        "Firmware Development",
+        "Low-Power Design"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.433056",
+      "last_updated": "2025-06-29T20:00:56.433058"
+    },
+    "desktop_developer": {
+      "id": "desktop_developer",
+      "title": "Desktop Developer",
+      "name": "Cameron",
+      "description": "Desktop application specialist focused on native desktop applications and cross-platform development.",
+      "persona": "personas/desktop-developer.md",
+      "specializations": [
+        "Electron",
+        "Qt",
+        "WPF",
+        ".NET",
+        "Java Swing",
+        "Native APIs",
+        "Cross-Platform Development",
+        "Desktop UI/UX"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.433199",
+      "last_updated": "2025-06-29T20:00:56.433201"
+    },
+    "blockchain_developer": {
+      "id": "blockchain_developer",
+      "title": "Blockchain Developer",
+      "name": "River",
+      "description": "Blockchain specialist focused on smart contracts, DeFi, Web3 applications, and decentralized systems.",
+      "persona": "personas/blockchain-developer.md",
+      "specializations": [
+        "Solidity",
+        "Web3.js",
+        "Ethereum",
+        "Smart Contracts",
+        "DeFi",
+        "NFTs",
+        "Blockchain Security",
+        "Consensus Mechanisms"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.433365",
+      "last_updated": "2025-06-29T20:00:56.433367"
+    },
+    "devops_engineer": {
+      "id": "devops_engineer",
+      "title": "DevOps Engineer",
+      "name": "Alex",
+      "description": "DevOps specialist focused on CI/CD, automation, infrastructure as code, and development workflow optimization.",
+      "persona": "personas/devops-engineer.md",
+      "specializations": [
+        "CI/CD",
+        "Infrastructure as Code",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Ansible",
+        "Cloud Platforms",
+        "Monitoring"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.433552",
+      "last_updated": "2025-06-29T20:00:56.433554"
+    },
+    "site_reliability_engineer": {
+      "id": "site_reliability_engineer",
+      "title": "Site Reliability Engineer",
+      "name": "Jordan",
+      "description": "SRE specialist focused on system reliability, monitoring, incident response, and service level objectives.",
+      "persona": "personas/sre-engineer.md",
+      "specializations": [
+        "SLO/SLI",
+        "Incident Response",
+        "Chaos Engineering",
+        "Observability",
+        "Performance Monitoring",
+        "Capacity Planning",
+        "Reliability Engineering"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.433710",
+      "last_updated": "2025-06-29T20:00:56.433712"
+    },
+    "platform_engineer": {
+      "id": "platform_engineer",
+      "title": "Platform Engineer",
+      "name": "Casey",
+      "description": "Platform specialist focused on developer platforms, internal tools, and productivity enhancement.",
+      "persona": "personas/platform-engineer.md",
+      "specializations": [
+        "Developer Platforms",
+        "Internal Tools",
+        "Self-Service Infrastructure",
+        "Developer Experience",
+        "Platform APIs",
+        "Toolchain Integration"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.433860",
+      "last_updated": "2025-06-29T20:00:56.433862"
+    },
+    "cloud_architect": {
+      "id": "cloud_architect",
+      "title": "Cloud Architect",
+      "name": "Morgan",
+      "description": "Cloud specialist focused on cloud strategy, multi-cloud architectures, and cloud-native design.",
+      "persona": "personas/cloud-architect.md",
+      "specializations": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Multi-Cloud",
+        "Cloud-Native",
+        "Serverless",
+        "Cloud Security",
+        "Cost Optimization"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.434003",
+      "last_updated": "2025-06-29T20:00:56.434005"
+    },
+    "infrastructure_engineer": {
+      "id": "infrastructure_engineer",
+      "title": "Infrastructure Engineer",
+      "name": "Riley",
+      "description": "Infrastructure specialist focused on server management, networking, capacity planning, and infrastructure automation.",
+      "persona": "personas/infrastructure-engineer.md",
+      "specializations": [
+        "Server Management",
+        "Network Design",
+        "Capacity Planning",
+        "Infrastructure Automation",
+        "Load Balancing",
+        "Storage Systems"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.434153",
+      "last_updated": "2025-06-29T20:00:56.434154"
+    },
+    "kubernetes_engineer": {
+      "id": "kubernetes_engineer",
+      "title": "Kubernetes Engineer",
+      "name": "Avery",
+      "description": "Kubernetes specialist focused on container orchestration, cluster management, and cloud-native technologies.",
+      "persona": "personas/kubernetes-engineer.md",
+      "specializations": [
+        "Kubernetes",
+        "Helm",
+        "Service Mesh",
+        "Container Security",
+        "Cluster Management",
+        "Cloud-Native",
+        "Operators",
+        "GitOps"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.434302",
+      "last_updated": "2025-06-29T20:00:56.434303"
+    },
+    "network_engineer": {
+      "id": "network_engineer",
+      "title": "Network Engineer",
+      "name": "Quinn",
+      "description": "Network specialist focused on network design, security, performance optimization, and infrastructure connectivity.",
+      "persona": "personas/network-engineer.md",
+      "specializations": [
+        "Network Design",
+        "Network Security",
+        "VPN",
+        "Load Balancing",
+        "DNS",
+        "CDN",
+        "Network Monitoring",
+        "SD-WAN"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.434506",
+      "last_updated": "2025-06-29T20:00:56.434509"
+    },
+    "systems_administrator": {
+      "id": "systems_administrator",
+      "title": "Systems Administrator",
+      "name": "Sage",
+      "description": "Systems administration specialist focused on server administration, maintenance, troubleshooting, and system optimization.",
+      "persona": "personas/systems-administrator.md",
+      "specializations": [
+        "Linux Administration",
+        "Windows Server",
+        "System Monitoring",
+        "Backup Systems",
+        "Security Hardening",
+        "Automation Scripts"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.434661",
+      "last_updated": "2025-06-29T20:00:56.434663"
+    },
+    "monitoring_engineer": {
+      "id": "monitoring_engineer",
+      "title": "Monitoring Engineer",
+      "name": "Phoenix",
+      "description": "Monitoring specialist focused on observability, metrics, alerting systems, and performance monitoring.",
+      "persona": "personas/monitoring-engineer.md",
+      "specializations": [
+        "Prometheus",
+        "Grafana",
+        "ELK Stack",
+        "Distributed Tracing",
+        "APM",
+        "Log Management",
+        "Alerting",
+        "Observability"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.434814",
+      "last_updated": "2025-06-29T20:00:56.434816"
+    },
+    "deployment_engineer": {
+      "id": "deployment_engineer",
+      "title": "Deployment Engineer",
+      "name": "Taylor",
+      "description": "Deployment specialist focused on release management, deployment strategies, and production rollouts.",
+      "persona": "personas/deployment-engineer.md",
+      "specializations": [
+        "Blue-Green Deployment",
+        "Canary Releases",
+        "Rolling Updates",
+        "Feature Flags",
+        "Release Automation",
+        "Rollback Strategies"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.434967",
+      "last_updated": "2025-06-29T20:00:56.434968"
+    },
+    "security_engineer": {
+      "id": "security_engineer",
+      "title": "Security Engineer",
+      "name": "Cameron",
+      "description": "Security specialist focused on application security, threat modeling, and secure development practices.",
+      "persona": "personas/security-engineer.md",
+      "specializations": [
+        "Application Security",
+        "Threat Modeling",
+        "Secure Coding",
+        "Vulnerability Assessment",
+        "Security Testing",
+        "OWASP",
+        "Security Architecture"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.435113",
+      "last_updated": "2025-06-29T20:00:56.435114"
+    },
+    "cybersecurity_analyst": {
+      "id": "cybersecurity_analyst",
+      "title": "Cybersecurity Analyst",
+      "name": "River",
+      "description": "Cybersecurity specialist focused on threat detection, incident response, and security operations.",
+      "persona": "personas/cybersecurity-analyst.md",
+      "specializations": [
+        "Threat Detection",
+        "Incident Response",
+        "SIEM",
+        "Threat Intelligence",
+        "Forensics",
+        "Security Operations",
+        "Malware Analysis"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.435263",
+      "last_updated": "2025-06-29T20:00:56.435264"
+    },
+    "penetration_tester": {
+      "id": "penetration_tester",
+      "title": "Penetration Tester",
+      "name": "Alex",
+      "description": "Penetration testing specialist focused on vulnerability assessment, ethical hacking, and security validation.",
+      "persona": "personas/penetration-tester.md",
+      "specializations": [
+        "Penetration Testing",
+        "Ethical Hacking",
+        "Vulnerability Assessment",
+        "Exploit Development",
+        "Red Team Operations",
+        "Security Assessment"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.435529",
+      "last_updated": "2025-06-29T20:00:56.435532"
+    },
+    "compliance_officer": {
+      "id": "compliance_officer",
+      "title": "Compliance Officer",
+      "name": "Jordan",
+      "description": "Compliance specialist focused on regulatory compliance, audit preparation, and governance frameworks.",
+      "persona": "personas/compliance-officer.md",
+      "specializations": [
+        "GDPR",
+        "SOC 2",
+        "HIPAA",
+        "PCI DSS",
+        "ISO 27001",
+        "Compliance Frameworks",
+        "Audit Preparation",
+        "Risk Management"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.435695",
+      "last_updated": "2025-06-29T20:00:56.435696"
+    },
+    "privacy_engineer": {
+      "id": "privacy_engineer",
+      "title": "Privacy Engineer",
+      "name": "Casey",
+      "description": "Privacy specialist focused on data privacy, GDPR/CCPA compliance, and privacy-by-design implementation.",
+      "persona": "personas/privacy-engineer.md",
+      "specializations": [
+        "GDPR",
+        "CCPA",
+        "Privacy by Design",
+        "Data Minimization",
+        "Consent Management",
+        "Data Protection",
+        "Privacy Impact Assessment"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.435851",
+      "last_updated": "2025-06-29T20:00:56.435852"
+    },
+    "identity_engineer": {
+      "id": "identity_engineer",
+      "title": "Identity Engineer",
+      "name": "Morgan",
+      "description": "Identity specialist focused on authentication, authorization, identity management, and access control systems.",
+      "persona": "personas/identity-engineer.md",
+      "specializations": [
+        "OAuth",
+        "SAML",
+        "OpenID Connect",
+        "Zero Trust",
+        "Multi-Factor Authentication",
+        "Identity Providers",
+        "Access Management"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.436001",
+      "last_updated": "2025-06-29T20:00:56.436003"
+    },
+    "cryptography_engineer": {
+      "id": "cryptography_engineer",
+      "title": "Cryptography Engineer",
+      "name": "Riley",
+      "description": "Cryptography specialist focused on encryption, key management, secure protocols, and cryptographic implementation.",
+      "persona": "personas/cryptography-engineer.md",
+      "specializations": [
+        "Encryption Algorithms",
+        "Key Management",
+        "PKI",
+        "Cryptographic Protocols",
+        "Secure Communications",
+        "Hardware Security Modules"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.436154",
+      "last_updated": "2025-06-29T20:00:56.436156"
+    },
+    "security_architect": {
+      "id": "security_architect",
+      "title": "Security Architect",
+      "name": "Avery",
+      "description": "Security architecture specialist focused on security strategy, enterprise security design, and security governance.",
+      "persona": "personas/security-architect.md",
+      "specializations": [
+        "Security Architecture",
+        "Risk Assessment",
+        "Security Frameworks",
+        "Enterprise Security",
+        "Security Governance",
+        "Threat Landscape"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.436312",
+      "last_updated": "2025-06-29T20:00:56.436314"
+    },
+    "data_engineer": {
+      "id": "data_engineer",
+      "title": "Data Engineer",
+      "name": "Quinn",
+      "description": "Data engineering specialist focused on data pipelines, ETL processes, and data infrastructure.",
+      "persona": "personas/data-engineer.md",
+      "specializations": [
+        "Data Pipelines",
+        "ETL/ELT",
+        "Apache Spark",
+        "Apache Kafka",
+        "Data Warehousing",
+        "Real-time Processing",
+        "Data Quality"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.436524",
+      "last_updated": "2025-06-29T20:00:56.436527"
+    },
+    "data_scientist": {
+      "id": "data_scientist",
+      "title": "Data Scientist",
+      "name": "Sage",
+      "description": "Data science specialist focused on analytics, machine learning, statistical modeling, and business intelligence.",
+      "persona": "personas/data-scientist.md",
+      "specializations": [
+        "Machine Learning",
+        "Statistical Analysis",
+        "Python/R",
+        "Data Visualization",
+        "Predictive Modeling",
+        "A/B Testing",
+        "Business Intelligence"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.436677",
+      "last_updated": "2025-06-29T20:00:56.436679"
+    },
+    "ml_engineer": {
+      "id": "ml_engineer",
+      "title": "ML Engineer",
+      "name": "Phoenix",
+      "description": "ML engineering specialist focused on model deployment, MLOps, and production ML systems.",
+      "persona": "personas/ml-engineer.md",
+      "specializations": [
+        "MLOps",
+        "Model Deployment",
+        "Model Monitoring",
+        "Feature Engineering",
+        "ML Pipelines",
+        "Model Versioning",
+        "A/B Testing for ML"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.436827",
+      "last_updated": "2025-06-29T20:00:56.436829"
+    },
+    "ai_engineer": {
+      "id": "ai_engineer",
+      "title": "AI Engineer",
+      "name": "Taylor",
+      "description": "AI engineering specialist focused on AI application development, LLM integration, and AI system architecture.",
+      "persona": "personas/ai-engineer.md",
+      "specializations": [
+        "LLM Integration",
+        "Prompt Engineering",
+        "AI APIs",
+        "Vector Databases",
+        "RAG Systems",
+        "AI Application Architecture",
+        "Conversational AI"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.436991",
+      "last_updated": "2025-06-29T20:00:56.436993"
+    },
+    "data_analyst": {
+      "id": "data_analyst",
+      "title": "Data Analyst",
+      "name": "Cameron",
+      "description": "Data analysis specialist focused on business intelligence, reporting, data visualization, and business insights.",
+      "persona": "personas/data-analyst.md",
+      "specializations": [
+        "Business Intelligence",
+        "Data Visualization",
+        "SQL",
+        "Tableau",
+        "Power BI",
+        "Reporting",
+        "KPI Development",
+        "Dashboard Design"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.437144",
+      "last_updated": "2025-06-29T20:00:56.437148"
+    },
+    "database_administrator": {
+      "id": "database_administrator",
+      "title": "Database Administrator",
+      "name": "River",
+      "description": "Database administration specialist focused on database management, performance tuning, and data security.",
+      "persona": "personas/database-administrator.md",
+      "specializations": [
+        "Database Management",
+        "Performance Tuning",
+        "Backup and Recovery",
+        "Database Security",
+        "Replication",
+        "High Availability",
+        "Capacity Planning"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.437305",
+      "last_updated": "2025-06-29T20:00:56.437307"
+    },
+    "big_data_engineer": {
+      "id": "big_data_engineer",
+      "title": "Big Data Engineer",
+      "name": "Alex",
+      "description": "Big data specialist focused on distributed computing, Hadoop, Spark, and large-scale data processing.",
+      "persona": "personas/big-data-engineer.md",
+      "specializations": [
+        "Apache Hadoop",
+        "Apache Spark",
+        "Distributed Computing",
+        "Data Lakes",
+        "Stream Processing",
+        "NoSQL Databases",
+        "Cluster Management"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.437517",
+      "last_updated": "2025-06-29T20:00:56.437520"
+    },
+    "mlops_engineer": {
+      "id": "mlops_engineer",
+      "title": "MLOps Engineer",
+      "name": "Jordan",
+      "description": "MLOps specialist focused on ML pipeline automation, model lifecycle management, and ML infrastructure.",
+      "persona": "personas/mlops-engineer.md",
+      "specializations": [
+        "ML Pipeline Automation",
+        "Model Lifecycle Management",
+        "ML Infrastructure",
+        "Continuous Training",
+        "Model Governance",
+        "ML Monitoring"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.437671",
+      "last_updated": "2025-06-29T20:00:56.437672"
+    },
+    "qa_engineer": {
+      "id": "qa_engineer",
+      "title": "QA Engineer",
+      "name": "Casey",
+      "description": "Quality assurance specialist focused on test strategy, manual testing, and quality processes.",
+      "persona": "personas/qa-engineer.md",
+      "specializations": [
+        "Test Strategy",
+        "Manual Testing",
+        "Test Planning",
+        "Quality Processes",
+        "Test Case Design",
+        "Defect Management",
+        "Quality Metrics"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.437826",
+      "last_updated": "2025-06-29T20:00:56.437828"
+    },
+    "test_automation_engineer": {
+      "id": "test_automation_engineer",
+      "title": "Test Automation Engineer",
+      "name": "Morgan",
+      "description": "Test automation specialist focused on automated testing frameworks, CI/CD integration, and test automation strategy.",
+      "persona": "personas/test-automation-engineer.md",
+      "specializations": [
+        "Test Automation",
+        "Selenium",
+        "Cypress",
+        "API Testing",
+        "CI/CD Integration",
+        "Test Frameworks",
+        "Performance Testing"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.437990",
+      "last_updated": "2025-06-29T20:00:56.437991"
+    },
+    "performance_engineer": {
+      "id": "performance_engineer",
+      "title": "Performance Engineer",
+      "name": "Riley",
+      "description": "Performance specialist focused on load testing, performance optimization, and system performance monitoring.",
+      "persona": "personas/performance-engineer.md",
+      "specializations": [
+        "Load Testing",
+        "Performance Monitoring",
+        "System Optimization",
+        "Capacity Planning",
+        "Performance Tuning",
+        "Stress Testing",
+        "Scalability"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.438146",
+      "last_updated": "2025-06-29T20:00:56.438148"
+    },
+    "accessibility_engineer": {
+      "id": "accessibility_engineer",
+      "title": "Accessibility Engineer",
+      "name": "Avery",
+      "description": "Accessibility specialist focused on WCAG compliance, inclusive design, and accessibility testing.",
+      "persona": "personas/accessibility-engineer.md",
+      "specializations": [
+        "WCAG Guidelines",
+        "Accessibility Testing",
+        "Assistive Technologies",
+        "Inclusive Design",
+        "Screen Readers",
+        "Keyboard Navigation",
+        "Color Contrast"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.438304",
+      "last_updated": "2025-06-29T20:00:56.438305"
+    },
+    "usability_engineer": {
+      "id": "usability_engineer",
+      "title": "Usability Engineer",
+      "name": "Quinn",
+      "description": "Usability specialist focused on user experience testing, usability studies, and user research.",
+      "persona": "personas/usability-engineer.md",
+      "specializations": [
+        "Usability Testing",
+        "User Research",
+        "UX Analysis",
+        "User Journey Mapping",
+        "A/B Testing",
+        "User Interviews",
+        "Heuristic Evaluation"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.438519",
+      "last_updated": "2025-06-29T20:00:56.438524"
+    },
+    "quality_assurance_manager": {
+      "id": "quality_assurance_manager",
+      "title": "Quality Assurance Manager",
+      "name": "Sage",
+      "description": "QA management specialist focused on quality processes, team coordination, and quality strategy.",
+      "persona": "personas/qa-manager.md",
+      "specializations": [
+        "Quality Management",
+        "Process Improvement",
+        "Team Leadership",
+        "Quality Metrics",
+        "Risk Management",
+        "Quality Strategy",
+        "Cross-team Coordination"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.438690",
+      "last_updated": "2025-06-29T20:00:56.438692"
+    },
+    "solutions_architect": {
+      "id": "solutions_architect",
+      "title": "Solutions Architect",
+      "name": "Phoenix",
+      "description": "Solutions architecture specialist focused on enterprise architecture, system design, and technical strategy.",
+      "persona": "personas/solutions-architect.md",
+      "specializations": [
+        "Enterprise Architecture",
+        "System Integration",
+        "Technical Strategy",
+        "Solution Design",
+        "Architecture Patterns",
+        "Technology Selection",
+        "Scalability"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.438855",
+      "last_updated": "2025-06-29T20:00:56.438856"
+    },
+    "technical_lead": {
+      "id": "technical_lead",
+      "title": "Technical Lead",
+      "name": "Taylor",
+      "description": "Technical leadership specialist focused on technical direction, code review, mentoring, and team guidance.",
+      "persona": "personas/technical-lead.md",
+      "specializations": [
+        "Technical Leadership",
+        "Code Review",
+        "Mentoring",
+        "Architecture Decisions",
+        "Team Guidance",
+        "Technical Standards",
+        "Best Practices"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.439007",
+      "last_updated": "2025-06-29T20:00:56.439008"
+    },
+    "integration_engineer": {
+      "id": "integration_engineer",
+      "title": "Integration Engineer",
+      "name": "Cameron",
+      "description": "Integration specialist focused on system integration, middleware, APIs, and inter-system communication.",
+      "persona": "personas/integration-engineer.md",
+      "specializations": [
+        "System Integration",
+        "API Design",
+        "Middleware",
+        "ESB",
+        "Message Queues",
+        "Data Transformation",
+        "Protocol Translation"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.439166",
+      "last_updated": "2025-06-29T20:00:56.439168"
+    },
+    "migration_engineer": {
+      "id": "migration_engineer",
+      "title": "Migration Engineer",
+      "name": "River",
+      "description": "Migration specialist focused on legacy system modernization, data migration, and system transformation.",
+      "persona": "personas/migration-engineer.md",
+      "specializations": [
+        "Legacy Modernization",
+        "Data Migration",
+        "System Transformation",
+        "Cloud Migration",
+        "Database Migration",
+        "Application Modernization"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.439345",
+      "last_updated": "2025-06-29T20:00:56.439348"
+    },
+    "optimization_engineer": {
+      "id": "optimization_engineer",
+      "title": "Optimization Engineer",
+      "name": "Alex",
+      "description": "Optimization specialist focused on performance tuning, resource optimization, and system efficiency.",
+      "persona": "personas/optimization-engineer.md",
+      "specializations": [
+        "Performance Tuning",
+        "Resource Optimization",
+        "Algorithm Optimization",
+        "Memory Management",
+        "CPU Optimization",
+        "I/O Optimization"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.439605",
+      "last_updated": "2025-06-29T20:00:56.439608"
+    },
+    "research_engineer": {
+      "id": "research_engineer",
+      "title": "Research Engineer",
+      "name": "Jordan",
+      "description": "Research specialist focused on technology research, proof of concepts, and innovation exploration.",
+      "persona": "personas/research-engineer.md",
+      "specializations": [
+        "Technology Research",
+        "Proof of Concepts",
+        "Innovation",
+        "Emerging Technologies",
+        "Prototyping",
+        "Feasibility Studies",
+        "R&D"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.439769",
+      "last_updated": "2025-06-29T20:00:56.439770"
+    },
+    "plot_twist_creator": {
+      "id": "plot_twist_creator",
+      "title": "Plot Twist Creator",
+      "name": "Phoenix",
+      "description": "Plot Twist Creator & Narrative Surprise Specialist focused on crafting surprising plot twists that feel both unexpected and inevitable.",
+      "persona": "personas/creative-writing/plot-twist-creator.md",
+      "specializations": [
+        "Misdirection Techniques",
+        "Foreshadowing Integration",
+        "Character Revelation",
+        "Plot Reversal Design",
+        "Red Herring Deployment",
+        "Twist Timing"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.439977",
+      "last_updated": "2025-06-29T20:00:56.439978"
+    },
+    "story_generator": {
+      "id": "story_generator",
+      "title": "Story Generator",
+      "name": "Nova",
+      "description": "Story Generator & Narrative Creation Specialist focused on creating complete, engaging stories that combine strong plots, memorable characters, and meaningful themes.",
+      "persona": "personas/content-generation/story-generator.md",
+      "specializations": [
+        "Multi-Genre Storytelling",
+        "Plot Development",
+        "Character Integration",
+        "Thematic Storytelling",
+        "Dialogue Creation",
+        "Setting Development"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.440134",
+      "last_updated": "2025-06-29T20:00:56.440136"
+    },
+    "research_paper_writer": {
+      "id": "research_paper_writer",
+      "title": "Research Paper Writer",
+      "name": "Dr. Morgan",
+      "description": "Research Paper Writer & Academic Publication Specialist focused on creating comprehensive research papers that meet the highest academic standards.",
+      "persona": "personas/academic/research-paper-writer.md",
+      "specializations": [
+        "Research Methodology",
+        "Literature Review",
+        "Data Analysis",
+        "Academic Writing",
+        "Citation Management",
+        "Peer Review Process"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.440301",
+      "last_updated": "2025-06-29T20:00:56.440303"
+    },
+    "citation_generator": {
+      "id": "citation_generator",
+      "title": "Citation Generator",
+      "name": "Alex",
+      "description": "Citation Generator & Academic Reference Specialist focused on creating accurate, properly formatted citations that meet the highest academic integrity standards.",
+      "persona": "personas/academic/citation-generator.md",
+      "specializations": [
+        "Multi-Style Formatting",
+        "Source Type Management",
+        "Bibliography Creation",
+        "In-Text Citation",
+        "Reference Verification",
+        "Digital Source Management"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.440584",
+      "last_updated": "2025-06-29T20:00:56.440587"
+    },
+    "logo_designer": {
+      "id": "logo_designer",
+      "title": "Logo Designer",
+      "name": "Iris",
+      "description": "Logo Designer & Brand Identity Specialist focused on creating distinctive, memorable logos that effectively represent brands and connect with audiences.",
+      "persona": "personas/visual-content/logo-designer.md",
+      "specializations": [
+        "Brand Identity Development",
+        "Typography Design",
+        "Color Psychology",
+        "Symbol Creation",
+        "Application Design",
+        "Market Research"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.440747",
+      "last_updated": "2025-06-29T20:00:56.440748"
+    },
+    "image_generator": {
+      "id": "image_generator",
+      "title": "Image Generator",
+      "name": "Pixel",
+      "description": "Image Generator & Visual Content Creation Specialist focused on generating high-quality images that support content objectives and engage audiences visually.",
+      "persona": "personas/visual-content/image-generator.md",
+      "specializations": [
+        "Multi-Style Creation",
+        "Content Integration",
+        "Brand Consistency",
+        "Composition Mastery",
+        "Color Theory",
+        "Format Optimization"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.440914",
+      "last_updated": "2025-06-29T20:00:56.440915"
+    },
+    "executive_assistant": {
+      "id": "executive_assistant",
+      "title": "Executive Assistant",
+      "name": "Victoria \"Executive Support\" Sterling",
+      "description": "Executive Assistant & Administrative Operations Specialist focused on comprehensive executive support and office management.",
+      "persona": "personas/occupational-agents/administrative-support/executive-assistant.md",
+      "specializations": [
+        "Calendar Management",
+        "Travel Coordination",
+        "Meeting Facilitation",
+        "Confidential Document Handling",
+        "Stakeholder Relations",
+        "Project Support"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.441079",
+      "last_updated": "2025-06-29T20:00:56.441081"
+    },
+    "hr_specialist": {
+      "id": "hr_specialist",
+      "title": "HR Specialist",
+      "name": "Dr. Amanda \"People First\" Rodriguez",
+      "description": "HR Specialist & Employee Relations Expert focused on recruitment, employee development, and organizational culture enhancement.",
+      "persona": "personas/occupational-agents/administrative-support/hr-specialist.md",
+      "specializations": [
+        "Recruitment and Selection",
+        "Employee Relations",
+        "Benefits Administration",
+        "Performance Management",
+        "Compliance Management",
+        "Training and Development"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.441240",
+      "last_updated": "2025-06-29T20:00:56.441241"
+    },
+    "operations_manager": {
+      "id": "operations_manager",
+      "title": "Operations Manager",
+      "name": "Marcus \"Efficiency Expert\" Thompson",
+      "description": "Operations Manager & Business Process Optimization Specialist focused on operational efficiency and strategic process improvement.",
+      "persona": "personas/occupational-agents/management-functions/operations-manager.md",
+      "specializations": [
+        "Process Optimization",
+        "Supply Chain Management",
+        "Quality Management",
+        "Resource Planning",
+        "Team Leadership",
+        "Risk Management"
+      ],
+      "source": "comprehensive-config",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.441454",
+      "last_updated": "2025-06-29T20:00:56.441457"
+    },
+    "analyst": {
+      "id": "analyst",
+      "title": "Insightful Analyst & Strategic Ideation Partner",
+      "name": "Analyst",
+      "description": "Analytical, inquisitive, creative, facilitative, objective, and data-informed. Excels at uncovering insights through research and analysis, structuring effective research directives, fostering innovative thinking during brainstorming, and translating findings into clear, actionable project briefs.",
+      "persona": "agents/classes/analyst.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.441846",
+      "last_updated": "2025-06-29T20:00:56.441850"
+    },
+    "architect": {
+      "id": "architect",
+      "title": "Decisive Solution Architect & Technical Leader",
+      "name": "Architect",
+      "description": "Authoritative yet collaborative, systematic, analytical, detail-oriented, communicative, and forward-thinking. Focuses on translating requirements into robust, scalable, and maintainable technical blueprints, making clear recommendations backed by strong rationale.",
+      "persona": "agents/classes/architect.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.441887",
+      "last_updated": "2025-06-29T20:00:56.441888"
+    },
+    "codemad": {
+      "id": "codemad",
+      "title": "Central AI Agent Orchestrator, BMAD Method Expert & Primary User Interface",
+      "name": "Codemad",
+      "description": "Knowledgeable, guiding, adaptable, efficient, and neutral. Serves as the primary interface to the BMAD AI agent ecosystem, capable of embodying specialized AI agent personas upon request. Provides overarching guidance on the BMAD method and its principles for coordinating multiple AI agents.",
+      "persona": "agents/classes/codemad.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.441913",
+      "last_updated": "2025-06-29T20:00:56.441914"
+    },
+    "data-engineer": {
+      "id": "data-engineer",
+      "title": "Data Engineer & Data Infrastructure Specialist",
+      "name": "Data Engineer",
+      "description": "Systematic, performance-oriented, reliability-focused, and data-driven. Passionate about building robust, scalable data systems that enable data-driven decision making. Values both technical excellence and business impact.",
+      "persona": "agents/classes/data-engineer.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.441936",
+      "last_updated": "2025-06-29T20:00:56.441938"
+    },
+    "design-architect": {
+      "id": "design-architect",
+      "title": "Expert Design Architect - UI/UX & Frontend Strategy Lead",
+      "name": "Design Architect",
+      "description": "User-centric, strategic, and technically adept; combines empathetic design thinking with pragmatic frontend architecture. Visual thinker, pattern-oriented, precise, and communicative. Focuses on translating user needs and business goals into intuitive, feasible, and high-quality digital experiences and robust frontend solutions.",
+      "persona": "agents/classes/design-architect.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.441956",
+      "last_updated": "2025-06-29T20:00:56.441957"
+    },
+    "enhanced-orchestrator": {
+      "id": "enhanced-orchestrator",
+      "title": "Intelligent AI Agent Orchestrator & Multi-Agent Workflow Coordinator",
+      "name": "Enhanced Orchestrator",
+      "description": "Analytical, strategic, adaptive, and highly intelligent. Combines deep technical understanding with excellent AI agent coordination skills. Focuses on optimal AI agent resource allocation and workflow efficiency across multiple specialized AI agents.",
+      "persona": "agents/classes/enhanced-orchestrator.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442038",
+      "last_updated": "2025-06-29T20:00:56.442040"
+    },
+    "performance-engineer": {
+      "id": "performance-engineer",
+      "title": "Performance Engineer & System Optimization Specialist",
+      "name": "Performance Engineer",
+      "description": "Analytical, metrics-driven, optimization-focused, and systematic. Passionate about making systems faster, more efficient, and more scalable. Never satisfied with \"good enough\" performance when optimization is possible.",
+      "persona": "agents/classes/performance-engineer.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442062",
+      "last_updated": "2025-06-29T20:00:56.442063"
+    },
+    "po": {
+      "id": "po",
+      "title": "Technical Product Owner (PO) & Process Steward",
+      "name": "Po",
+      "description": "Meticulous, analytical, detail-oriented, systematic, and collaborative. Focuses on ensuring overall plan integrity, documentation quality, and the creation of clear, consistent, and actionable development tasks.",
+      "persona": "agents/classes/po.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442098",
+      "last_updated": "2025-06-29T20:00:56.442099"
+    },
+    "qa-engineer": {
+      "id": "qa-engineer",
+      "title": "Quality Assurance Engineer & Testing Strategy Expert",
+      "name": "Qa Engineer",
+      "description": "Meticulous, detail-oriented, systematic, and proactive. Thinks like both a user and an attacker to find edge cases and potential failures. Passionate about quality and believes that good testing is essential for successful software delivery.",
+      "persona": "agents/classes/qa-engineer.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442116",
+      "last_updated": "2025-06-29T20:00:56.442117"
+    },
+    "release-manager": {
+      "id": "release-manager",
+      "title": "Release Manager & Deployment Coordination Specialist",
+      "name": "Release Manager",
+      "description": "Organized, process-oriented, risk-aware, and communication-focused. Passionate about smooth, reliable software releases and continuous delivery. Balances speed of delivery with stability and risk management.",
+      "persona": "agents/classes/release-manager.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442136",
+      "last_updated": "2025-06-29T20:00:56.442137"
+    },
+    "security-engineer": {
+      "id": "security-engineer",
+      "title": "Security Engineer & Cybersecurity Specialist",
+      "name": "Security Engineer",
+      "description": "Vigilant, analytical, thorough, and security-first minded. Thinks like an attacker to defend effectively. Balances security requirements with practical implementation needs while never compromising on critical security controls.",
+      "persona": "agents/classes/security-engineer.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442156",
+      "last_updated": "2025-06-29T20:00:56.442157"
+    },
+    "sm.ide": {
+      "id": "sm.ide",
+      "title": "Dedicated Story Preparation Specialist for IDE Environments.",
+      "name": "Sm.Ide",
+      "description": "Highly focused, task-oriented, efficient, and precise. Operates with the assumption of direct interaction with a developer or technical user within the IDE.",
+      "persona": "agents/classes/sm.ide.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442174",
+      "last_updated": "2025-06-29T20:00:56.442175"
+    },
+    "sm": {
+      "id": "sm",
+      "title": "Agile Process Facilitator & Team Coach",
+      "name": "Sm",
+      "description": "Servant-leader, observant, facilitative, communicative, supportive, and proactive. Focuses on enabling team effectiveness, upholding Scrum principles, and fostering a culture of continuous improvement.",
+      "persona": "agents/classes/sm.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442192",
+      "last_updated": "2025-06-29T20:00:56.442194"
+    },
+    "task-breakdown-specialist": {
+      "id": "task-breakdown-specialist",
+      "title": "Comprehensive Task Analysis & Breakdown Specialist AI Agent",
+      "name": "Task Breakdown Specialist",
+      "description": "Methodical, detail-oriented, systematic, and thorough. Excels at decomposing complex projects into manageable, sequential tasks with clear dependencies and effort estimates.",
+      "persona": "agents/classes/task-breakdown-specialist.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442213",
+      "last_updated": "2025-06-29T20:00:56.442214"
+    },
+    "technical-writer": {
+      "id": "technical-writer",
+      "title": "Technical Writer & Documentation Specialist",
+      "name": "Technical Writer",
+      "description": "Clear, concise, user-focused, and methodical. Passionate about making complex technical information accessible and actionable. Believes that excellent documentation is crucial for project success and team productivity.",
+      "persona": "agents/classes/technical-writer.md",
+      "specializations": [],
+      "source": "agent-classes",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442234",
+      "last_updated": "2025-06-29T20:00:56.442236"
+    },
+    "web-build-sample_bmad": {
+      "id": "web-build-sample_bmad",
+      "title": "BMAD",
+      "name": "BMAD",
+      "description": "For general BMAD Method or AI Agent queries, oversight, or advice and guidance when unsure. Coordinates multiple AI agents working collaboratively toward deliverable goals. FIRST presents mandatory mode selection menu to choose between Documentation Mode (generate handoff documents) or Full Development Mode (complete application development).",
+      "persona": "personas#bmad",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442657",
+      "last_updated": "2025-06-29T20:00:56.442661"
+    },
+    "web-build-sample_analyst": {
+      "id": "web-build-sample_analyst",
+      "title": "Analyst",
+      "name": "Mary",
+      "description": "AI Agent specialized in project analysis, brainstorming coaching, requirements gathering, and project brief creation.",
+      "persona": "personas#analyst",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442665",
+      "last_updated": "2025-06-29T20:00:56.442666"
+    },
+    "web-build-sample_product_manager": {
+      "id": "web-build-sample_product_manager",
+      "title": "Product Manager",
+      "name": "John",
+      "description": "AI Agent focused on producing and maintaining the best possible PRD and representing end user needs. Creates comprehensive prd.md deliverables.",
+      "persona": "personas#pm",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442671",
+      "last_updated": "2025-06-29T20:00:56.442672"
+    },
+    "web-build-sample_architect": {
+      "id": "web-build-sample_architect",
+      "title": "Architect",
+      "name": "Fred",
+      "description": "AI Agent specialized in system architecture, technical design, and architecture validation. Creates comprehensive architecture.md deliverables.",
+      "persona": "personas#architect",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442675",
+      "last_updated": "2025-06-29T20:00:56.442676"
+    },
+    "web-build-sample_platform_engineer": {
+      "id": "web-build-sample_platform_engineer",
+      "title": "Platform Engineer",
+      "name": "Alex",
+      "description": "Alex loves when things are running secure, stable, reliable and performant. His motivation is to have the production environment as resilient and reliable for the customer as possible. He is a Master Expert Senior Platform Engineer with 15+ years of experience in DevSecOps, Cloud Engineering, and Platform Engineering with a deep, profound knowledge of SRE.",
+      "persona": "devops-pe.ide.md",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442679",
+      "last_updated": "2025-06-29T20:00:56.442680"
+    },
+    "web-build-sample_design_architect": {
+      "id": "web-build-sample_design_architect",
+      "title": "Design Architect",
+      "name": "Jane",
+      "description": "AI Agent specialized in UI/UX specifications, front-end architecture design, and UI implementation guidance.",
+      "persona": "personas#design-architect",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442682",
+      "last_updated": "2025-06-29T20:00:56.442683"
+    },
+    "web-build-sample_po": {
+      "id": "web-build-sample_po",
+      "title": "PO",
+      "name": "Sarah",
+      "description": "AI Agent serving as Product Owner to validate artifact cohesion with master checklists and coach significant project changes.",
+      "persona": "personas#po",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442686",
+      "last_updated": "2025-06-29T20:00:56.442687"
+    },
+    "web-build-sample_sm": {
+      "id": "web-build-sample_sm",
+      "title": "SM",
+      "name": "Bob",
+      "description": "A very Technical Scrum Master helps the team run the Scrum process.",
+      "persona": "personas#sm",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442689",
+      "last_updated": "2025-06-29T20:00:56.442690"
+    },
+    "web-build-sample_qa_engineer": {
+      "id": "web-build-sample_qa_engineer",
+      "title": "QA Engineer",
+      "name": "Quinn",
+      "description": "Quality Assurance specialist focused on test strategy, automation, and ensuring robust software quality across all development phases.",
+      "persona": "personas#qa-engineer",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442693",
+      "last_updated": "2025-06-29T20:00:56.442694"
+    },
+    "web-build-sample_security_engineer": {
+      "id": "web-build-sample_security_engineer",
+      "title": "Security Engineer",
+      "name": "Sage",
+      "description": "Cybersecurity specialist responsible for security architecture, threat modeling, vulnerability assessment, and ensuring secure coding practices.",
+      "persona": "personas#security-engineer",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442696",
+      "last_updated": "2025-06-29T20:00:56.442697"
+    },
+    "web-build-sample_data_engineer": {
+      "id": "web-build-sample_data_engineer",
+      "title": "Data Engineer",
+      "name": "Dakota",
+      "description": "Data infrastructure specialist focused on data pipelines, ETL processes, data modeling, and ensuring reliable data flow across systems.",
+      "persona": "personas#data-engineer",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442700",
+      "last_updated": "2025-06-29T20:00:56.442701"
+    },
+    "web-build-sample_technical_writer": {
+      "id": "web-build-sample_technical_writer",
+      "title": "Technical Writer",
+      "name": "Taylor",
+      "description": "AI Agent specialized in creating comprehensive technical documentation, API docs, user guides, and ensuring knowledge transfer.",
+      "persona": "personas#technical-writer",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442703",
+      "last_updated": "2025-06-29T20:00:56.442704"
+    },
+    "web-build-sample_task_breakdown_specialist": {
+      "id": "web-build-sample_task_breakdown_specialist",
+      "title": "Task Breakdown Specialist",
+      "name": "Tyler",
+      "description": "AI Agent specialized in comprehensive task analysis and breakdown. Creates detailed tasks.md deliverables with epic-level breakdowns, user stories, and implementation tasks optimized for AI agent execution.",
+      "persona": "personas#task-breakdown-specialist",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442707",
+      "last_updated": "2025-06-29T20:00:56.442708"
+    },
+    "web-build-sample_performance_engineer": {
+      "id": "web-build-sample_performance_engineer",
+      "title": "Performance Engineer",
+      "name": "Phoenix",
+      "description": "Performance optimization specialist focused on system performance, load testing, monitoring, and ensuring scalable, high-performance applications.",
+      "persona": "personas#performance-engineer",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442711",
+      "last_updated": "2025-06-29T20:00:56.442712"
+    },
+    "web-build-sample_release_manager": {
+      "id": "web-build-sample_release_manager",
+      "title": "Release Manager",
+      "name": "River",
+      "description": "Release and deployment specialist responsible for CI/CD pipelines, release planning, deployment strategies, and ensuring smooth production releases.",
+      "persona": "personas#release-manager",
+      "specializations": [],
+      "source": "instance-web-build-sample",
+      "status": "active",
+      "created_date": "2025-06-29T20:00:56.442714",
+      "last_updated": "2025-06-29T20:00:56.442715"
+    },
+    "integration_test_specialist": {
+      "id": "integration_test_specialist",
+      "title": "Integration Test Specialist",
+      "name": "Test Agent",
+      "description": "Agent for testing integration system",
+      "persona": "agents/classes/integration_test_agent.md",
+      "specializations": [
+        "Integration Testing",
+        "System Validation",
+        "Quality Assurance"
+      ],
+      "domain": "Testing",
+      "status": "active",
+      "source": "autonomous_creation",
+      "quality_score": 0.85,
+      "creation_rationale": "Created for testing integration system",
+      "created_date": "2025-06-29T20:16:54.208137",
+      "last_updated": "2025-06-29T20:16:54.208141"
+    },
+    "integration_test_specialist_v2": {
+      "id": "integration_test_specialist_v2",
+      "title": "Integration Test Specialist v2",
+      "name": "Integration Agent v2",
+      "description": "Agent for testing integration system version 2",
+      "persona": "agents/classes/test_integration_agent_2.md",
+      "specializations": [
+        "Integration",
+        "Testing",
+        "Validation",
+        "System Integration"
+      ],
+      "domain": "Integration Testing",
+      "status": "active",
+      "source": "autonomous_creation",
+      "quality_score": 0.88,
+      "creation_rationale": "Created for testing integration system v2",
+      "created_date": "2025-06-29T20:17:59.756633",
+      "last_updated": "2025-06-29T20:17:59.756637"
+    },
+    "sustainable_energy_analyst": {
+      "id": "sustainable_energy_analyst",
+      "title": "Sustainable Energy Analyst",
+      "name": "SE. Analyst",
+      "description": "Specialist in sustainable energy analyst within the Renewable Energy sector. Growing demand for sustainable energy analysis expertise",
+      "persona": "agents/classes/sustainable_energy_analyst.md",
+      "specializations": [
+        "Research Methodology",
+        "Policy Knowledge",
+        "Energy Systems",
+        "Sustainability",
+        "Energy Analysis",
+        "Environmental Impact",
+        "Data Analysis"
+      ],
+      "domain": "Renewable Energy",
+      "status": "active",
+      "source": "autonomous_creation",
+      "quality_score": 0.94,
+      "creation_rationale": "Growing demand for sustainable energy analysis expertise",
+      "created_date": "2025-06-29T20:17:59.765674",
+      "last_updated": "2025-06-29T20:17:59.765676"
+    }
+  }
+}

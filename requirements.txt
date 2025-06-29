@@ -1,0 +1,33 @@
+# Core Python dependencies for Chimera Autonomous Expansion Protocol
+# All dependencies use standard library or minimal external packages
+
+# Web requests and HTTP handling
+requests>=2.31.0
+
+# JSON and data processing (built-in)
+# json - built-in
+# pathlib - built-in
+# datetime - built-in
+# logging - built-in
+# threading - built-in
+# dataclasses - built-in (Python 3.7+)
+# enum - built-in
+# typing - built-in
+# re - built-in
+# os - built-in
+# sys - built-in
+# time - built-in
+# hashlib - built-in
+
+# Optional: Enhanced logging and monitoring
+# colorama>=0.4.6  # For colored terminal output
+# psutil>=5.9.0    # For system resource monitoring
+
+# Development and testing
+# pytest>=7.4.0    # For testing framework
+# black>=23.0.0     # For code formatting
+# flake8>=6.0.0     # For code linting
+
+# Note: The Chimera protocol is designed to use minimal dependencies
+# Most functionality relies on Python standard library for maximum
+# compatibility and reduced security surface area.
