@@ -1,0 +1,294 @@
+{
+  "research_sources_metadata": {
+    "version": "1.0.0",
+    "description": "Configuration for web research sources used in global needs analysis",
+    "last_updated": "2025-06-29",
+    "total_sources": 25
+  },
+  
+  "labor_market_data": {
+    "government_sources": [
+      {
+        "name": "U.S. Bureau of Labor Statistics",
+        "url": "https://www.bls.gov",
+        "endpoints": [
+          "/news.release/ecopro.toc.htm",
+          "/ooh/",
+          "/emp/"
+        ],
+        "data_types": ["employment_projections", "occupational_outlook", "job_growth"],
+        "update_frequency": "monthly",
+        "reliability_score": 0.95,
+        "rate_limit": "60_requests_per_hour"
+      },
+      {
+        "name": "European Centre for the Development of Vocational Training",
+        "url": "https://www.cedefop.europa.eu",
+        "endpoints": [
+          "/en/tools/skills-online-vacancies",
+          "/en/publications-and-resources/data-visualisations/skills-forecast"
+        ],
+        "data_types": ["skills_demand", "vocational_training", "eu_labor_trends"],
+        "update_frequency": "quarterly",
+        "reliability_score": 0.90,
+        "rate_limit": "30_requests_per_hour"
+      }
+    ],
+    
+    "industry_reports": [
+      {
+        "name": "World Economic Forum",
+        "url": "https://www.weforum.org",
+        "endpoints": [
+          "/reports/the-future-of-jobs-report-2023",
+          "/agenda/archive/future-of-work/"
+        ],
+        "data_types": ["future_skills", "job_displacement", "emerging_roles"],
+        "update_frequency": "annual",
+        "reliability_score": 0.92,
+        "rate_limit": "20_requests_per_hour"
+      },
+      {
+        "name": "McKinsey Global Institute",
+        "url": "https://www.mckinsey.com",
+        "endpoints": [
+          "/mgi/our-research/",
+          "/capabilities/people-and-organizational-performance/our-insights"
+        ],
+        "data_types": ["workforce_trends", "automation_impact", "skills_gaps"],
+        "update_frequency": "quarterly",
+        "reliability_score": 0.88,
+        "rate_limit": "15_requests_per_hour"
+      }
+    ]
+  },
+  
+  "technology_trends": {
+    "tech_platforms": [
+      {
+        "name": "GitHub Trending",
+        "url": "https://github.com/trending",
+        "endpoints": [
+          "/",
+          "/developers",
+          "/repositories"
+        ],
+        "data_types": ["emerging_technologies", "developer_skills", "open_source_trends"],
+        "update_frequency": "daily",
+        "reliability_score": 0.85,
+        "rate_limit": "5000_requests_per_hour"
+      },
+      {
+        "name": "Stack Overflow Trends",
+        "url": "https://insights.stackoverflow.com",
+        "endpoints": [
+          "/trends",
+          "/survey"
+        ],
+        "data_types": ["programming_languages", "developer_tools", "technology_adoption"],
+        "update_frequency": "weekly",
+        "reliability_score": 0.87,
+        "rate_limit": "300_requests_per_hour"
+      },
+      {
+        "name": "Hacker News",
+        "url": "https://news.ycombinator.com",
+        "endpoints": [
+          "/",
+          "/newest",
+          "/best"
+        ],
+        "data_types": ["startup_trends", "tech_discussions", "innovation_signals"],
+        "update_frequency": "real_time",
+        "reliability_score": 0.75,
+        "rate_limit": "unlimited"
+      }
+    ],
+    
+    "research_publications": [
+      {
+        "name": "arXiv",
+        "url": "https://arxiv.org",
+        "endpoints": [
+          "/list/cs/recent",
+          "/search/",
+          "/list/econ/recent"
+        ],
+        "data_types": ["academic_research", "ai_developments", "scientific_breakthroughs"],
+        "update_frequency": "daily",
+        "reliability_score": 0.93,
+        "rate_limit": "1000_requests_per_day"
+      }
+    ]
+  },
+  
+  "job_market_platforms": {
+    "job_boards": [
+      {
+        "name": "LinkedIn Jobs",
+        "url": "https://www.linkedin.com/jobs",
+        "endpoints": [
+          "/search/",
+          "/collections/recommended/"
+        ],
+        "data_types": ["job_postings", "skills_demand", "salary_trends"],
+        "update_frequency": "real_time",
+        "reliability_score": 0.82,
+        "rate_limit": "100_requests_per_hour",
+        "requires_auth": true
+      },
+      {
+        "name": "Indeed",
+        "url": "https://www.indeed.com",
+        "endpoints": [
+          "/jobs",
+          "/salaries",
+          "/career-advice"
+        ],
+        "data_types": ["job_market_data", "compensation_trends", "career_insights"],
+        "update_frequency": "real_time",
+        "reliability_score": 0.80,
+        "rate_limit": "1000_requests_per_day"
+      },
+      {
+        "name": "Glassdoor",
+        "url": "https://www.glassdoor.com",
+        "endpoints": [
+          "/Job/jobs.htm",
+          "/Salaries/index.htm"
+        ],
+        "data_types": ["company_insights", "salary_data", "job_satisfaction"],
+        "update_frequency": "daily",
+        "reliability_score": 0.78,
+        "rate_limit": "500_requests_per_day"
+      }
+    ]
+  },
+  
+  "industry_specific": {
+    "healthcare": [
+      {
+        "name": "Healthcare Financial Management Association",
+        "url": "https://www.hfma.org",
+        "endpoints": ["/topics/", "/news/"],
+        "data_types": ["healthcare_trends", "medical_technology", "healthcare_jobs"],
+        "reliability_score": 0.85
+      }
+    ],
+    
+    "finance": [
+      {
+        "name": "Financial Planning Association",
+        "url": "https://www.onefpa.org",
+        "endpoints": ["/business-success/", "/advocacy-policy/"],
+        "data_types": ["fintech_trends", "financial_services", "regulatory_changes"],
+        "reliability_score": 0.88
+      }
+    ],
+    
+    "education": [
+      {
+        "name": "EdTech Hub",
+        "url": "https://www.edtechhub.org",
+        "endpoints": ["/research/", "/news/"],
+        "data_types": ["educational_technology", "learning_trends", "digital_education"],
+        "reliability_score": 0.83
+      }
+    ]
+  },
+  
+  "emerging_sectors": {
+    "sustainability": [
+      {
+        "name": "International Renewable Energy Agency",
+        "url": "https://www.irena.org",
+        "endpoints": ["/publications/", "/newsroom/"],
+        "data_types": ["renewable_energy_jobs", "green_skills", "sustainability_careers"],
+        "reliability_score": 0.91
+      }
+    ],
+    
+    "artificial_intelligence": [
+      {
+        "name": "AI Index",
+        "url": "https://aiindex.stanford.edu",
+        "endpoints": ["/report/", "/data/"],
+        "data_types": ["ai_job_market", "ml_skills_demand", "ai_industry_trends"],
+        "reliability_score": 0.94
+      }
+    ],
+    
+    "biotechnology": [
+      {
+        "name": "BioWorld",
+        "url": "https://www.bioworld.com",
+        "endpoints": ["/articles/", "/intelligence/"],
+        "data_types": ["biotech_careers", "pharmaceutical_trends", "life_sciences_jobs"],
+        "reliability_score": 0.86
+      }
+    ]
+  },
+  
+  "research_configuration": {
+    "scraping_settings": {
+      "user_agent": "Mozilla/5.0 (compatible; ChimeraResearchBot/1.0; +https://github.com/usemanusai/CodeMAD)",
+      "request_timeout": 30,
+      "max_retries": 3,
+      "retry_delay": 5,
+      "respect_robots_txt": true
+    },
+    
+    "content_processing": {
+      "max_content_length": 50000,
+      "extract_keywords": true,
+      "sentiment_analysis": false,
+      "language_detection": true,
+      "content_quality_threshold": 0.7
+    },
+    
+    "caching_strategy": {
+      "cache_duration_hours": 24,
+      "cache_compression": true,
+      "cache_encryption": false,
+      "max_cache_entries": 1000
+    },
+    
+    "error_handling": {
+      "skip_on_error": true,
+      "log_errors": true,
+      "fallback_sources": true,
+      "max_error_rate": 0.3
+    }
+  },
+  
+  "data_quality": {
+    "validation_rules": {
+      "min_content_length": 100,
+      "max_content_age_days": 365,
+      "required_keywords": ["job", "career", "skill", "employment", "work", "profession"],
+      "exclude_keywords": ["spam", "advertisement", "promotion"]
+    },
+    
+    "scoring_criteria": {
+      "source_authority": 0.3,
+      "content_freshness": 0.2,
+      "relevance_score": 0.3,
+      "data_completeness": 0.2
+    }
+  },
+  
+  "compliance_settings": {
+    "privacy_protection": {
+      "anonymize_data": true,
+      "gdpr_compliance": true,
+      "data_retention_days": 90
+    },
+    
+    "ethical_guidelines": {
+      "respect_rate_limits": true,
+      "avoid_overloading_servers": true,
+      "attribution_required": true,
+      "fair_use_compliance": true
+    }
+  }
+}

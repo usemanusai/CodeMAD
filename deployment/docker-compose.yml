@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  chimera-protocol:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    container_name: chimera-autonomous-protocol
+    restart: unless-stopped
+    environment:
+      - PYTHONPATH=/app
+      - WORKSPACE_ROOT=/app
+      - PROTOCOL_MODE=production
+      - LOG_LEVEL=INFO
+    volumes:
+      - ../:/app
+      - chimera-data:/app/data
+      - chimera-logs:/app/logs
+      - chimera-reports:/app/reports
+    ports:
+      - "8080:8080"  # Web interface
+      - "8081:8081"  # API endpoint
+    networks:
+      - chimera-network
+    healthcheck:
+      test: ["CMD", "python", "/app/services/control_interface.py", "dashboard"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  chimera-monitor:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile.monitor
+    container_name: chimera-monitor
+    restart: unless-stopped
+    environment:
+      - WORKSPACE_ROOT=/app
+      - MONITORING_INTERVAL=30
+    volumes:
+      - ../:/app
+      - chimera-logs:/app/logs
+    depends_on:
+      - chimera-protocol
+    networks:
+      - chimera-network
+
+  chimera-web:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile.web
+    container_name: chimera-web-interface
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://chimera-protocol:8081
+    depends_on:
+      - chimera-protocol
+    networks:
+      - chimera-network
+
+volumes:
+  chimera-data:
+    driver: local
+  chimera-logs:
+    driver: local
+  chimera-reports:
+    driver: local
+
+networks:
+  chimera-network:
+    driver: bridge
