@@ -1,0 +1,56 @@
+{
+  "dao_name": "CodeMAD Human Governance DAO",
+  "version": "1.0.0",
+  "established": "2025-06-29",
+  "governance_model": "hybrid_proof_system",
+  
+  "membership_types": {
+    "proof_of_brain": {
+      "description": "Members contributing intellectual capital, expertise, and innovation",
+      "voting_weight": "expertise_based",
+      "requirements": ["demonstrated_expertise", "community_recognition", "contribution_history"]
+    },
+    "proof_of_stake": {
+      "description": "Members contributing financial resources and infrastructure",
+      "voting_weight": "stake_proportional",
+      "requirements": ["minimum_stake_threshold", "vesting_period", "good_standing"]
+    }
+  },
+  
+  "voting_mechanisms": {
+    "simple_majority": {
+      "threshold": 0.51,
+      "use_cases": ["routine_policies", "operational_decisions"]
+    },
+    "supermajority": {
+      "threshold": 0.67,
+      "use_cases": ["constitutional_amendments", "major_system_changes"]
+    },
+    "unanimous": {
+      "threshold": 1.0,
+      "use_cases": ["emergency_powers", "fundamental_architecture_changes"]
+    }
+  },
+  
+  "proposal_process": {
+    "submission": {
+      "minimum_member_level": "verified",
+      "required_fields": ["title", "description", "rationale", "implementation_plan", "impact_assessment"]
+    },
+    "review_period": "7_days",
+    "voting_period": "14_days",
+    "implementation_delay": "3_days"
+  },
+  
+  "current_members": [],
+  "active_proposals": [],
+  "voting_history": [],
+  
+  "emergency_procedures": {
+    "triggers": ["security_breach", "system_failure", "agent_malfunction"],
+    "emergency_council": ["sovereign_orchestrator", "senior_dao_members"],
+    "powers": ["temporary_agent_suspension", "system_lockdown", "emergency_patches"],
+    "duration_limit": "72_hours",
+    "ratification_required": true
+  }
+}
