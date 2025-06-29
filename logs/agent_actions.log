@@ -1,0 +1,5 @@
+# CodeMAD Agent Actions Log
+# This file records all actions taken against agents for due process and transparency
+# Format: [TIMESTAMP] [ACTION_TYPE] [AGENT_ID] [REASON] [DETAILS] [AUTHORIZED_BY]
+
+[2025-06-29T19:15:09Z] SYSTEM_INIT ALL_AGENTS REPOSITORY_RESTRUCTURE "All existing agent configurations migrated to new structure" ORCHESTRATOR

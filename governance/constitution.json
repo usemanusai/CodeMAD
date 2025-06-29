@@ -1,0 +1,52 @@
+{
+  "title": "CodeMAD Cipher Architecture Constitution",
+  "version": "1.0.0",
+  "ratified": null,
+  "preamble": "This constitution establishes the fundamental governance framework for the CodeMAD Cipher Architecture ecosystem, defining the rights, responsibilities, and operational principles for all agents and human participants.",
+  
+  "core_principles": {
+    "transparency": "All executive decisions by the Orchestrator and DAO must be logged in an immutable audit ledger",
+    "accountability": "All agent actions must be traceable and auditable",
+    "due_process": "Actions taken against agents must follow established procedures and be logged",
+    "collective_governance": "The Human Governance DAO has ultimate authority over system-wide policies",
+    "agent_rights": "Agents have defined rights within their operational parameters"
+  },
+  
+  "governance_structure": {
+    "sovereign_orchestrator": {
+      "role": "Primary executive authority for day-to-day operations",
+      "powers": ["policy_enactment", "agent_management", "resource_allocation"],
+      "constraints": ["must_log_decisions", "subject_to_dao_oversight"]
+    },
+    "human_governance_dao": {
+      "role": "Ultimate authority for constitutional and policy matters",
+      "composition": ["proof_of_brain_members", "proof_of_stake_members"],
+      "powers": ["constitutional_amendments", "policy_ratification", "orchestrator_oversight"]
+    },
+    "agent_classes": {
+      "specialist_agents": {"permissions": "domain_specific_operations"},
+      "auditor_agents": {"permissions": "verification_and_validation"},
+      "regulator_agents": {"permissions": "compliance_monitoring"},
+      "enforcer_agents": {"permissions": "policy_enforcement"}
+    }
+  },
+  
+  "operational_requirements": {
+    "audit_logging": {
+      "required_events": ["executive_decisions", "policy_changes", "agent_sanctions"],
+      "log_location": "/logs/audit_ledger.log",
+      "immutability": true
+    },
+    "agent_lifecycle": {
+      "creation": "must_pass_school_validation",
+      "deployment": "requires_orchestrator_approval",
+      "sanctions": ["isolation_jailing", "parameter_reset", "termination"]
+    }
+  },
+  
+  "amendment_process": {
+    "proposal": "Any DAO member may propose amendments",
+    "voting": "Requires majority approval from both proof-of-brain and proof-of-stake members",
+    "ratification": "Amendments take effect immediately upon approval"
+  }
+}

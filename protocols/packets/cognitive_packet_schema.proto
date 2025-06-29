@@ -1,0 +1,86 @@
+// Protocol Buffer schema for Cognitive Packets in the CodeMAD Cipher Architecture
+// These packets enable structured communication between agents
+
+syntax = "proto3";
+
+package codemad.protocols;
+
+// Base Cognitive Packet structure
+message CognitivePacket {
+  string packet_id = 1;
+  string sender_agent_id = 2;
+  string recipient_agent_id = 3;
+  int64 timestamp = 4;
+  PacketType type = 5;
+  bytes payload = 6;
+  map<string, string> metadata = 7;
+}
+
+enum PacketType {
+  PERCEPTUAL = 0;
+  KNOWLEDGE_GRAPH = 1;
+  PREDICTION_MODEL = 2;
+  AFFECTIVE_CONTEXT = 3;
+  EPISODIC_MEMORY = 4;
+  WORKING_MEMORY = 5;
+  TASK_REQUEST = 6;
+  TASK_RESPONSE = 7;
+}
+
+// Perceptual Packet - raw sensory/input data
+message PerceptualPacket {
+  string input_source = 1;
+  string content_type = 2;
+  bytes raw_data = 3;
+  repeated string tags = 4;
+}
+
+// Knowledge Graph Packet - structured facts and relationships
+message KnowledgeGraphPacket {
+  repeated Entity entities = 1;
+  repeated Relationship relationships = 2;
+  repeated Rule rules = 3;
+}
+
+message Entity {
+  string id = 1;
+  string type = 2;
+  map<string, string> properties = 3;
+}
+
+message Relationship {
+  string subject_id = 1;
+  string predicate = 2;
+  string object_id = 3;
+  float confidence = 4;
+}
+
+message Rule {
+  string id = 1;
+  string condition = 2;
+  string action = 3;
+  float weight = 4;
+}
+
+// Prediction Model Packet - forecasts and hypotheses
+message PredictionModelPacket {
+  string model_type = 1;
+  repeated Prediction predictions = 2;
+  float confidence_threshold = 3;
+}
+
+message Prediction {
+  string scenario = 1;
+  float probability = 2;
+  repeated string supporting_evidence = 3;
+  int64 time_horizon = 4;
+}
+
+// Affective Context Packet - emotional and contextual state
+message AffectiveContextPacket {
+  string emotional_state = 1;
+  float arousal_level = 2;
+  float valence = 3;
+  map<string, float> context_factors = 4;
+  string motivation = 5;
+}
