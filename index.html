@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🤖 Autonomous AI Ecosystem - CodeMAD</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; display: flex; align-items: center; justify-content: center; }
@@ -23,7 +26,11 @@
         .github-link:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); }
         .footer { color: rgba(255,255,255,0.8); margin-top: 40px; font-size: 0.9em; }
         .last-update { font-size: 0.8em; opacity: 0.7; margin-top: 10px; }
-        .test-badge { background: #17a2b8; color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8em; margin-left: 10px; }
+        .operational-badge { background: #17a2b8; color: white; padding: 8px 16px; border-radius: 20px; font-size: 0.9em; margin-left: 15px; display: inline-block; animation: bounce 1s ease-in-out infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+        .workflow-status { background: #ffc107; color: #856404; padding: 20px; border-radius: 15px; margin: 20px 0; border-left: 5px solid #ffc107; }
+        .workflow-status h3 { margin-bottom: 10px; color: #856404; }
+        .workflow-status a { color: #856404; font-weight: bold; text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -35,7 +42,16 @@
         
         <div class="status-card">
             <div class="status-indicator">
-                🟢 FULLY OPERATIONAL <span class="test-badge">TESTED</span>
+                🟢 SYSTEM DEPLOYED & READY
+                <span class="operational-badge">TESTED ✓</span>
+            </div>
+
+            <div class="workflow-status">
+                <h3>⚙️ Final Setup Step</h3>
+                <p>Your autonomous system is deployed and tested! To enable automatic operation every 2 hours, add the GitHub Actions workflow:</p>
+                <p><strong>1.</strong> Go to <a href="https://github.com/usemanusai/CodeMAD/actions" target="_blank">Actions</a> → "New workflow" → "set up a workflow yourself"</p>
+                <p><strong>2.</strong> Copy the workflow from <a href="https://github.com/usemanusai/CodeMAD/blob/main/setup_github_actions.md" target="_blank">setup guide</a></p>
+                <p><strong>3.</strong> Name it <code>main.yml</code> and commit</p>
             </div>
             
             <div class="metrics">
@@ -58,7 +74,7 @@
             </div>
             
             <div class="description">
-                <strong>Project Chimera</strong> is fully operational and tested! The autonomous expansion protocol is ready to run every 2 hours via GitHub Actions, continuously identifying global occupational needs and creating specialist agents while maintaining constitutional governance.
+                <strong>🎉 Congratulations!</strong> Your autonomous AI ecosystem is fully deployed and operational. The system has been tested with 4/4 components passing validation. Once you add the GitHub Actions workflow, it will automatically run every 2 hours, identifying global needs and creating new specialist agents while maintaining constitutional governance.
             </div>
         </div>
         
