@@ -1,0 +1,257 @@
+{
+  "metadata": {
+    "version": 1,
+    "created": "2024-06-30T12:00:00Z",
+    "preset_mode": "balanced",
+    "last_modified": "2024-06-30T12:00:00Z",
+    "modified_by": "system",
+    "schema_version": "2.0.0"
+  },
+  "autonomous_operation": {
+    "enabled": true,
+    "cycle_interval_minutes": 120,
+    "max_cycles_per_day": 12,
+    "auto_start_on_boot": true,
+    "require_human_approval": false,
+    "perpetual_loop": true,
+    "cooldown_period_minutes": 5,
+    "timezone": "UTC"
+  },
+  "quality_assurance": {
+    "validation_score_threshold": 0.85,
+    "duplicate_similarity_threshold": 0.8,
+    "multi_tier_validation": true,
+    "constitutional_compliance_check": true,
+    "quality_gates": {
+      "structure_validation": true,
+      "content_validation": true,
+      "compliance_validation": true,
+      "integration_validation": true
+    },
+    "quality_metrics": {
+      "min_persona_length": 500,
+      "min_task_count": 3,
+      "required_sections": ["description", "responsibilities", "expertise"]
+    }
+  },
+  "safety_limits": {
+    "error_thresholds": {
+      "max_consecutive_failures": 5,
+      "max_failure_rate_percent": 20,
+      "auto_disable_on_errors": true,
+      "failure_cooldown_minutes": 30
+    },
+    "resource_limits": {
+      "max_memory_usage_mb": 1024,
+      "max_disk_usage_mb": 500,
+      "max_api_calls_per_hour": 200,
+      "max_concurrent_operations": 4,
+      "max_execution_time_minutes": 30
+    },
+    "emergency_controls": {
+      "emergency_stop_enabled": true,
+      "human_override_required": false,
+      "cooldown_period_minutes": 30,
+      "auto_recovery_enabled": true,
+      "escalation_thresholds": {
+        "critical_error_count": 3,
+        "resource_usage_percent": 90,
+        "failure_rate_percent": 50
+      }
+    },
+    "rate_limiting": {
+      "requests_per_minute": 60,
+      "burst_allowance": 10,
+      "backoff_strategy": "exponential"
+    }
+  },
+  "research_configuration": {
+    "timeout_seconds": 600,
+    "max_concurrent_research": 4,
+    "retry_attempts": 3,
+    "cache_duration_hours": 24,
+    "source_priorities": {
+      "academic_papers": 0.3,
+      "industry_reports": 0.4,
+      "government_data": 0.2,
+      "news_sources": 0.1
+    },
+    "research_sources": {
+      "enabled_sources": [
+        "arxiv",
+        "google_scholar",
+        "industry_reports",
+        "government_apis",
+        "news_apis",
+        "job_boards",
+        "professional_networks"
+      ],
+      "source_weights": {
+        "arxiv": 0.25,
+        "google_scholar": 0.20,
+        "industry_reports": 0.25,
+        "government_apis": 0.15,
+        "news_apis": 0.05,
+        "job_boards": 0.05,
+        "professional_networks": 0.05
+      }
+    },
+    "quality_filters": {
+      "min_source_credibility": 0.7,
+      "max_age_days": 365,
+      "language_filter": ["en"],
+      "content_filters": ["spam", "duplicate", "low_quality"]
+    }
+  },
+  "agent_creation": {
+    "max_agents_per_day": 8,
+    "max_agents_per_domain": 5,
+    "max_agents_per_cycle": 2,
+    "quality_gate_enabled": true,
+    "approval_workflow": "automatic",
+    "creation_quotas": {
+      "daily_limit": 8,
+      "weekly_limit": 50,
+      "monthly_limit": 200
+    },
+    "domain_restrictions": {
+      "max_agents_per_domain": 5,
+      "domain_cooldown_hours": 24,
+      "priority_domains": ["healthcare", "education", "sustainability"]
+    },
+    "validation_requirements": {
+      "min_quality_score": 0.85,
+      "peer_review_required": false,
+      "constitutional_review": true,
+      "integration_testing": true
+    }
+  },
+  "monitoring_and_alerts": {
+    "enabled": true,
+    "alert_channels": {
+      "email": {
+        "enabled": false,
+        "recipients": [],
+        "severity_threshold": "warning"
+      },
+      "webhook": {
+        "enabled": false,
+        "url": "",
+        "severity_threshold": "error"
+      },
+      "dashboard": {
+        "enabled": true,
+        "refresh_interval_seconds": 30,
+        "alert_retention_hours": 24
+      }
+    },
+    "metrics_collection": {
+      "performance_metrics": true,
+      "resource_metrics": true,
+      "quality_metrics": true,
+      "error_metrics": true,
+      "retention_days": 30
+    },
+    "health_checks": {
+      "interval_minutes": 5,
+      "timeout_seconds": 30,
+      "failure_threshold": 3,
+      "checks": [
+        "agent_directory_service",
+        "configuration_service",
+        "research_engine",
+        "synthesis_engine"
+      ]
+    }
+  },
+  "performance_optimization": {
+    "caching": {
+      "enabled": true,
+      "cache_size_mb": 256,
+      "ttl_hours": 24,
+      "cache_types": ["research_results", "validation_results", "metrics"]
+    },
+    "parallel_processing": {
+      "enabled": true,
+      "max_workers": 4,
+      "queue_size": 100,
+      "timeout_seconds": 300
+    },
+    "resource_management": {
+      "memory_optimization": true,
+      "garbage_collection": true,
+      "connection_pooling": true,
+      "lazy_loading": true
+    }
+  },
+  "backup_and_recovery": {
+    "enabled": true,
+    "backup_interval_hours": 6,
+    "retention_days": 30,
+    "backup_types": {
+      "configuration": true,
+      "agent_directory": true,
+      "metrics_data": true,
+      "logs": false
+    },
+    "recovery_options": {
+      "auto_recovery": true,
+      "rollback_enabled": true,
+      "backup_verification": true
+    }
+  },
+  "api_configuration": {
+    "enabled": true,
+    "port": 8081,
+    "host": "0.0.0.0",
+    "authentication": {
+      "enabled": false,
+      "method": "token",
+      "token_expiry_hours": 24
+    },
+    "rate_limiting": {
+      "requests_per_minute": 100,
+      "burst_allowance": 20
+    },
+    "endpoints": {
+      "status": true,
+      "metrics": true,
+      "configuration": true,
+      "control": true
+    }
+  },
+  "constitutional_governance": {
+    "enabled": true,
+    "compliance_checks": {
+      "agent_creation": true,
+      "configuration_changes": true,
+      "system_operations": true
+    },
+    "audit_logging": {
+      "enabled": true,
+      "log_level": "INFO",
+      "retention_days": 90,
+      "immutable_logging": true
+    },
+    "governance_rules": {
+      "human_oversight_required": false,
+      "quality_standards_enforced": true,
+      "safety_limits_enforced": true,
+      "transparency_required": true
+    }
+  },
+  "experimental_features": {
+    "enabled": false,
+    "features": {
+      "advanced_analytics": false,
+      "machine_learning_optimization": false,
+      "predictive_scaling": false,
+      "auto_tuning": false
+    },
+    "beta_testing": {
+      "enabled": false,
+      "feedback_collection": true,
+      "rollback_on_failure": true
+    }
+  }
+}
