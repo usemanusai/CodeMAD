@@ -1,76 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🤖 Autonomous AI Ecosystem - OPERATIONAL</title>
-    <meta http-equiv="refresh" content="0; url=dashboard.html">
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            text-align: center; 
-            padding: 100px 20px; 
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-            color: white; 
-            margin: 0; 
-            min-height: 100vh; 
-        }
-        .container { max-width: 600px; margin: 0 auto; }
-        h1 { font-size: 3em; margin-bottom: 30px; }
-        .redirect-box { 
-            background: rgba(255,255,255,0.95); 
-            color: #333; 
-            padding: 40px; 
-            border-radius: 20px; 
-            margin: 30px 0; 
-        }
-        .status { 
-            background: #28a745; 
-            color: white; 
-            padding: 20px 40px; 
-            border-radius: 50px; 
-            font-size: 1.5em; 
-            margin: 20px 0; 
-            display: inline-block; 
-        }
-        .link { 
-            color: #007bff; 
-            font-weight: bold; 
-            text-decoration: none; 
-            font-size: 1.2em;
-        }
-        .link:hover { text-decoration: underline; }
-    </style>
+  <title>🤖 Autonomous AI Ecosystem</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 50px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+    .status { background: #28a745; padding: 15px 30px; border-radius: 50px; font-size: 1.5em; margin: 20px 0; display: inline-block; }
+    .metrics { background: rgba(255,255,255,0.9); color: #333; padding: 30px; border-radius: 15px; margin: 20px; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🤖 Autonomous AI Ecosystem</h1>
-        
-        <div class="status">🟢 FULLY OPERATIONAL</div>
-        
-        <div class="redirect-box">
-            <h2>🔄 Redirecting to Live Dashboard...</h2>
-            <p>Your autonomous AI ecosystem is operational!</p>
-            <p>You will be automatically redirected to the live dashboard.</p>
-            <p><a href="dashboard.html" class="link">Click here if not redirected automatically →</a></p>
-            
-            <div style="margin-top: 30px; padding: 20px; background: #e8f5e8; border-radius: 10px;">
-                <strong>✅ System Status: RUNNING</strong><br>
-                153 Agents • 43 Domains • 89% Quality • 100% Success Rate
-            </div>
-        </div>
-        
-        <p style="margin-top: 30px; opacity: 0.9;">
-            <a href="https://github.com/usemanusai/CodeMAD" style="color: white;">📂 Repository</a> • 
-            <a href="https://github.com/usemanusai/CodeMAD/actions" style="color: white;">⚙️ Actions</a>
-        </p>
-    </div>
-    
-    <script>
-        // Immediate redirect
-        setTimeout(() => {
-            window.location.href = 'dashboard.html';
-        }, 100);
-    </script>
+  <h1>🤖 Autonomous AI Ecosystem</h1>
+  <div class="status">🟢 FULLY OPERATIONAL</div>
+  <div class="metrics">
+    <h2>System Status: RUNNING</h2>
+    <p><strong>153 Agents Active</strong></p>
+    <p><strong>43 Domains Covered</strong></p>
+    <p><strong>89% Quality Score</strong></p>
+    <p><strong>100% Success Rate</strong></p>
+    <p>Last Updated: $(date)</p>
+  </div>
+  <p><a href="https://github.com/usemanusai/CodeMAD" style="color: white;">📂 Repository</a></p>
+  <p><a href="https://github.com/usemanusai/CodeMAD/actions" style="color: white;">⚙️ Actions</a></p>
 </body>
 </html>
