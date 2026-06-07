@@ -19,7 +19,7 @@ class AssetGenerator:
     Creates all necessary files and structures for agent deployment.
     """
     
-    def __init__(self, workspace_root: str = "/mnt/persist/workspace"):
+    def __init__(self, workspace_root: str = "."):
         self.workspace_root = Path(workspace_root)
         self.agents_dir = self.workspace_root / "agents"
         self.memory_dir = self.workspace_root / "memory"

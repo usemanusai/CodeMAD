@@ -11,7 +11,7 @@ import os
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Any
 from pathlib import Path
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict
 import sys
 
 # Add services directory to path for imports
@@ -47,7 +47,7 @@ class ReportingSystem:
     Generates insights, tracks performance, and provides strategic recommendations.
     """
     
-    def __init__(self, workspace_root: str = "/mnt/persist/workspace"):
+    def __init__(self, workspace_root: str = "."):
         self.workspace_root = Path(workspace_root)
         self.config_file = self.workspace_root / "services" / "config" / "expansion_config.json"
         self.state_file = self.workspace_root / "services" / "data" / "expansion_state.json"
@@ -95,8 +95,8 @@ class ReportingSystem:
             'report_id': f"cycle_report_{cycle_result.cycle_id}",
             'generated_at': datetime.now().isoformat(),
             'cycle_summary': self._generate_cycle_summary(cycle_result),
-            'ecosystem_metrics': self._calculate_ecosystem_metrics(),
-            'performance_analysis': self._analyze_performance(),
+            'ecosystem_metrics': asdict(self._calculate_ecosystem_metrics()),
+            'performance_analysis': asdict(self._analyze_performance()),
             'strategic_insights': self._generate_strategic_insights(cycle_result),
             'recommendations': self._generate_recommendations(cycle_result),
             'next_actions': self._determine_next_actions(cycle_result)

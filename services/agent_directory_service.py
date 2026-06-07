@@ -19,7 +19,7 @@ class AgentDirectoryService:
     Maintains real-time registry of all agents with metadata and capabilities.
     """
     
-    def __init__(self, workspace_root: str = "/mnt/persist/workspace"):
+    def __init__(self, workspace_root: str = "."):
         self.workspace_root = Path(workspace_root)
         self.data_dir = self.workspace_root / "services" / "data"
         self.agent_directory_file = self.data_dir / "agent_directory.json"

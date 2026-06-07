@@ -24,7 +24,7 @@ class ControlInterface:
     Provides monitoring, control, and emergency intervention capabilities.
     """
     
-    def __init__(self, workspace_root: str = "/mnt/persist/workspace"):
+    def __init__(self, workspace_root: str = "."):
         self.workspace_root = Path(workspace_root)
         self.config_file = self.workspace_root / "services" / "config" / "expansion_config.json"
         self.state_file = self.workspace_root / "services" / "data" / "expansion_state.json"
