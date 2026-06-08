@@ -36,7 +36,7 @@ class GapAnalyzer:
     Cross-references discovered occupations with existing agent directory.
     """
     
-    def __init__(self, workspace_root: str = "/mnt/persist/workspace"):
+    def __init__(self, workspace_root: str = "."):
         self.workspace_root = Path(workspace_root)
         self.config_file = self.workspace_root / "services" / "config" / "expansion_config.json"
         self.audit_log = self.workspace_root / "logs" / "audit_ledger.log"

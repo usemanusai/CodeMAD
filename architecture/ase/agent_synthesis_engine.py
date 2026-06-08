@@ -40,7 +40,7 @@ class AgentSynthesisEngine:
     Transforms gap analysis results into fully functional agent specifications.
     """
     
-    def __init__(self, workspace_root: str = "/mnt/persist/workspace"):
+    def __init__(self, workspace_root: str = "."):
         self.workspace_root = Path(workspace_root)
         self.config_file = self.workspace_root / "services" / "config" / "expansion_config.json"
         self.ase_dir = self.workspace_root / "architecture" / "ase"

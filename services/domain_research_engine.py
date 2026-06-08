@@ -38,7 +38,7 @@ class DomainResearchEngine:
     Performs comprehensive research on selected expansion focus areas.
     """
     
-    def __init__(self, workspace_root: str = "/mnt/persist/workspace"):
+    def __init__(self, workspace_root: str = "."):
         self.workspace_root = Path(workspace_root)
         self.config_file = self.workspace_root / "services" / "config" / "expansion_config.json"
         self.sources_file = self.workspace_root / "services" / "config" / "research_sources.json"
