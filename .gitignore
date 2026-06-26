@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+logs/
+*.log
+
+# Caches
+.cache/
+reports/
+services/data/research_cache/
+index.html
