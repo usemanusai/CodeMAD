@@ -1,0 +1,8 @@
+# Ignore Python cache and runtime artifacts
+__pycache__/
+*.py[cod]
+*.class
+logs/
+reports/*.json
+services/data/research_cache/
+index.html
