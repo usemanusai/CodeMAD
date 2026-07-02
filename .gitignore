@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+index.html
+logs/
+memory/
+reports/
+services/data/research_cache/
