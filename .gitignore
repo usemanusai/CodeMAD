@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# logs and reports
+logs/
+reports/
+services/data/research_cache/
+memory/
+
+# artifacts
+index.html
