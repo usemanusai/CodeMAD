@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+index.html
+logs/
+memory/
+reports/
+services/data/research_cache/
