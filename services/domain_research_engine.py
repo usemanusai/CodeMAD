@@ -211,7 +211,7 @@ class DomainResearchEngine:
                     source_data['content_quality'] = max(source_data['content_quality'], extracted_data['quality'])
                     
             except Exception as e:
-                self.logger.warning(f"Error fetching {url}: {e}")
+                self.logger.debug(f"Error fetching {url}: {e}")
         
         # Deduplicate and limit data
         source_data['occupations'] = list(set(source_data['occupations']))[:20]
@@ -527,7 +527,7 @@ class DomainResearchEngine:
             return response.text
             
         except Exception as e:
-            self.logger.warning(f"Error fetching {url}: {e}")
+            self.logger.debug(f"Error fetching {url}: {e}")
             return None
     
     def _generate_cache_key(self, key_data: str) -> str:
