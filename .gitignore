@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv/
+env.bak/
+venv.bak/
+
+# Logs
+logs/
+*.log
+
+# Caches
+services/data/research_cache/*.json
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Reports
+reports/
+index.html
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
