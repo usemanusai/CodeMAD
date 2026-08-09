@@ -107,7 +107,7 @@ def test_domain_research_engine():
         print(f"❌ Error testing Domain Research Engine: {e}")
         return []
 
-def test_gap_analyzer(mock_profiles):
+def test_gap_analyzer():
     """Test Gap Analyzer functionality."""
     print("\n" + "=" * 60)
     print("TESTING GAP ANALYZER")
@@ -125,6 +125,7 @@ def test_gap_analyzer(mock_profiles):
         test_domain = "AI Healthcare"
         print(f"🔍 Testing gap analysis for: {test_domain}")
         
+        mock_profiles = test_domain_research_engine()
         gaps = analyzer.analyze_gaps(test_domain, mock_profiles)
         print(f"✅ Gap analysis completed: {len(gaps)} gaps identified")
         
