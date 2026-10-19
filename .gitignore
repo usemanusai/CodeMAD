@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+logs/
+reports/
+memory/
+services/data/research_cache/
+services/data/expansion_state.json
+services/data/agent_directory.json
